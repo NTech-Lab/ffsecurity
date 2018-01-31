@@ -1,0 +1,281 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Очистка базы данных событий c event-cleaner &mdash; Документация FindFace Security </title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Алфавитный указатель"
+              href="genindex.html"/>
+        <link rel="search" title="Поиск" href="search.html"/>
+    <link rel="top" title="Документация FindFace Security " href="index.html"/>
+        <link rel="next" title="Устранение неисправностей" href="troubleshooting.html"/>
+        <link rel="prev" title="Управление пользователями" href="user_management.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> FindFace Security
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Содержание</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Системные требования</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Архитектура</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy.html">Развертывание FindFace Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wui.html">Веб-интерфейс</a></li>
+<li class="toctree-l1"><a class="reference internal" href="camera_management.html">Управление видеокамерами</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guests.html">Управление базой данных посетителей</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_management.html">Управление пользователями</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Очистка базы данных событий c <code class="docutils literal"><span class="pre">event-cleaner</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Устранение неисправностей</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FindFace Security</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Очистка базы данных событий c <code class="docutils literal"><span class="pre">event-cleaner</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/event_cleaner.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="c-event-cleaner">
+<span id="events"></span><h1>Очистка базы данных событий c <code class="docutils literal"><span class="pre">event-cleaner</span></code><a class="headerlink" href="#c-event-cleaner" title="Ссылка на этот заголовок">¶</a></h1>
+<p>Для удаления устаревших событий используйте утилиту <code class="docutils literal"><span class="pre">event-cleaner</span></code>.</p>
+<p>Cправка по утилите вызывается следующей командой:</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">findface</span><span class="o">-</span><span class="n">security</span> <span class="n">cleanup_events</span> <span class="o">--</span><span class="n">help</span>
+</pre></div>
+</div>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">usage</span><span class="p">:</span> <span class="n">findface</span><span class="o">-</span><span class="n">security</span><span class="o">-</span><span class="n">manage</span> <span class="n">cleanup_events</span> <span class="p">[</span><span class="o">-</span><span class="n">h</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">version</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">v</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}]</span>
+                                               <span class="p">[</span><span class="o">--</span><span class="n">settings</span> <span class="n">SETTINGS</span><span class="p">]</span>
+                                               <span class="p">[</span><span class="o">--</span><span class="n">pythonpath</span> <span class="n">PYTHONPATH</span><span class="p">]</span>
+                                               <span class="p">[</span><span class="o">--</span><span class="n">traceback</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">color</span><span class="p">]</span>
+                                               <span class="o">--</span><span class="n">age</span> <span class="n">AGE</span>
+
+<span class="n">Delete</span> <span class="n">old</span> <span class="n">events</span>
+
+<span class="n">optional</span> <span class="n">arguments</span><span class="p">:</span>
+ <span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="o">--</span><span class="n">help</span>            <span class="n">show</span> <span class="n">this</span> <span class="n">help</span> <span class="n">message</span> <span class="ow">and</span> <span class="n">exit</span>
+ <span class="o">--</span><span class="n">version</span>             <span class="n">show</span> <span class="n">program</span><span class="s1">&#39;s version number and exit</span>
+ <span class="o">-</span><span class="n">v</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">},</span> <span class="o">--</span><span class="n">verbosity</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+                       <span class="n">Verbosity</span> <span class="n">level</span><span class="p">;</span> <span class="mi">0</span><span class="o">=</span><span class="n">minimal</span> <span class="n">output</span><span class="p">,</span> <span class="mi">1</span><span class="o">=</span><span class="n">normal</span> <span class="n">output</span><span class="p">,</span>
+                       <span class="mi">2</span><span class="o">=</span><span class="n">verbose</span> <span class="n">output</span><span class="p">,</span> <span class="mi">3</span><span class="o">=</span><span class="n">very</span> <span class="n">verbose</span> <span class="n">output</span>
+ <span class="o">--</span><span class="n">settings</span> <span class="n">SETTINGS</span>   <span class="n">The</span> <span class="n">Python</span> <span class="n">path</span> <span class="n">to</span> <span class="n">a</span> <span class="n">settings</span> <span class="n">module</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span>
+                       <span class="s2">&quot;myproject.settings.main&quot;</span><span class="o">.</span> <span class="n">If</span> <span class="n">this</span> <span class="n">isn</span><span class="s1">&#39;t provided, the</span>
+                       <span class="n">DJANGO_SETTINGS_MODULE</span> <span class="n">environment</span> <span class="n">variable</span> <span class="n">will</span> <span class="n">be</span>
+                       <span class="n">used</span><span class="o">.</span>
+ <span class="o">--</span><span class="n">pythonpath</span> <span class="n">PYTHONPATH</span>
+                       <span class="n">A</span> <span class="n">directory</span> <span class="n">to</span> <span class="n">add</span> <span class="n">to</span> <span class="n">the</span> <span class="n">Python</span> <span class="n">path</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span>
+                       <span class="s2">&quot;/home/djangoprojects/myproject&quot;</span><span class="o">.</span>
+ <span class="o">--</span><span class="n">traceback</span>           <span class="n">Raise</span> <span class="n">on</span> <span class="n">CommandError</span> <span class="n">exceptions</span>
+ <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">color</span>            <span class="n">Don</span><span class="s1">&#39;t colorize the command output.</span>
+ <span class="o">--</span><span class="n">age</span> <span class="n">AGE</span>             <span class="n">Minimum</span> <span class="n">age</span> <span class="ow">in</span> <span class="n">days</span> <span class="n">of</span> <span class="n">events</span> <span class="n">to</span> <span class="n">clean</span> <span class="n">up</span>
+</pre></div>
+</div>
+<p>Для удаления событий старше определенного количества дней используйте опцию <code class="docutils literal"><span class="pre">--age</span></code>. Например, для удаления событий старше 5 дней выполните команду:</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">findface</span><span class="o">-</span><span class="n">security</span> <span class="n">cleanup_events</span> <span class="o">--</span><span class="n">age</span> <span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="troubleshooting.html" class="btn btn-neutral float-right" title="Устранение неисправностей" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="user_management.html" class="btn btn-neutral" title="Управление пользователями" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, NtechLab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

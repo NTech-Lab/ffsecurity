@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Управление видеокамерами &mdash; Документация FindFace Security </title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Алфавитный указатель"
+              href="genindex.html"/>
+        <link rel="search" title="Поиск" href="search.html"/>
+    <link rel="top" title="Документация FindFace Security " href="index.html"/>
+        <link rel="next" title="Управление базой данных посетителей" href="guests.html"/>
+        <link rel="prev" title="Веб-интерфейс" href="wui.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> FindFace Security
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Содержание</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Системные требования</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Архитектура</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy.html">Развертывание FindFace Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wui.html">Веб-интерфейс</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Управление видеокамерами</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Создание группы камер</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Добавление камеры в группу</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="guests.html">Управление базой данных посетителей</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_management.html">Управление пользователями</a></li>
+<li class="toctree-l1"><a class="reference internal" href="event_cleaner.html">Очистка базы данных событий c <code class="docutils literal"><span class="pre">event-cleaner</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Устранение неисправностей</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FindFace Security</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Управление видеокамерами</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/camera_management.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cameras">
+<span id="id1"></span><h1>Управление видеокамерами<a class="headerlink" href="#cameras" title="Ссылка на этот заголовок">¶</a></h1>
+<p>Для настройки видео-идентификации лиц добавьте камеры в FindFace Security, сгруппировав их c учетом расположения.</p>
+<p class="rubric">В этой главе:</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#id2" id="id4">Создание группы камер</a></li>
+<li><a class="reference internal" href="#id3" id="id5">Добавление камеры в группу</a></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id4">Создание группы камер</a><a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Для создания группы камер выполните следующие действия:</p>
+<ol class="arabic">
+<li><p class="first">В веб-интерфейсе перейдите на вкладку <span class="guilabel">Группы камер</span>.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/create_camera_group.png"><img alt="_images/create_camera_group.png" src="_images/create_camera_group.png" style="width: 377.4px; height: 177.6px;" /></a>
+</div></blockquote>
+</li>
+<li><p class="first">Нажмите на кнопку <span class="guilabel">Создать</span>.</p>
+</li>
+<li><p class="first">Введите имя группы и при необходимости комментарий к ней.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/camera_group.png"><img alt="_images/camera_group.png" src="_images/camera_group.png" style="width: 612.0px; height: 422.4px;" /></a>
+</div></blockquote>
+</li>
+<li><p class="first">Если события от камер, принадлежащих одной группе, требуется дедуплицировать, т. е. исключить одинаковые события, поставьте флажок <span class="guilabel">Дедуплицировать</span> и задайте таймаут дедупликации (интервал, с которым события проверяются на уникальность).</p>
+</li>
+<li><p class="first">Поставьте флажок <span class="guilabel">Активный</span>.</p>
+</li>
+<li><p class="first">Нажмите на кнопку <span class="guilabel">Сохранить</span>.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id5">Добавление камеры в группу</a><a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Для добавления камеры в группу выполните следующие действия:</p>
+<ol class="arabic">
+<li><p class="first">В веб-интерфейсе перейдите на вкладку <span class="guilabel">Камеры</span>.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/create_camera.png"><img alt="_images/create_camera.png" src="_images/create_camera.png" style="width: 462.0px; height: 176.4px;" /></a>
+</div></blockquote>
+</li>
+<li><p class="first">Нажмите на кнопку <span class="guilabel">Создать</span>.</p>
+</li>
+<li><p class="first">Введите название камеры и добавьте ее в одну из групп. При необходимости введите комментарий к камере.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/camera.png"><img alt="_images/camera.png" src="_images/camera.png" style="width: 666.4px; height: 403.2px;" /></a>
+</div></blockquote>
+</li>
+<li><p class="first">Задайте URL камеры.</p>
+</li>
+<li><p class="first">При необходимости включите детектирование и отслеживание лиц только внутри заданной прямоугольной области, задав параметр <code class="docutils literal"><span class="pre">ROT</span></code>. Используйте данную опцию, чтобы уменьшить нагрузку на <code class="docutils literal"><span class="pre">fkvideo_detector</span></code>.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/roi_rot.png"><img alt="_images/roi_rot.png" src="_images/roi_rot.png" style="width: 468.3px; height: 162.4px;" /></a>
+</div></blockquote>
+</li>
+<li><p class="first">При небходимости включите отправку в компонент <code class="docutils literal"><span class="pre">ffsecurity</span></code> только тех лиц, которые были обнаружены внутри интересующей области <code class="docutils literal"><span class="pre">ROI</span></code>.</p>
+</li>
+<li><p class="first">Поставьте флажок <span class="guilabel">Активный</span>.</p>
+</li>
+<li><p class="first">Нажмите на кнопку <span class="guilabel">Сохранить</span>.</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="guests.html" class="btn btn-neutral float-right" title="Управление базой данных посетителей" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="wui.html" class="btn btn-neutral" title="Веб-интерфейс" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, NtechLab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

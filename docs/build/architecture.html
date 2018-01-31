@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Архитектура &mdash; Документация FindFace Security </title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Алфавитный указатель"
+              href="genindex.html"/>
+        <link rel="search" title="Поиск" href="search.html"/>
+    <link rel="top" title="Документация FindFace Security " href="index.html"/>
+        <link rel="next" title="Развертывание FindFace Security" href="deploy.html"/>
+        <link rel="prev" title="Системные требования" href="requirements.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> FindFace Security
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Содержание</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Системные требования</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Архитектура</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy.html">Развертывание FindFace Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wui.html">Веб-интерфейс</a></li>
+<li class="toctree-l1"><a class="reference internal" href="camera_management.html">Управление видеокамерами</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guests.html">Управление базой данных посетителей</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_management.html">Управление пользователями</a></li>
+<li class="toctree-l1"><a class="reference internal" href="event_cleaner.html">Очистка базы данных событий c <code class="docutils literal"><span class="pre">event-cleaner</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Устранение неисправностей</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FindFace Security</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Архитектура</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/architecture.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="architecture">
+<span id="id1"></span><h1>Архитектура<a class="headerlink" href="#architecture" title="Ссылка на этот заголовок">¶</a></h1>
+<p>FindFace Security развертывается на одиночном сервере или нескольких серверах.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Совет</p>
+<p class="last">См. <a class="reference internal" href="requirements.html#requirements"><span class="std std-ref">Системные требования</span></a>.</p>
+</div>
+<p>Для установки FindFace Security используются следующие установочные пакеты:</p>
+<ul class="simple">
+<li>Пакет с компонентами <strong class="program">&lt;ffsecurity-repo&gt;.deb</strong>.</li>
+<li>Пакет с моделью нейронной сети для извлечения биометрических образцов лиц <strong class="program">&lt;findface-data&gt;.deb</strong>.</li>
+</ul>
+<p>Работоспособность FindFace Security обеспечивается взаимодействием следующих компонентов:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="73%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Компонент</th>
+<th class="head">Описание</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>PostgreSQL</td>
+<td>База данных (СУБД), в которой хранятся детализированные досье посетителей с разбиением по категориям (спискам), биометрические данные посетителей, а также все события распознавания лиц. Помимо этого, в базе данных хранится информация внутреннего характера: профили пользователей FindFace Security, данные видеокамер и пр. Устанавливается из репозитория Ubuntu (наряду с Redis).</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">ffsecurity</span></code></td>
+<td>Сервис, который связывает воедино все компоненты FindFace Security, обеспечивая функционирование системы. Получает от видеодетектора <code class="docutils literal"><span class="pre">fkvideo_detector</span></code> нормализованное изображение, полный кадр и мета-данные обнаруженного лица. Перенаправляет нормализованное изображение лица в сервис <code class="docutils literal"><span class="pre">extraction-api</span></code> для извлечения биометрического образца. Полученный биометрический образец используется для поиска наиболее схожих лиц в списках досье с помощью сервиса <code class="docutils literal"><span class="pre">findface-postgres-facen</span></code>. После этого событие обнаружения лица записывается в базу данных PostgreSQL вместе с результатом поиска и отображается в веб-интерфейсе. Систему можно настроить таким образом, что событие будет записываться и отображаться в веб-интерфейсе только в том случае, если степень схожести обнаруженного лица и лица из какого-либо досье превышает предустановленное пороговое значение, т. е. если лица совпадают  (см. <a class="reference internal" href="deploy.html#basic-deployment"><span class="std std-ref">Установка базовой конфигурации</span></a>).</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">fkvideo_detector</span></code></td>
+<td>Видеодетектор лиц, который обнаруживает лицо «на лету» в видеопотоке и отправляет его нормализованное изображение, полный кадр и мета-данные, такие как ID камеры и метку времени обнаружения, в сервис <code class="docutils literal"><span class="pre">ffsecurity</span></code>.</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">extraction-api</span></code></td>
+<td>Сервис, который используется для извлечения биометрического образца (вектора признаков) лица. Для работы необходим пакет c моделью нейронной сети <strong class="program">&lt;findface-data&gt;.deb</strong>.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">findface-postgres-facen</span></code></td>
+<td>Расширение к базе данных <strong class="program">PostgreSQL</strong>, которое используется для вычисления степени схожести обнаруженного лица с лицами из досье путем сравнения биометрических образцов.</td>
+</tr>
+<tr class="row-odd"><td>Веб-интерфейс</td>
+<td>Веб-интерфейс <code class="docutils literal"><span class="pre">ffsecurity-ui</span></code> используется для отображения результатов работы системы распознавания лиц, управления видеокамерами, пользователями, ведения списков досье.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">NTLS</span></code></td>
+<td>Локальный сервер лицензий с управлением через веб-интерфейс, взаимодействующий для верификации лицензий с аппаратным лицензионным ключом.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Работа с FindFace Security выполняется через веб-интерфейс.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Для очистки базы данных от устаревших событий используйте <a class="reference internal" href="event_cleaner.html#events"><span class="std std-ref">утилиту</span></a> <code class="docutils literal"><span class="pre">event-cleaner</span></code>.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="deploy.html" class="btn btn-neutral float-right" title="Развертывание FindFace Security" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="requirements.html" class="btn btn-neutral" title="Системные требования" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, NtechLab.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
