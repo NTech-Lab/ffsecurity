@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NtechLab
+# This file is distributed under the same license as the FindFace Security
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Security 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-06 17:05+0800\n"
+"PO-Revision-Date: 2018-02-12 14:20+0700\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: ../source/requirements.rst:5
+msgid "Системные требования"
+msgstr "System Requirements"
+
+#: ../source/requirements.rst:7
+msgid ""
+"FindFace Security развертывается на одиночном сервере или нескольких "
+"серверах со следующими минимальными характеристиками:"
+msgstr ""
+"FindFace Security can be deployed on a single host (standalone) or in a "
+"cluster environment. The designated host(s) must meet the following "
+"requirements:"
+
+#: ../source/requirements.rst:11
+msgid "Требование"
+msgstr "Requirement"
+
+#: ../source/requirements.rst:11
+msgid "Описание"
+msgstr "Description"
+
+#: ../source/requirements.rst:13
+msgid "Процессор"
+msgstr "CPU"
+
+#: ../source/requirements.rst:13
+msgid ""
+"Intel Xeon E5 c поддержкой AVX. Характеристики зависят от количества "
+"камер. Для одной камеры ``1080p@25FPS`` требуется 2 ядра с HT с частотой "
+">2 ГГц под обработку видео и 2 ядра с HT c частотой >2ГГц под "
+"распознавание лиц."
+msgstr ""
+"Intel Xeon E5 with AVX support. The characteristics depend on the number "
+"of cameras in use. A single camera ``1080p@25FPS`` requires 2 cores HT "
+">2 GHz for video processing and 2 cores HT >2 GHz for face recognition."
+
+#: ../source/requirements.rst:18
+msgid "Память"
+msgstr "RAM"
+
+#: ../source/requirements.rst:18
+msgid ""
+"Потребление памяти зависит от количества камер. Для одной камеры "
+"``1080p@25FPS`` требуется 4 ГБ под обработку видео и 4 ГБ под "
+"распознавание лиц."
+msgstr ""
+"Depends on the number of cameras in use. A single camera ``1080p@25FPS`` "
+"requires 4 GB for video processing and 4 GB for face recognition."
+
+#: ../source/requirements.rst:22
+msgid "Жесткий диск"
+msgstr "HDD"
+
+#: ../source/requirements.rst:22
+msgid ""
+"На собственные нужды операционной системы и FindFace Security требуется "
+"10 ГБ. Суммарный объем определяется в зависимости от требуемой глубины "
+"архива событий в базе данных и в логе из расчета 800 КБ на 1 событие."
+msgstr ""
+"The own needs of the operating system and FindFace Security require 10 "
+"GB. The total volume is subject to the required depth of the event "
+"archive in the database and in the log, at the rate of 800 KB per 1 "
+"event."
+
+#: ../source/requirements.rst:26
+msgid "Операционная система"
+msgstr "Operating system"
+
+#: ../source/requirements.rst:26
+msgid "Ubuntu 16.04 LTS (64-битная)"
+msgstr "Ubuntu 16.04 LTS (x64)"

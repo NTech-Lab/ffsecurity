@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NtechLab
+# This file is distributed under the same license as the FindFace Security
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Security 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-06 17:05+0800\n"
+"PO-Revision-Date: 2018-02-12 17:26+0700\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: ../source/events.rst:5
+msgid "Работа с событиями распознавания лиц"
+msgstr "Face Recognition Events"
+
+#: ../source/events.rst:7
+msgid ""
+"Работа с событиями распознавания лиц, в том числе просмотр истории, "
+"выполняется на вкладке :guilabel:`События`."
+msgstr ""
+"Navigate to the :guilabel:`Events` tab to view and process the face "
+"recognition events."
+
+#: ../source/events.rst:11
+msgid "В этой главе:"
+msgstr "In this chapter:"
+
+#: ../source/events.rst:18
+msgid "Работа со списком событий"
+msgstr "List of Events"
+
+#: ../source/events.rst:20
+msgid "При обнаружении лица в списке событий выводится уведомление."
+msgstr "Once a face detected, you will see a notification in the event list."
+
+#: ../source/events.rst:24
+msgid "Уведомление содержит следующую информацию:"
+msgstr ""
+"A notification can feature different pieces of information, depending on "
+"whether a detected face has a match in the database:"
+
+#: ../source/events.rst:26
+msgid ""
+"Если на лицо отсутствует досье: нормализованное изображение лица, дата и "
+"время обнаружения лица, группа камер."
+msgstr ""
+"Match not found: a normalized face image, detection date and time, the "
+"name of a camera group."
+
+#: ../source/events.rst:27
+msgid ""
+"Если на лицо заведено досье: нормализованное изображение лица, фотография "
+"из досье, имя персоны, степень схожести лиц, комментарий из досье, список "
+"досье, дата и время обнаружения лица, группа камер."
+msgstr ""
+"Match found: a normalized face image, the photo from a dossier, the name "
+"of a person, similarity between faces, the comment from a dossier, the "
+"name of a dossier list, detection date and time, the name of a camera "
+"group."
+
+#: ../source/events.rst:30
+msgid ""
+"Система может быть настроена таким образом, что уведомления будут "
+"выводиться только для лиц с досье."
+msgstr ""
+"You can configure the system in such a way that you will get notifications "
+"only for the faces with a match."
+
+#: ../source/events.rst:33
+msgid ""
+"Для того чтобы остановить вывод новых уведомлений, нажмите на кнопку |"
+"pause| над списком событий."
+msgstr ""
+"In order to pause the notifications thread, click |pause| above the list "
+"of events."
+
+#: ../source/events.rst:38
+msgid "К событиям (уведомлениям) в списке можно применить следующие фильтры:"
+msgstr "When working with events, the following filters may come in handy:"
+
+#: ../source/events.rst:40
+msgid ":guilabel:`Досье`: отображать только события по определенному досье."
+msgstr ":guilabel:`Dossier`: show events only for a selected dossier."
+
+#: ../source/events.rst:41
+msgid ""
+":guilabel:`Списки досье`: отображать только события по определенному "
+"списку досье."
+msgstr ""
+":guilabel:`Dossier lists`: show events only for a selected dossier "
+"category (list)."
+
+#: ../source/events.rst:42
+msgid ""
+":guilabel:`Совпадения`: отображать только события с совпадением/без "
+"совпадений или все события."
+msgstr ""
+":guilabel:`Matches`: show events only with/without matches, or all events."
+
+#: ../source/events.rst:43
+msgid ""
+":guilabel:`Подтверждение`: отображать только принятые/непринятые или все "
+"события."
+msgstr ""
+":guilabel:`Acknowledged`: show only acknowledged/unacknowledged events, or "
+"all events."
+
+#: ../source/events.rst:44
+msgid ""
+":guilabel:`Группы камер`: отображать только события по определенной группе "
+"камер."
+msgstr ""
+":guilabel:`Camera groups`: show only events from a selected group of "
+"cameras."
+
+#: ../source/events.rst:45
+msgid ""
+":guilabel:`Старт`, :guilabel:`Конец`: отображать только события, "
+"случившиеся в определенный период времени."
+msgstr ""
+":guilabel:`Start`, :guilabel:`End`: show only events occurred within a "
+"certain time period."
+
+#: ../source/events.rst:49
+msgid "Карточка события. Принятие события"
+msgstr "Event Ticket. Acknowledging Event"
+
+#: ../source/events.rst:51
+msgid ""
+"Для того чтобы перейти в карточку события из списка событий, щелкните в "
+"уведомлении по результату распознавания (:guilabel:`Нет совпадений` или "
+"имя из досье)."
+msgstr ""
+"In order to navigate to an event ticket from the list of events, click on "
+"the face recognition result in a notification (:guilabel:`No matches` or "
+"the name of a matching person)."
+
+#: ../source/events.rst:53
+msgid ""
+"Карточка содержит ту же информацию, что и :ref:`уведомление <event-list>`, "
+"а также предоставляет возможность принять событие. Для того чтобы принять "
+"событие, поставьте флажок :guilabel:`Принять событие`. Нажмите на кнопку :"
+"guilabel:`Сохранить`."
+msgstr ""
+"An event ticket contains the same data as a relevant :ref:`notification "
+"<event-list>`. It also allows for acknowledging the event. To do so, "
+"check :guilabel:`Acknowledge event`. Click :guilabel:`Save`."
+
+#: ../source/events.rst:59
+msgid ""
+"Если на обнаруженное лицо заведено досье, в него можно перейти, щелкнув по "
+"имени персоны в карточке события."
+msgstr ""
+"If a detected face has a match in the dossiers, you can navigate into a "
+"relevant one by clicking on the person’s name in the event ticket."

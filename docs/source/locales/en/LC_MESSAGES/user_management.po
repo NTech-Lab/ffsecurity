@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NtechLab
+# This file is distributed under the same license as the FindFace Security
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Security 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-06 17:05+0800\n"
+"PO-Revision-Date: 2018-02-12 16:56+0700\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: ../source/user_management.rst:5
+msgid "Управление пользователями"
+msgstr "User Management"
+
+#: ../source/user_management.rst:7
+msgid ""
+"Управление пользователями FindFace Security выполняется через веб-"
+"интерфейс системы на вкладке :guilabel:`Пользователи`."
+msgstr ""
+"To manage FindFace Security users, navigate to the :guilabel:`Users` tab."
+
+#: ../source/user_management.rst:10
+msgid "В этой главе:"
+msgstr "In this chapter:"
+
+#: ../source/user_management.rst:16
+msgid "Роли"
+msgstr "Roles"
+
+#: ../source/user_management.rst:18
+msgid "Для работы с FindFace Security предусмотрены следующие роли:"
+msgstr "FindFace Security provides the following pre-defined roles:"
+
+#: ../source/user_management.rst:20
+msgid ""
+"Администратор. Обладает полными правами на :ref:`управление "
+"видеокамерами <cameras>`, :ref:`базой данных посетителей <guests>`, "
+"событий, пользователями FindFace Security."
+msgstr ""
+"Administrator has rights to :ref:`manage cameras <cameras>`, events, "
+"FindFace Security users, and :ref:`the visitor database <guests>`."
+
+#: ../source/user_management.rst:23
+msgid ""
+"Первый :ref:`созданный из консоли <basic-deployment>` администратор "
+"(Супер Администратор) не может лишиться прав даже при смене роли."
+msgstr ""
+"Whatever the role, the first administrator :ref:`created on the console "
+"<basic-deployment>` (Super Administrator) cannot be deprived of its "
+"rights."
+
+#: ../source/user_management.rst:25
+msgid ""
+"Оператор. Обладает правами на :ref:`создание досье вручную <create-"
+"dossier>` и прием событий. Остальная информация доступна в режиме "
+"чтения. :ref:`Пакетное <batch-upload>` создание досье невозможно."
+msgstr ""
+"Operator can :ref:`create dossiers manually <create-dossier>`, receive "
+"and acknowledge events. The other data is available read-only. The :ref:"
+"`batch <batch-upload>` dossier creation is unavailable."
+
+#: ../source/user_management.rst:26
+msgid ""
+"Пользователь. Обладает правами только на прием событий. Остальная "
+"информация доступна в режиме чтения."
+msgstr ""
+"User has a right only to receive and acknowledge events. The other data "
+"is available read-only."
+
+#: ../source/user_management.rst:30
+msgid "Создание пользователя"
+msgstr "Create User"
+
+#: ../source/user_management.rst:32
+msgid "Для создания нового пользователя выполните следующие действия:"
+msgstr "To create a user, do the following:"
+
+#: ../source/user_management.rst:34 ../source/user_management.rst:44
+msgid "Нажмите на кнопку :guilabel:`Создать`."
+msgstr "Click :guilabel:`Create`."
+
+#: ../source/user_management.rst:38
+msgid ""
+"Введите такие данные пользователя, как имя, логин и пароль, и из "
+"раскрывающегося списка :guilabel:`Роль` выберите одну из 3-х возможных "
+"ролей. При желании добавьте комментарий."
+msgstr ""
+"Specify such user data as name, login and password. From the :guilabel:"
+"`Role` drop-down menu, select the user role. If necessary, add a comment."
+
+#: ../source/user_management.rst:43
+msgid "Поставьте флажок :guilabel:`Активный`."
+msgstr "Check :guilabel:`Active`."
+
+#: ../source/user_management.rst:48
+msgid "Деактивация или удаление пользователя"
+msgstr "Deactivate or Delete User"
+
+#: ../source/user_management.rst:50
+msgid ""
+"Для того чтобы деактивировать или удалить пользователя из FindFace "
+"Security, выполните следующие действия:"
+msgstr ""
+"In order to deactivate or delete a user from FindFace Security, do the "
+"following:"
+
+#: ../source/user_management.rst:52
+msgid "Щелкните по логину пользователя в списке."
+msgstr "Click on the user login in the list."
+
+#: ../source/user_management.rst:53
+msgid ""
+"Для деактивации снимите флажок :guilabel:`Активный`. Нажмите на кнопку :"
+"guilabel:`Обновить`."
+msgstr ""
+"To deactivate a user, uncheck :guilabel:`Active`. Click :guilabel:"
+"`Update`."
+
+#: ../source/user_management.rst:54
+msgid "Для удаления нажмите на кнопку :guilabel:`Удалить`."
+msgstr "To delete the user, click :guilabel:`Delete`."

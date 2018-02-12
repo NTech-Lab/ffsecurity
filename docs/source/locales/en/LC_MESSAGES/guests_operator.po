@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NtechLab
+# This file is distributed under the same license as the FindFace Security
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Security 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-06 17:05+0800\n"
+"PO-Revision-Date: 2018-02-12 17:10+0700\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: ../source/guests_operator.rst:5
+msgid "Работа с досье на посетителя"
+msgstr "Visitor Dossier"
+
+#: ../source/guests_operator.rst:7
+msgid ""
+"На каждого нежелательного посетителя и VIP-гостя в FindFace Security создается "
+"досье, содержащее одну или несколько фотографий. Досье классифицируется по "
+"принадлежности к тому или иному списку."
+msgstr ""
+"The visitor database contains dossiers on the unwanted visitors and VIP "
+"guests. A dossier has to contain one or several photos of a visitor and belong "
+"to a certain classification list (so called dossier list)."
+
+#: ../source/guests_operator.rst:10
+msgid "В этой главе:"
+msgstr "In this chapter:"
+
+#: ../source/guests_operator.rst:17
+msgid "Создание досье"
+msgstr "Create Dossier"
+
+#: ../source/guests_operator.rst:19
+msgid "Для создания досье выполните следующие действия:"
+msgstr "To create a dossier on a visitor, do the following:"
+
+#: ../source/guests_operator.rst:21
+msgid "В веб-интерфейсе перейдите на вкладку :guilabel:`Досье`."
+msgstr "In the web interface, go to the :guilabel:`Dossier` tab."
+
+#: ../source/guests_operator.rst:26
+msgid "Нажмите на кнопку :guilabel:`Создать`."
+msgstr "Click :guilabel:`Create`."
+
+#: ../source/guests_operator.rst:27
+msgid ""
+"Добавьте фотографию и введите имя посетителя. При необходимости добавьте "
+"комментарий."
+msgstr ""
+"Attach a photo and specify the name of a visitor. If necessary, add a comment."
+
+#: ../source/guests_operator.rst:30
+msgid "Фотография должна отвечать следующим требованиям:"
+msgstr ""
+"A photo must meet the following requirements in order to be successfully "
+"uploaded to FindFace Security:"
+
+#: ../source/guests_operator.rst:32
+msgid "Содержать лицо и притом только одно."
+msgstr "It must contain only one face."
+
+#: ../source/guests_operator.rst:33
+msgid "Лицо должно быть надлежащего качества, т. е. в близком к анфас положении."
+msgstr "A face must be of high quality, i.e. close to a frontal position."
+
+#: ../source/guests_operator.rst:35
+msgid ""
+"При несоответствии фотографии одному или нескольким требованиям будет выведено "
+"сообщение с описанием ошибки."
+msgstr ""
+"Photos that do not meet the requirements will be rejected with a detailed "
+"error description."
+
+#: ../source/guests_operator.rst:40
+msgid ""
+"Из раскрывающегося списка :guilabel:`Списки досье` выберите список, в который "
+"следует добавить досье."
+msgstr ""
+"From the :guilabel:`Dossier lists` drop-down menu, select a classification "
+"list for the dossier."
+
+#: ../source/guests_operator.rst:41
+msgid "Нажмите на кнопку :guilabel:`Сохранить`."
+msgstr "Click :guilabel:`Save`."
+
+#: ../source/guests_operator.rst:44
+msgid "Просмотр досье из списка"
+msgstr "View Dossier"
+
+#: ../source/guests_operator.rst:46
+msgid ""
+"Все созданные в FindFace Security досье отображаются на вкладке :guilabel:"
+"`Досье`. Используйте фильтр :guilabel:`Списки досье`, чтобы отфильтровать "
+"досье по спискам."
+msgstr ""
+"You can find all dossiers created in FindFace Security on the :guilabel:"
+"`Dossiers` tab. Use the :guilabel:`Dossier lists` filter to filter dossiers by "
+"list."
