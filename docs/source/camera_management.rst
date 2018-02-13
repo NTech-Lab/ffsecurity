@@ -19,14 +19,25 @@
 
 #. В веб-интерфейсе перейдите на вкладку :guilabel:`Группы камер`.
 
-     .. image:: /_static/create_camera_group.png
+    |create_camera_group_ru|
+
+     .. |create_camera_group_ru| image:: /_static/create_camera_group.png
+        :scale: 60%
+
+     .. |create_camera_group_en| image:: /_static/create_camera_group_en.png
         :scale: 60%
 
 #. Нажмите на кнопку :guilabel:`Создать`.
 #. Введите имя группы и при необходимости комментарий к ней.
 
-     .. image:: /_static/camera_group.png
+     |camera_group_ru|
+
+     .. |camera_group_ru| image:: /_static/camera_group.png
         :scale: 80%
+
+     .. |camera_group_en| image:: /_static/camera_group_en.png
+        :scale: 80%
+
 
 #. Если события от камер, принадлежащих одной группе, требуется дедуплицировать, т. е. исключить одинаковые события, поставьте флажок :guilabel:`Дедуплицировать` и задайте таймаут дедупликации (интервал, с которым события проверяются на уникальность).
 #. Поставьте флажок :guilabel:`Активный`.
@@ -40,20 +51,38 @@
 
 #. В веб-интерфейсе перейдите на вкладку :guilabel:`Камеры`.
 
-     .. image:: /_static/create_camera.png
+     |create_camera_ru|
+
+     .. |create_camera_ru| image:: /_static/create_camera.png
         :scale: 60%
+
+     .. |create_camera_en| image:: /_static/create_camera_en.png
+        :scale: 60%
+
 
 #. Нажмите на кнопку :guilabel:`Создать`.
 #. Введите название камеры и добавьте ее в одну из групп. При необходимости введите комментарий к камере.
 
-     .. image:: /_static/camera.png
+     |camera_ru|
+
+     .. |camera_ru| image:: /_static/camera.png
         :scale: 80%
+
+     .. |camera_en| image:: /_static/camera_en.png
+        :scale: 80%
+
 
 #. Задайте URL камеры.
 #. При необходимости включите детектирование и отслеживание лиц только внутри заданной прямоугольной области, задав параметр ``ROT``. Используйте данную опцию, чтобы уменьшить нагрузку на ``fkvideo_detector``.
 
-     .. image:: /_static/roi_rot.png
+     |roi_rot_ru|
+
+     .. |roi_rot_ru| image:: /_static/roi_rot.png
         :scale: 70%
+
+     .. |roi_rot_en| image:: /_static/roi_rot_en.png
+        :scale: 70%
+
 
 #. При небходимости включите отправку в компонент ``ffsecurity`` только тех лиц, которые были обнаружены внутри интересующей области ``ROI``.
 #. Поставьте флажок :guilabel:`Активный`.

@@ -32,13 +32,24 @@
 Для создания нового пользователя выполните следующие действия:
 
 #. Нажмите на кнопку :guilabel:`Создать`.
+
+     |create_user_ru|
   
-     .. image:: /_static/create_user.png
+     .. |create_user_ru| image:: /_static/create_user.png
+
+     .. |create_user_en| image:: /_static/create_user_en.png
+
 
 #. Введите такие данные пользователя, как имя, логин и пароль, и из раскрывающегося списка :guilabel:`Роль` выберите одну из 3-х возможных ролей. При желании добавьте комментарий.
+
+     |user_ru|
  
-     .. image:: /_static/user.png
+     .. |user_ru| image:: /_static/user.png
         :scale: 80%
+
+     .. |user_en| image:: /_static/user_en.png
+        :scale: 80%
+
 
 #. Поставьте флажок :guilabel:`Активный`.
 #. Нажмите на кнопку :guilabel:`Создать`.

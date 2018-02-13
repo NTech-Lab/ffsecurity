@@ -19,9 +19,15 @@
 Для создания досье выполните следующие действия:
 
 #. В веб-интерфейсе перейдите на вкладку :guilabel:`Досье`.
+
+     |create_dossier_ru|
  
-     .. image:: /_static/create_dossier.png
+     .. |create_dossier_ru| image:: /_static/create_dossier.png
         :scale: 60%
+
+     .. |create_dossier_en| image:: /_static/create_dossier_en.png
+        :scale: 60%
+
 
 #. Нажмите на кнопку :guilabel:`Создать`.
 #. Добавьте фотографию и введите имя посетителя. При необходимости добавьте комментарий.
@@ -34,8 +40,14 @@
       
       При несоответствии фотографии одному или нескольким требованиям будет выведено сообщение с описанием ошибки.
 
-   .. image:: /_static/dossier.png
+   |dossier_ru|
+
+   .. |dossier_ru| image:: /_static/dossier.png
       :scale: 80%
+
+   .. |dossier_en| image:: /_static/dossier_en.png
+      :scale: 80%
+
 
 #. Из раскрывающегося списка :guilabel:`Списки досье` выберите список, в который следует добавить досье.
 #. Нажмите на кнопку :guilabel:`Сохранить`.

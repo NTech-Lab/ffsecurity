@@ -8,15 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-06 17:05+0800\n"
-"PO-Revision-Date: 2018-02-12 16:49+0700\n"
+"POT-Creation-Date: 2018-02-13 12:47+0700\n"
+"PO-Revision-Date: 2018-02-13 12:51+0700\n"
+"Last-Translator: \n"
+"Language: en\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: en\n"
 "X-Generator: Poedit 2.0.6\n"
 
 #: ../source/guests.rst:5
@@ -28,13 +29,13 @@ msgid ""
 "На каждого нежелательного посетителя и VIP-гостя в FindFace Security создается "
 "досье, содержащее одну или несколько фотографий. Досье классифицируется по "
 "принадлежности к тому или иному списку, например, к черному или белому в самом "
-"простом случае. Вы можете создать несколько списков, например, в зависимости "
-"от уровня опасности или, наоборот, статуса посетителя."
+"простом случае. Вы можете создать несколько списков, например, в зависимости от "
+"уровня опасности или, наоборот, статуса посетителя."
 msgstr ""
-"The visitor database contains dossiers on the unwanted visitors and VIP "
-"guests. A dossier has to contain one or several photos of a visitor and belong "
-"to a certain classification list (so called dossier list), black or white in "
-"the simplest case. You can create several classification lists, subject to a "
+"The visitor database contains dossiers on the unwanted visitors and VIP guests. "
+"A dossier has to contain one or several photos of a visitor and belong to a "
+"certain classification list (so called dossier list), black or white in the "
+"simplest case. You can create several classification lists, subject to a "
 "visitor status or hazard level."
 
 #: ../source/guests.rst:10
@@ -63,11 +64,15 @@ msgstr "To create a dossier list, do the following:"
 msgid "В веб-интерфейсе перейдите на вкладку :guilabel:`Списки`."
 msgstr "In the web interface, go to the :guilabel:`Dossier lists` tab."
 
-#: ../source/guests.rst:30 ../source/guests.rst:70
+#: ../source/guests.rst:27
+msgid "|create_list_ru|"
+msgstr "|create_list_en|"
+
+#: ../source/guests.rst:36 ../source/guests.rst:88
 msgid "Нажмите на кнопку :guilabel:`Создать`."
 msgstr "Click :guilabel:`Create`."
 
-#: ../source/guests.rst:31
+#: ../source/guests.rst:37
 msgid ""
 "В палитре :guilabel:`Метка` выберите цвет, который будет использоваться в "
 "событиях распознавания посетителей из данного списка. Правильно выбранный цвет "
@@ -77,137 +82,152 @@ msgstr ""
 "notifications for this list. Keep in mind that the right color makes for "
 "quicker response of security and hospitality managers."
 
-#: ../source/guests.rst:36
+#: ../source/guests.rst:39
+msgid "|list_ru|"
+msgstr "|list_en|"
+
+#: ../source/guests.rst:48
 msgid "Введите название списка."
 msgstr "Specify the list name."
 
-#: ../source/guests.rst:37
+#: ../source/guests.rst:49
 msgid ""
 "Поставьте флажок :guilabel:`Требовать подтверждение`, если для данного списка "
 "оператор должен в обязательном порядке подтвердить принятие события."
 msgstr ""
-"Check :guilabel:`Require acknowledgement` if it is mandatory that a manager "
+"Check :guilabel:`Require acknowledgment` if it is mandatory that a manager "
 "acknowledge events for the list."
 
-#: ../source/guests.rst:38
+#: ../source/guests.rst:50
 msgid "При необходимости включите звук при появлении события для данного списка."
 msgstr "If necessary, turn on sound notifications for the list."
 
-#: ../source/guests.rst:39
+#: ../source/guests.rst:51
 msgid "Поставьте флажок :guilabel:`Активный`."
 msgstr "Check :guilabel:`Active`."
 
-#: ../source/guests.rst:40 ../source/guests.rst:85
+#: ../source/guests.rst:52 ../source/guests.rst:109
 msgid "Нажмите на кнопку :guilabel:`Сохранить`."
 msgstr "Click :guilabel:`Save`."
 
-#: ../source/guests.rst:44
+#: ../source/guests.rst:56
 msgid "Деактивация или удаление списка"
 msgstr "Deactivate or Delete Dossier List"
 
-#: ../source/guests.rst:46
+#: ../source/guests.rst:58
 msgid ""
 "Для того чтобы деактивировать или удалить список из FindFace Security, "
 "выполните следующие действия:"
 msgstr "In order to deactivate or delete a list, do the following:"
 
-#: ../source/guests.rst:48
+#: ../source/guests.rst:60
 msgid "Щелкните по имени списка в таблице."
 msgstr "Click on the list name in the table."
 
-#: ../source/guests.rst:49
+#: ../source/guests.rst:61
 msgid ""
 "Для деактивации снимите флажок :guilabel:`Активный`. Нажмите на кнопку :"
 "guilabel:`Сохранить`."
 msgstr ""
 "To deactivate the list, uncheck :guilabel:`Active`. Click :guilabel:`Save`."
 
-#: ../source/guests.rst:50
+#: ../source/guests.rst:62
 msgid "Для удаления нажмите на кнопку :guilabel:`Удалить`."
 msgstr "To delete the list, click :guilabel:`Delete`."
 
-#: ../source/guests.rst:53
+#: ../source/guests.rst:65
 msgid "Просмотр досье из списка"
 msgstr "Filter Dossiers by List"
 
-#: ../source/guests.rst:55
+#: ../source/guests.rst:67
 msgid ""
 "Все созданные в FindFace Security досье отображаются на вкладке :guilabel:"
-"`Досье`. Используйте фильтр :guilabel:`Списки досье`, чтобы отфильтровать "
-"досье по спискам."
+"`Досье`. Используйте фильтр :guilabel:`Списки досье`, чтобы отфильтровать досье "
+"по спискам."
 msgstr ""
 "You can find all dossiers created in FindFace Security on the :guilabel:"
 "`Dossiers` tab. Use the :guilabel:`Dossier lists` filter to filter dossiers by "
 "list."
 
-#: ../source/guests.rst:61
+#: ../source/guests.rst:73
 msgid "Создание досье вручную"
 msgstr "Create Dossier Manually"
 
-#: ../source/guests.rst:63
+#: ../source/guests.rst:75
 msgid "Для создания досье вручную выполните следующие действия:"
 msgstr "To create a dossier manually, do the following:"
 
-#: ../source/guests.rst:65
+#: ../source/guests.rst:77
 msgid "В веб-интерфейсе перейдите на вкладку :guilabel:`Досье`."
 msgstr "In the web interface, go to the :guilabel:`Dossier` tab."
 
-#: ../source/guests.rst:71
+#: ../source/guests.rst:79
+msgid "|create_dossier_ru|"
+msgstr "|create_dossier_en|"
+
+#: ../source/guests.rst:89
 msgid ""
 "Добавьте фотографию и введите имя посетителя. При необходимости добавьте "
 "комментарий."
 msgstr ""
 "Attach a photo and specify the name of a visitor. If necessary, add a comment."
 
-#: ../source/guests.rst:74
+#: ../source/guests.rst:92
 msgid "Фотография должна отвечать следующим требованиям:"
 msgstr "A photo must meet the following requirements:"
 
-#: ../source/guests.rst:76
+#: ../source/guests.rst:94
 msgid "Содержать лицо и притом только одно."
 msgstr "It must contain only one face."
 
-#: ../source/guests.rst:77
+#: ../source/guests.rst:95
 msgid "Лицо должно быть надлежащего качества, т. е. в близком к анфас положении."
 msgstr "A face must be of high quality, i.e. close to a frontal position."
 
-#: ../source/guests.rst:79
+#: ../source/guests.rst:97
 msgid ""
 "При несоответствии фотографии одному или нескольким требованиям будет выведено "
 "сообщение с описанием ошибки."
 msgstr ""
-"Photos that do not meet the requirements will be rejected with a detailed "
-"error description."
+"Photos that do not meet the requirements will be rejected with a detailed error "
+"description."
 
-#: ../source/guests.rst:84
+#: ../source/guests.rst:99
+msgid "|dossier_ru|"
+msgstr "|dossier_en|"
+
+#: ../source/guests.rst:108
 msgid ""
 "Из раскрывающегося списка :guilabel:`Списки досье` выберите список, в который "
 "следует добавить досье."
 msgstr ""
-"From the :guilabel:`Dossier lists` drop-down menu, select a classification "
-"list for the dossier."
+"From the :guilabel:`Dossier lists` drop-down menu, select a classification list "
+"for the dossier."
 
-#: ../source/guests.rst:91
+#: ../source/guests.rst:115
 msgid "Пакетная загрузка фотографий"
 msgstr "Batch Photo Upload"
 
-#: ../source/guests.rst:93
+#: ../source/guests.rst:117
 msgid ""
 "Для автоматического создания большого количества досье используйте функционал "
 "пакетной загрузки фотографий. Выполните следующие действия:"
-msgstr ""
-"To create dossiers in bulk, use the batch photo upload. Do the following:"
+msgstr "To create dossiers in bulk, use the batch photo upload. Do the following:"
 
-#: ../source/guests.rst:95
+#: ../source/guests.rst:119
 msgid "В веб-интерфейсе перейдите на вкладку :guilabel:`Массовая загрузка`."
 msgstr "In the web interface, go to the :guilabel:`Batch upload` tab."
 
-#: ../source/guests.rst:99
+#: ../source/guests.rst:121
+msgid "|batch_upload_ru|"
+msgstr "|batch_upload_en|"
+
+#: ../source/guests.rst:128
 msgid ""
 "Выберите фотографии для загрузки пофайлово или укажите папку с фотографиями."
 msgstr "Select multiple image files, or a folder."
 
-#: ../source/guests.rst:100
+#: ../source/guests.rst:129
 msgid ""
 "Имена файлов с фотографиями можно использовать как основу для имен и/или "
 "комментариев в создаваемых досье. Выберите нужный вариант(ы). Затем настройте "
@@ -216,10 +236,10 @@ msgid ""
 msgstr ""
 "You can use image file names as a basis for names and/or comments in dossiers "
 "to be created. Select the necessary option(s). Then configure the automatic "
-"name/comment generation rule by appending a custom prefix and/or postfix to "
-"the file name."
+"name/comment generation rule by appending a custom prefix and/or postfix to the "
+"file name."
 
-#: ../source/guests.rst:103
+#: ../source/guests.rst:132
 msgid ""
 "Во избежание слияние 3-х слов в одно, используйте символ подчеркивания или "
 "пробел в префиксе и постфиксе."
@@ -227,14 +247,14 @@ msgstr ""
 "To avoid merging the 3 words into one, use underscore or another symbol in the "
 "prefix and postfix."
 
-#: ../source/guests.rst:105
+#: ../source/guests.rst:134
 msgid ""
 "Из раскрывающегося списка :guilabel:`Списки досье` выберите список, в который "
 "следует добавить создаваемые досье."
 msgstr ""
-"From the :guilabel:`Dossier lists` drop-down menu, select a classification "
-"list for the dossiers."
+"From the :guilabel:`Dossier lists` drop-down menu, select a classification list "
+"for the dossiers."
 
-#: ../source/guests.rst:106
+#: ../source/guests.rst:135
 msgid "Для запуска пакетного создания досье нажмите на кнопку :guilabel:`Старт`."
 msgstr "Click :guilabel:`Start` to launch the photo upload."
