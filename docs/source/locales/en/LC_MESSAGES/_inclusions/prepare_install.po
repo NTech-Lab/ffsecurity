@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NtechLab
+# This file is distributed under the same license as the FindFace Security
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Security 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-09 21:09+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../source/_inclusions/prepare_install.rst:4
+msgid ""
+"Перед развертыванием FindFace Security убедитесь, что корректно "
+"выставлены системное время и часовой пояс, а также включена синхронизация"
+" времени через ``ntpd``/``systemd-timesyncd``. При эксплуатации FindFace "
+"Security не допускайте резких скачков времени, чтобы исключить проблемы с"
+" работоспособностью сервисов после перезагрузки."
+msgstr ""
+
+#: ../source/_inclusions/prepare_install.rst:7
+msgid ""
+"Предварительно ознакомьтесь с разделами :ref:`requirements` и "
+":ref:`architecture`."
+msgstr ""
+

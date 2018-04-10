@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NtechLab
+# This file is distributed under the same license as the FindFace Security
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Security 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-09 21:09+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../source/protocol.rst:5
+msgid "Приложение. Настройка шифрования данных"
+msgstr ""
+
+#: ../source/protocol.rst:7
+msgid ""
+"Для обеспечения безопасности данных включите SSL-шифрование. Выполните "
+"следующие действия:"
+msgstr ""
+
+#: ../source/protocol.rst:9
+msgid ""
+"В директории с конфигурацией nginx создайте каталог для хранения "
+"информации о SSL-шифровании:"
+msgstr ""
+
+#: ../source/protocol.rst:15
+msgid "Создайте ключ и сертификат SSL:"
+msgstr ""
+
+#: ../source/protocol.rst:21
+msgid ""
+"Для заполнения полей сертификата вам будет предложено несколько вопросов."
+" Ответьте на них, уделив особое внимание строке ``Common Name``. В ней "
+"нужно ввести имя или публичный IP-адрес домена, связанного с сервером.  "
+"Созданные файлы ключа ``nginx.key`` и сертификата ``nginx.crt`` будут "
+"сохранены в каталоге ``/etc/nginx/ssl``."
+msgstr ""
+
+#: ../source/protocol.rst:23
+msgid ""
+"Настройте nginx для использования SSL. Откройте файл конфигурации nginx. "
+"Добавьте в него строку ``listen 443 ssl`` и данные о сертификате "
+"``ssl_certificate`` и ключе ``ssl_certificate_key`` (отмечены знаком "
+"комментария ## в примере ниже)."
+msgstr ""
+
+#: ../source/protocol.rst:50
+msgid "Перезапустите nginx."
+msgstr ""
+
+#: ../source/protocol.rst:56
+msgid ""
+"Внесите изменения в файл конфигурации ``ffsecurity``. В параметре "
+"``EXTERNAL_ADDRESS`` измените приставку ``http`` на ``https``."
+msgstr ""
+

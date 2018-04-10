@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-13 12:47+0700\n"
-"PO-Revision-Date: 2018-02-13 12:49+0700\n"
+"POT-Creation-Date: 2018-04-10 14:54+0700\n"
+"PO-Revision-Date: 2018-04-10 14:56+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -52,7 +52,7 @@ msgstr "Navigate to the :guilabel:`Camera groups` tab."
 msgid "|create_camera_group_ru|"
 msgstr "|create_camera_group_en|"
 
-#: ../source/camera_management.rst:30 ../source/camera_management.rst:63
+#: ../source/camera_management.rst:30
 msgid "Нажмите на кнопку :guilabel:`Создать`."
 msgstr "Click :guilabel:`Create`."
 
@@ -68,16 +68,16 @@ msgstr "|camera_group_en|"
 msgid ""
 "Если события от камер, принадлежащих одной группе, требуется "
 "дедуплицировать, т. е. исключить одинаковые события, поставьте флажок :"
-"guilabel:`Дедуплицировать` и задайте таймаут дедупликации (интервал, с "
-"которым события проверяются на уникальность)."
+"guilabel:`Дедуплицировать события` и задайте интервал дедупликации "
+"(интервал, с которым события проверяются на уникальность)."
 msgstr ""
 "If you want to deduplicate events from cameras that belong to the same "
-"group, i. e. exclude coinciding events, check :guilabel:`Deduplicate` "
-"and specify the deduplication timeout (interval between 2 consecutive "
-"checks for event uniqueness)."
+"group, i. e. exclude coinciding events, check :guilabel:`Deduplicate "
+"Events` and specify the deduplication interval (interval between 2 "
+"consecutive checks for event uniqueness)."
 
 #: ../source/camera_management.rst:43 ../source/camera_management.rst:88
-msgid "Поставьте флажок :guilabel:`Активный`."
+msgid "Поставьте флажок :guilabel:`Активная`."
 msgstr "Check :guilabel:`Active`."
 
 #: ../source/camera_management.rst:44 ../source/camera_management.rst:89
@@ -99,6 +99,10 @@ msgstr "In the web interface, go to the :guilabel:`Cameras` tab."
 #: ../source/camera_management.rst:54
 msgid "|create_camera_ru|"
 msgstr "|create_camera_en|"
+
+#: ../source/camera_management.rst:63
+msgid "Нажмите на кнопку :guilabel:`Добавить`."
+msgstr "Click :guilabel:`Add`."
 
 #: ../source/camera_management.rst:64
 msgid ""

@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NtechLab
+# This file is distributed under the same license as the FindFace Security
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Security 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-09 21:09+0700\n"
+"PO-Revision-Date: 2018-04-10 16:14+0700\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: ../source/face_search.rst:5
+msgid "Поиск лица в списке событий и соцсетях"
+msgstr "Face Search"
+
+#: ../source/face_search.rst:7
+msgid ""
+"FindFace Security позволяет искать лица во внутренней (список событий) и "
+"внешней (соцсеть ВКонтакте) базах данных. Искать можно как по ID события, так и "
+"по фотографии."
+msgstr ""
+"FindFace Security allows you to search for faces in the internal (event list) "
+"and external (social network vk.com) databases by using an event ID or a photo."
+
+#: ../source/face_search.rst:9
+msgid "Для поиска лица выполните следующие действия:"
+msgstr "To find a face, do the following:"
+
+#: ../source/face_search.rst:11
+msgid "Перейдите на вкладку :guilabel:`Поиск`."
+msgstr "Navigate to the :guilabel:`Search` tab."
+
+#: ../source/face_search.rst:13
+msgid "|search_ru|"
+msgstr "|search_en|"
+
+#: ../source/face_search.rst:21
+msgid "Укажите место поиска: :guilabel:`События` или :guilabel:`Социальные сети`."
+msgstr ""
+"Select a database to search: :guilabel:`Events` or :guilabel:`Social networks`."
+
+#: ../source/face_search.rst:22
+msgid ""
+"Укажите ID события, лицо из которого нужно найти, или загрузите фотографию. "
+"Видеокадр события/фотография будут отображены в поле :guilabel:`Фотография`. "
+"Если на изображении присутствует несколько лиц, выберите нужное."
+msgstr ""
+"Specify an event with a face you want to find, or upload a photo. A relevant "
+"image will be displayed in the :guilabel:`Photo` area. If there are several "
+"faces in the image, select one."
+
+#: ../source/face_search.rst:23
+msgid ""
+"При необходимости укажите минимальную степень схожести лиц в результатах "
+"поиска. Если поиск выполняется в списке событий, также можно указать группу "
+"камер и период времени, в течение которого произошло событие."
+msgstr ""
+"If necessary, specify the threshold similarity between the face and faces in "
+"the search results. "
+
+#: ../source/face_search.rst:24
+msgid ""
+"Нажмите :guilabel:`Поиск`. Результаты поиска будут отображены ниже. Для каждого "
+"найденного лица будет указана вероятность его совпадения с лицом из события/на "
+"исходной фотографии."
+msgstr ""

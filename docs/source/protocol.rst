@@ -1,3 +1,5 @@
+.. _https:
+
 *******************************************
 Приложение. Настройка шифрования данных
 *******************************************
@@ -16,110 +18,48 @@
 
       sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/ssl/nginx.key -out /etc/nginx/ssl/nginx.crt
 
-   Для заполнения полей сертификата вам будет предложено несколько вопросов. Ответьте на них, уделив особое внимание строке ``Common Name``. В ней нужно ввести имя или публичный IP-адрес домена, связанного с сервером.  Созданные файлы ключа и сертификата будут сохранены в каталоге ``/etc/nginx/ssl``.
+   Для заполнения полей сертификата вам будет предложено несколько вопросов. Ответьте на них, уделив особое внимание строке ``Common Name``. В ней нужно ввести имя или публичный IP-адрес домена, связанного с сервером.  Созданные файлы ключа ``nginx.key`` и сертификата ``nginx.crt`` будут сохранены в каталоге ``/etc/nginx/ssl``.
 
-#. Настройте nginx для использования SSL.
- 
-
-
-
-
-
-
-.. important::
-   Для того чтобы включить хранение аудит-логов на жестком диске, в файле ``etc/systemd/journald.conf`` раскомментируйте и измените параметр ``Storage`` следующим образом:
+#. Настройте nginx для использования SSL. Откройте файл конфигурации nginx. Добавьте в него строку ``listen 443 ssl`` и данные о сертификате ``ssl_certificate`` и ключе ``ssl_certificate_key`` (отмечены знаком комментария ## в примере ниже). 
 
    .. code::
 
-       sudo vi etc/systemd/journald.conf
-       ...
-       [Journal]
-       Storage=persistent
+      sudo vi /etc/nginx/nginx.conf
 
-   При необходимости также раскомментируйте и измените значение параметра ``SystemMaxUse``. Данный параметр определяет в процентах максимальный объем логов на жестком диске (по умолчанию 10%).
+      server {
+              listen 80 default_server;
+              listen [::]:80 default_server ipv6only=on;
+              
+              ##
+              listen 443 ssl;
+
+              root /usr/share/nginx/html;
+              index index.html index.htm;
+
+              server_name your_domain.com;
+              ##
+              ssl_certificate /etc/nginx/ssl/nginx.crt;
+              ##
+              ssl_certificate_key /etc/nginx/ssl/nginx.key;
+
+              location / {
+                      try_files $uri $uri/ =404;
+              }
+      }
+
+#. Перезапустите nginx.
 
    .. code::
+
+      sudo service nginx restart
+
+#. Внесите изменения в файл конфигурации ``ffsecurity``. В параметре ``EXTERNAL_ADDRESS`` измените приставку ``http`` на ``https``.
+
+   .. code::
+
+      sudo vi /etc/ffsecurity/config.py
  
-      SystemMaxUse=15
-       
+      EXTERNAL_ADDRESS="https://192.168.104.204"
 
-Для того чтобы просмотреть аудит-логи, выполните следующую команду:
-
-.. code::
-
-   journalctl -o verbose SYSLOG_IDENTIFIER=ffsecurity
-
-
-При расшифровке аудит-логов в первую очередь обращайте внимание на следующие параметры:
-
-* ``REQUEST_USER``: пользователь, который выполнил изменения;
-* ``REQUEST_PATH``: URL запроса;
-* ``REQUEST_DATA``: данные запроса.
-
-Ниже приведен пример лога создания досье с ``id=1879`` пользователем ``admin``.
-
-.. code::
-
-   Пт 2017-12-22 17:53:32.436258 MSK [s=0b5566699751426983e13241301205e9;i=e26015;b=907c34cc1fde4398af63bb575587d9ba;m=246f620c449;t=560eefaf59bc5;x=ed60a136c8fc6362]
-      PRIORITY=6
-      _UID=123
-      _GID=130
-      _CAP_EFFECTIVE=0
-      _BOOT_ID=907c34cc1fde4398af63bb575587d9ba
-      _MACHINE_ID=a3eea61c03e041ef8e64d5c72f5fce40
-      _HOSTNAME=ntechadmin
-      SYSLOG_IDENTIFIER=ffsecurity
-      THREAD_NAME=MainThread
-      _TRANSPORT=journal
-      _PID=6579
-      _COMM=findface-securi
-      _EXE=/opt/ffsecurity/bin/python3
-      _CMDLINE=/opt/ffsecurity/bin/python /opt/ffsecurity/bin/findface-security-manage runworker
-      _SYSTEMD_CGROUP=/system.slice/system-findface\x2dsecurity\x2dworker.slice/findface-security-worker@4.service
-      _SYSTEMD_UNIT=findface-security-worker@4.service
-      _SYSTEMD_SLICE=system-findface\x2dsecurity\x2dworker.slice
-      CODE_FILE=/opt/ffsecurity/lib/python3.5/site-packages/ffsecurity/mixins.py
-      CODE_LINE=94
-      CODE_FUNC=finalize_response
-      REQUEST_USER=admin
-      LOGGER=ffsecurity.audit
-      MESSAGE=N8Be05il POST /dossier-faces/ 201 by admin
-      REQUEST_DATA={"dossier": "'1879'", "source_photo": "<InMemoryUploadedFile: 14927016033292449.jpeg (image/jpeg)>"}
-      REQUEST_PATH=/dossier-faces/
-      REQUEST_ID=N8Be05il
-      _SOURCE_REALTIME_TIMESTAMP=1513954412436258
-
-В следующем примере для досье с ``id=1879`` запрашивается список лиц.
-
-.. code::
-
-   Пт 2017-12-22 17:53:32.475467 MSK [s=0b5566699751426983e13241301205e9;i=e26016;b=907c34cc1fde4398af63bb575587d9ba;m=246f6215d82;t=560eefaf634fe;x=b1374a144a46b5cd]
-      PRIORITY=6
-      _UID=123
-      _GID=130
-      _CAP_EFFECTIVE=0
-      _BOOT_ID=907c34cc1fde4398af63bb575587d9ba
-      _MACHINE_ID=a3eea61c03e041ef8e64d5c72f5fce40
-      _HOSTNAME=ntechadmin
-      SYSLOG_IDENTIFIER=ffsecurity
-      THREAD_NAME=MainThread
-      _TRANSPORT=journal
-      _COMM=findface-securi
-      _EXE=/opt/ffsecurity/bin/python3
-      _CMDLINE=/opt/ffsecurity/bin/python /opt/ffsecurity/bin/findface-security-manage runworker
-      _SYSTEMD_SLICE=system-findface\x2dsecurity\x2dworker.slice
-      _PID=6588
-      _SYSTEMD_CGROUP=/system.slice/system-findface\x2dsecurity\x2dworker.slice/findface-security-worker@2.service
-      _SYSTEMD_UNIT=findface-security-worker@2.service
-      CODE_FILE=/opt/ffsecurity/lib/python3.5/site-packages/ffsecurity/mixins.py
-      CODE_LINE=94
-      CODE_FUNC=finalize_response
-      REQUEST_USER=admin
-      REQUEST_DATA={}
-      LOGGER=ffsecurity.audit
-      MESSAGE=Dee7Qvy4 GET /dossier-faces/?dossier=1879&limit=1000 200 by admin
-      REQUEST_ID=Dee7Qvy4
-      REQUEST_PATH=/dossier-faces/?dossier=1879&limit=1000
-      _SOURCE_REALTIME_TIMESTAMP=1513954412475467
 
 

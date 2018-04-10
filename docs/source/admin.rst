@@ -8,12 +8,13 @@
 
    requirements
    architecture
-   deploy
+   ffsec
    wui
    camera_management
    guests
    user_management
    event_cleaner
    troubleshooting
+   protocol
 
 

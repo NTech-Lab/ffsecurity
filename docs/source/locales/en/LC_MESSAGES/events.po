@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-13 12:47+0700\n"
-"PO-Revision-Date: 2018-02-13 12:50+0700\n"
+"POT-Creation-Date: 2018-04-09 21:09+0700\n"
+"PO-Revision-Date: 2018-04-10 15:45+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -32,29 +32,37 @@ msgstr ""
 "Navigate to the :guilabel:`Events` tab to view and process the face recognition "
 "events."
 
-#: ../source/events.rst:11
+#: ../source/events.rst:10
+msgid ""
+"Поиск лица в списке событий, а также в социальных сетях выполняется на вкладке :"
+"guilabel:`Поиск`."
+msgstr ""
+"Search the event database and social networks for faces on the :guilabel:"
+"`Search` tab."
+
+#: ../source/events.rst:14
 msgid "В этой главе:"
 msgstr "In this chapter:"
 
-#: ../source/events.rst:18
+#: ../source/events.rst:21
 msgid "Работа со списком событий"
 msgstr "List of Events"
 
-#: ../source/events.rst:20
+#: ../source/events.rst:23
 msgid "При обнаружении лица в списке событий выводится уведомление."
 msgstr "Once a face detected, you will see a notification in the event list."
 
-#: ../source/events.rst:22
+#: ../source/events.rst:25
 msgid "|events_ru|"
 msgstr "|events_en|"
 
-#: ../source/events.rst:28
+#: ../source/events.rst:31
 msgid "Уведомление содержит следующую информацию:"
 msgstr ""
 "A notification can feature different pieces of information, depending on whether "
 "a detected face has a match in the database:"
 
-#: ../source/events.rst:30
+#: ../source/events.rst:33
 msgid ""
 "Если на лицо отсутствует досье: нормализованное изображение лица, дата и время "
 "обнаружения лица, группа камер."
@@ -62,7 +70,7 @@ msgstr ""
 "Match not found: a normalized face image, detection date and time, the name of a "
 "camera group."
 
-#: ../source/events.rst:31
+#: ../source/events.rst:34
 msgid ""
 "Если на лицо заведено досье: нормализованное изображение лица, фотография из "
 "досье, имя персоны, степень схожести лиц, комментарий из досье, список досье, "
@@ -72,7 +80,7 @@ msgstr ""
 "person, similarity between faces, the comment from a dossier, the name of a "
 "dossier list, detection date and time, the name of a camera group."
 
-#: ../source/events.rst:34
+#: ../source/events.rst:37
 msgid ""
 "Система может быть настроена таким образом, что уведомления будут выводиться "
 "только для лиц с досье."
@@ -80,7 +88,7 @@ msgstr ""
 "You can configure the system in such a way that you will get notifications only "
 "for the faces with a match."
 
-#: ../source/events.rst:37
+#: ../source/events.rst:40
 msgid ""
 "Для того чтобы остановить вывод новых уведомлений, нажмите на кнопку |pause| над "
 "списком событий."
@@ -88,54 +96,63 @@ msgstr ""
 "In order to pause the notifications thread, click |pause| above the list of "
 "events."
 
-#: ../source/events.rst:42
+#: ../source/events.rst:45
 msgid "К событиям (уведомлениям) в списке можно применить следующие фильтры:"
 msgstr "When working with events, the following filters may come in handy:"
 
-#: ../source/events.rst:44
-msgid ":guilabel:`Досье`: отображать только события по определенному досье."
-msgstr ":guilabel:`Dossier`: show events only for a selected dossier."
-
-#: ../source/events.rst:45
-msgid ""
-":guilabel:`Списки досье`: отображать только события по определенному списку "
-"досье."
-msgstr ""
-":guilabel:`Dossier lists`: show events only for a selected dossier category "
-"(list)."
-
-#: ../source/events.rst:46
-msgid ""
-":guilabel:`Совпадения`: отображать только события с совпадением/без совпадений "
-"или все события."
-msgstr ":guilabel:`Matches`: show events only with/without matches, or all events."
-
 #: ../source/events.rst:47
-msgid ""
-":guilabel:`Подтверждение`: отображать только принятые/непринятые или все события."
-msgstr ""
-":guilabel:`Acknowledged`: show only acknowledged/unacknowledged events, or all "
-"events."
+msgid ":guilabel:`Досье`: отображать только события по определенному досье."
+msgstr ":guilabel:`Dossier`: display events only for a selected dossier."
 
 #: ../source/events.rst:48
 msgid ""
-":guilabel:`Группы камер`: отображать только события по определенной группе камер."
+":guilabel:`Списки наблюдения`: отображать только события по определенному списку "
+"досье."
 msgstr ""
-":guilabel:`Camera groups`: show only events from a selected group of cameras."
+":guilabel:`Watch lists`: display events only for a selected dossier category "
+"(watch list)."
 
 #: ../source/events.rst:49
+msgid ""
+":guilabel:`Совпадения`: отображать только события с совпадением/без совпадений "
+"или все события."
+msgstr ""
+":guilabel:`Matches`: display events only with/without matches, or all events."
+
+#: ../source/events.rst:50
+msgid ""
+":guilabel:`Подтверждено`: отображать только принятые/непринятые или все события."
+msgstr ""
+":guilabel:`Acknowledged`: display only acknowledged/unacknowledged events, or "
+"all events."
+
+#: ../source/events.rst:51
+msgid ":guilabel:`Камеры`: отображать только события по определенной камере."
+msgstr ":guilabel:`Cameras`: display only events from a selected camera."
+
+#: ../source/events.rst:52
+msgid ""
+":guilabel:`Группы камер`: отображать только события по определенной группе камер."
+msgstr ""
+":guilabel:`Camera groups`: display only events from a selected group of cameras."
+
+#: ../source/events.rst:53
 msgid ""
 ":guilabel:`Старт`, :guilabel:`Конец`: отображать только события, случившиеся в "
 "определенный период времени."
 msgstr ""
-":guilabel:`Start`, :guilabel:`End`: show only events occurred within a certain "
-"time period."
+":guilabel:`Start`, :guilabel:`End`: display only events occurred within a "
+"certain time period."
 
-#: ../source/events.rst:53
-msgid "Карточка события. Принятие события"
+#: ../source/events.rst:54
+msgid ":guilabel:`id`: отобразить событие с определенным ID."
+msgstr ":guilabel:`id`: display an event with a given ID."
+
+#: ../source/events.rst:58
+msgid "Карточка события. Подтверждение события"
 msgstr "Event Ticket. Acknowledging Event"
 
-#: ../source/events.rst:55
+#: ../source/events.rst:60
 msgid ""
 "Для того чтобы перейти в карточку события из списка событий, щелкните в "
 "уведомлении по результату распознавания (:guilabel:`Нет совпадений` или имя из "
@@ -145,25 +162,49 @@ msgstr ""
 "face recognition result in a notification (:guilabel:`No matches` or the name of "
 "a matching person)."
 
-#: ../source/events.rst:57
+#: ../source/events.rst:62
 msgid ""
 "Карточка содержит ту же информацию, что и :ref:`уведомление <event-list>`, а "
-"также предоставляет возможность принять событие. Для того чтобы принять событие, "
-"поставьте флажок :guilabel:`Принять событие`. Нажмите на кнопку :guilabel:"
+"также предоставляет возможность подтвердить событие. Для того чтобы это сделать, "
+"поставьте флажок :guilabel:`Подтверждение события`. Нажмите на кнопку :guilabel:"
 "`Сохранить`."
 msgstr ""
 "An event ticket contains the same data as a relevant :ref:`notification <event-"
 "list>`. It also allows for acknowledging the event. To do so, check :guilabel:"
 "`Acknowledge event`. Click :guilabel:`Save`."
 
-#: ../source/events.rst:59
+#: ../source/events.rst:64
 msgid "|accept_ru|"
 msgstr "|accept_en|"
 
-#: ../source/events.rst:69
+#: ../source/events.rst:74
 msgid ""
 "Если на обнаруженное лицо заведено досье, в него можно перейти, щелкнув по имени "
 "персоны в карточке события."
 msgstr ""
 "If a detected face has a match in the dossiers, you can navigate into a relevant "
 "one by clicking on the person’s name in the event ticket."
+
+#: ../source/events.rst:77
+msgid "Карточка события. Поиск лица"
+msgstr "Event Ticket. Face Search"
+
+#: ../source/events.rst:79
+msgid ""
+"FindFace Security позволяет искать обнаруженные на видео лица во внутренней "
+"(список событий) или внешней (соцсеть ВКОНТАКТЕ) базах данных. Для перехода на "
+"вкладку поиска из карточки события нажмите :guilabel:`События` или :guilabel:"
+"`Социальные сети`."
+msgstr ""
+"FindFace Security allows you to search for faces detected in video in the "
+"internal (list of events) and external (social network vk.com) databases. To "
+"navigate from an event ticket to the search tab, click :guilabel:`Events` or :"
+"guilabel:`Social networks`."
+
+#: ../source/events.rst:81
+msgid "|search_ticket_ru|"
+msgstr "|search_ticket_en|"
+
+#: ../source/events.rst:91
+msgid ":ref:`face-search`."
+msgstr ":ref:`face-search`."

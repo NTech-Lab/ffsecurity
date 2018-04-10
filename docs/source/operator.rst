@@ -9,6 +9,18 @@
    wui_operator
    guests_operator
    events
+   face_search
+
+
+
+
+  
+
+
+
+
+
+
 
 
 

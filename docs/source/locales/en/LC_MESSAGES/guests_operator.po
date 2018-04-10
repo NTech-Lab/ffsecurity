@@ -8,31 +8,31 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-13 12:47+0700\n"
+"POT-Creation-Date: 2018-04-09 21:09+0700\n"
 "PO-Revision-Date: 2018-02-13 12:51+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"X-Generator: Poedit 2.0.6\n"
 
 #: ../source/guests_operator.rst:5
 msgid "Работа с досье на посетителя"
 msgstr "Visitor Dossier"
 
 #: ../source/guests_operator.rst:7
+#, fuzzy
 msgid ""
-"На каждого нежелательного посетителя и VIP-гостя в FindFace Security создается "
-"досье, содержащее одну или несколько фотографий. Досье классифицируется по "
-"принадлежности к тому или иному списку."
+"На каждого нежелательного посетителя и VIP-гостя в FindFace Security "
+"создается досье, содержащее одну или несколько фотографий. Досье "
+"классифицируется по принадлежности к тому или иному списку наблюдения."
 msgstr ""
 "The visitor database contains dossiers on the unwanted visitors and VIP "
-"guests. A dossier has to contain one or several photos of a visitor and belong "
-"to a certain classification list (so called dossier list)."
+"guests. A dossier has to contain one or several photos of a visitor and "
+"belong to a certain classification list (so called dossier list)."
 
 #: ../source/guests_operator.rst:10
 msgid "В этой главе:"
@@ -63,7 +63,8 @@ msgid ""
 "Добавьте фотографию и введите имя посетителя. При необходимости добавьте "
 "комментарий."
 msgstr ""
-"Attach a photo and specify the name of a visitor. If necessary, add a comment."
+"Attach a photo and specify the name of a visitor. If necessary, add a "
+"comment."
 
 #: ../source/guests_operator.rst:36
 msgid "Фотография должна отвечать следующим требованиям:"
@@ -81,38 +82,42 @@ msgstr "A face must be of high quality, i.e. close to a frontal position."
 
 #: ../source/guests_operator.rst:41
 msgid ""
-"При несоответствии фотографии одному или нескольким требованиям будет выведено "
-"сообщение с описанием ошибки."
+"При несоответствии фотографии одному или нескольким требованиям будет "
+"выведено сообщение с описанием ошибки."
 msgstr ""
-"Photos that do not meet the requirements will be rejected with a detailed "
-"error description."
+"Photos that do not meet the requirements will be rejected with a detailed"
+" error description."
 
 #: ../source/guests_operator.rst:43
 msgid "|dossier_ru|"
 msgstr "|dossier_en|"
 
 #: ../source/guests_operator.rst:52
+#, fuzzy
 msgid ""
-"Из раскрывающегося списка :guilabel:`Списки досье` выберите список, в который "
-"следует добавить досье."
+"Из раскрывающегося списка :guilabel:`Списки наблюдения` выберите список "
+"(или несколько списков, по очереди), в который следует добавить досье."
 msgstr ""
-"From the :guilabel:`Dossier lists` drop-down menu, select a classification "
-"list for the dossier."
+"From the :guilabel:`Dossier lists` drop-down menu, select a "
+"classification list for the dossier."
 
 #: ../source/guests_operator.rst:53
 msgid "Нажмите на кнопку :guilabel:`Сохранить`."
 msgstr "Click :guilabel:`Save`."
 
 #: ../source/guests_operator.rst:56
-msgid "Просмотр досье из списка"
+#, fuzzy
+msgid "Просмотр досье из списка наблюдения"
 msgstr "View Dossier"
 
 #: ../source/guests_operator.rst:58
+#, fuzzy
 msgid ""
-"Все созданные в FindFace Security досье отображаются на вкладке :guilabel:"
-"`Досье`. Используйте фильтр :guilabel:`Списки досье`, чтобы отфильтровать "
-"досье по спискам."
+"Все созданные в FindFace Security досье отображаются на вкладке "
+":guilabel:`Досье`. Используйте фильтр :guilabel:`Списки наблюдения`, "
+"чтобы отфильтровать досье по спискам."
 msgstr ""
-"You can find all dossiers created in FindFace Security on the :guilabel:"
-"`Dossiers` tab. Use the :guilabel:`Dossier lists` filter to filter dossiers by "
-"list."
+"You can find all dossiers created in FindFace Security on the "
+":guilabel:`Dossiers` tab. Use the :guilabel:`Dossier lists` filter to "
+"filter dossiers by list."
+
