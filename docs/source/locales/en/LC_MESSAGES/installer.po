@@ -4,148 +4,164 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-09 21:09+0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-04-11 19:37+0700\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../source/installer.rst:4
 msgid "Развертывание из консольного инсталлятора"
-msgstr ""
+msgstr "Deploy from Console Installer"
 
 #: ../source/installer.rst:6
 msgid ""
 "Для развертывания FindFace Security на одиночном сервере можно "
 "использовать консольный инсталлятор."
 msgstr ""
+"To deploy FindFace Security standalone, you can use a developer-friendly "
+"console installer."
 
 #: ../source/installer.rst:10
 msgid "Инсталлятор не предназначен для обновления FindFace Security."
-msgstr ""
+msgstr "The installer cannot be used to update FindFace Security."
 
 #: ../source/installer.rst:14
 msgid ":ref:`deploy`"
-msgstr ""
+msgstr ":ref:`deploy`"
 
 #: ../source/installer.rst:17
 msgid "Выполните следующие действия:"
-msgstr ""
+msgstr "Do the following:"
 
 #: ../source/installer.rst:19
 msgid "Загрузите файл инсталлятора ``<findface-security-xxx>.run``."
-msgstr ""
+msgstr "Download the installer file ``<findface-security-xxx>.run``."
 
 #: ../source/installer.rst:20
 msgid ""
-"Поместите файл ``.run`` в любую папку на сервере установки (например, "
-"``/home/username``)."
+"Поместите файл ``.run`` в любую папку на сервере установки (например, ``/"
+"home/username``)."
 msgstr ""
+"Put the ``.run`` file into some directory on the designated host (for "
+"example, ``/home/username``)."
 
 #: ../source/installer.rst:21
 msgid "Из данной папки сделайте файл ``.run`` исполняемым."
-msgstr ""
+msgstr "From this directory, make the ``.run`` file executable."
 
 #: ../source/installer.rst:27
 msgid "Запустите файл ``.run``."
-msgstr ""
+msgstr "Execute the ``.run`` file."
 
 #: ../source/installer.rst:33
 msgid ""
 "Инсталлятор проверит, соответствует ли сервер системным требованиям. "
-"После этого компоненты FindFace Security будут автоматически установлены,"
-" настроены и запущены в соответствии со следующей конфигурацией:"
+"После этого компоненты FindFace Security будут автоматически "
+"установлены, настроены и запущены в соответствии со следующей "
+"конфигурацией:"
 msgstr ""
+"The installer will perform several automated checks to ensure that the "
+"host meets the system requirements. After that, the FindFace Security "
+"components will be automatically installed, configured and/or started in "
+"the following configuration:"
 
 #: ../source/installer.rst:37
 msgid "Компонент"
-msgstr ""
+msgstr "Component"
 
 #: ../source/installer.rst:37
 msgid "Особенности установки"
-msgstr ""
+msgstr "Details"
 
 #: ../source/installer.rst:39
 msgid "findface-postgres-facen"
-msgstr ""
+msgstr "findface-postgres-facen"
 
 #: ../source/installer.rst:39 ../source/installer.rst:41
 #: ../source/installer.rst:43 ../source/installer.rst:45
 #: ../source/installer.rst:47 ../source/installer.rst:49
 #: ../source/installer.rst:51 ../source/installer.rst:55
 msgid "Устанавливается и запускается."
-msgstr ""
+msgstr "Installed and started."
 
 #: ../source/installer.rst:41
 msgid "ffsecurity"
-msgstr ""
+msgstr "ffsecurity"
 
 #: ../source/installer.rst:43
 msgid "ffsecurity-ui"
-msgstr ""
+msgstr "ffsecurity-ui"
 
 #: ../source/installer.rst:45
 msgid "fkvideo_detector"
-msgstr ""
+msgstr "fkvideo_detector"
 
 #: ../source/installer.rst:47
 msgid "findface-extraction-api"
-msgstr ""
+msgstr "findface-extraction-api"
 
 #: ../source/installer.rst:49
 msgid "NTLS"
-msgstr ""
+msgstr "NTLS"
 
 #: ../source/installer.rst:51
 msgid "nginx"
-msgstr ""
+msgstr "nginx"
 
 #: ../source/installer.rst:53
 msgid "База данных PostgreSQL"
-msgstr ""
+msgstr "PostgreSQL database"
 
 #: ../source/installer.rst:53
 msgid "Устанавливается и запускается в стандартной конфигурации."
-msgstr ""
+msgstr "Installed and started in a standard configuration."
 
 #: ../source/installer.rst:55
 msgid "Сетевое хранилище Redis"
-msgstr ""
+msgstr "Redis"
 
 #: ../source/installer.rst:57
 msgid "jq"
-msgstr ""
+msgstr "jq"
 
 #: ../source/installer.rst:57
 msgid ""
 "Устанавливается. Используется для структурирования API-ответов от "
 "FindFace Security в формате JSON."
 msgstr ""
+"Installed. Used to pretty-print API responses from FindFace Security."
 
 #: ../source/installer.rst:60
 msgid ""
 "По завершении установки в консоль будет выведена информация, необходимая "
 "для использования FindFace Security:"
 msgstr ""
+"Once the installation is complete, the following output will be shown on "
+"the console:"
 
 #: ../source/installer.rst:63
 msgid "Обязательно сохраните эти данные: они вам понадобятся."
-msgstr ""
+msgstr "Be sure to save this data: you will need it later."
 
 #: ../source/installer.rst:78
 msgid ""
-"Загрузите файл лицензии через веб-интерфейс NTLS "
-"``http://<IP_адрес_сервера>:3185/#/``. Для доступа в веб-интерфейс NTLS "
+"Загрузите файл лицензии через веб-интерфейс NTLS ``http://"
+"<IP_адрес_сервера>:3185/#/``. Для доступа в веб-интерфейс NTLS "
 "используйте логин и пароль, выведенные в консоли."
 msgstr ""
+"Upload the FindFace Security license file via the NTLS web interface "
+"``http://<Host_IP_address>:3185/#/``. To access the NTLS web interface, "
+"use the credentials provided in the console."
 
 #: ../source/installer.rst:81
 msgid ""
@@ -153,4 +169,6 @@ msgid ""
 "``127.0.0.1`` или <IP_адрес_в_сети>, в зависимости от того, принадлежит "
 "ли сервер к сети."
 msgstr ""
-
+"The host IP address is shown in the links to FindFace web services in "
+"the following way: as an external IP address if the host belongs to a "
+"network, or ``127.0.0.1`` otherwise."

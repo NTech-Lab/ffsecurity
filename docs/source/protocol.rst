@@ -53,7 +53,7 @@
 
       sudo service nginx restart
 
-#. Внесите изменения в файл конфигурации ``ffsecurity``. В параметре ``EXTERNAL_ADDRESS`` измените приставку ``http`` на ``https``.
+#. Внесите изменения в файл конфигурации ``ffsecurity``. В параметре ``EXTERNAL_ADDRESS`` измените приставку ``http://`` на ``https://``.
 
    .. code::
 

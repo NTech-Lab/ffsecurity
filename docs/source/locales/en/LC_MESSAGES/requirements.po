@@ -9,15 +9,16 @@ msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-09 21:09+0700\n"
-"PO-Revision-Date: 2018-02-12 14:20+0700\n"
+"PO-Revision-Date: 2018-04-11 20:05+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../source/requirements.rst:5
 msgid "Системные требования"
@@ -52,8 +53,8 @@ msgid ""
 "распознавание лиц."
 msgstr ""
 "Intel Xeon E5 with AVX support. The characteristics depend on the number "
-"of cameras in use. A single camera ``1080p@25FPS`` requires 2 cores HT >2"
-" GHz for video processing and 2 cores HT >2 GHz for face recognition."
+"of cameras in use. A single camera ``1080p@25FPS`` requires 2 cores HT "
+">2 GHz for video processing and 2 cores HT >2 GHz for face recognition."
 
 #: ../source/requirements.rst:18
 msgid "Память"
@@ -73,7 +74,6 @@ msgid "Жесткий диск"
 msgstr "HDD"
 
 #: ../source/requirements.rst:22
-#, fuzzy
 msgid ""
 "На собственные нужды операционной системы и FindFace Security требуется "
 "10 ГБ. Суммарный объем определяется в зависимости от требуемой глубины "
@@ -81,7 +81,7 @@ msgid ""
 msgstr ""
 "The own needs of the operating system and FindFace Security require 10 "
 "GB. The total volume is subject to the required depth of the event "
-"archive in the database and in the log, at the rate of 800 KB per 1 "
+"archive in the database and in the log, at the rate of 1.5 Mb per 1 "
 "event."
 
 #: ../source/requirements.rst:26
@@ -91,4 +91,3 @@ msgstr "Operating system"
 #: ../source/requirements.rst:26
 msgid "Ubuntu 16.04 LTS (64-битная)"
 msgstr "Ubuntu 16.04 LTS (x64)"
-

@@ -64,16 +64,15 @@
 
    .. code::
 
-       ###############################################
-       #          Installation is complete           #
-       ###############################################
-       - upload your license to http://172.16.213.249:3185/
-         login:          admin
-         password:       admin
-       - user interface: http://172.16.213.249:8000/
-       - token for UI:   fZh9-zZDX
-       - documentation:  http://172.16.213.249:8000/v1/docs/v1/overview.html
-       user@ubuntu:~$
+      ###############################################
+      #          Installation is complete           #
+      ###############################################
+      - upload your license to http://172.20.77.82:3185/
+        login:          admin
+        password:       bXr3n3n
+      - user interface: http://172.20.77.82/
+        superuser:      admin
+        password:       admin
 
 #. Загрузите файл лицензии через веб-интерфейс NTLS ``http://<IP_адрес_сервера>:3185/#/``. Для доступа в веб-интерфейс NTLS используйте логин и пароль, выведенные в консоли.
 
