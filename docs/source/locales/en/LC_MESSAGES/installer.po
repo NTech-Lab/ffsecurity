@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-13 14:53+0700\n"
-"PO-Revision-Date: 2018-04-13 14:54+0700\n"
+"POT-Creation-Date: 2018-04-13 18:49+0700\n"
+"PO-Revision-Date: 2018-04-13 18:57+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -32,55 +32,53 @@ msgstr ""
 "To deploy FindFace Security standalone, you can use a developer-friendly "
 "console installer."
 
-#: ../source/installer.rst:9
-msgid ""
-"Для развертывания FindFace Security рекомендуется создать отдельную учетную "
-"запись Ubuntu. Не передавайте данные ``superuser`` третьим лицам."
-msgstr ""
-"We recommend that you create a new Ubuntu account to deploy FindFace "
-"Security in it. Do not disclose the ``superuser`` credentials to others."
-
-#: ../source/installer.rst:12
+#: ../source/installer.rst:10
 msgid "Инсталлятор не предназначен для обновления FindFace Security."
 msgstr "The installer cannot be used to update FindFace Security."
 
-#: ../source/installer.rst:15
+#: ../source/installer.rst:13
 msgid ""
 "Для успешного функционирования системы после установки из инсталлятора, IP-"
-"адрес сервера должен быть статическим. Если это не так, откройте файл ``etc/"
-"network/interfaces`` и измените текущую запись для основного сетевого "
-"интерфейса так, как показано в примере ниже. Замените адреса в примере на "
-"актуальные с учетом настроек сети. С осторожностью редактируйте файл ``etc/"
-"network/interfaces``. Перед тем как приступить к редактированию, "
-"ознакомьтесь с `инструкцией по настройке сетей <https://help.ubuntu.com/lts/"
-"serverguide/network-configuration.html#ip-addressing>` Ubuntu."
+"адрес сервера должен быть статическим. Для того чтобы сделать IP-адрес "
+"статическим, откройте файл ``etc/network/interfaces`` и измените текущую "
+"запись для основного сетевого интерфейса так, как показано в примере ниже. "
+"Замените адреса в примере на актуальные с учетом настроек сети."
 msgstr ""
 "The FindFace Security host must have a static IP address in order to be "
-"running successfully. If not, open the ``etc/network/interfaces`` file and "
-"modify the current primary network interface entry as shown in the case "
-"study below. Be sure to substitute the suggested addresses with the actual "
-"ones, subject to your network specification. Be sure to edit the ``etc/"
-"network/interfaces`` file with extreme care. Please refer to the Ubuntu "
-"`guide on networking <https://help.ubuntu.com/lts/serverguide/network-"
-"configuration.html#ip-addressing>` before proceeding."
+"running successfully. To make the IP address static, open the ``etc/network/"
+"interfaces`` file and modify the current primary network interface entry as "
+"shown in the case study below. Be sure to substitute the suggested "
+"addresses with the actual ones, subject to your network specification."
 
-#: ../source/installer.rst:27
+#: ../source/installer.rst:25
 msgid "Перезапустите сетевые интерфейсы."
 msgstr "Restart networking."
 
-#: ../source/installer.rst:36
+#: ../source/installer.rst:31
+msgid ""
+"С осторожностью редактируйте файл ``etc/network/interfaces``. Перед тем как "
+"приступить к редактированию, ознакомьтесь с `инструкцией по настройке сетей "
+"<https://help.ubuntu.com/lts/serverguide/network-configuration.html#ip-"
+"addressing>`__ Ubuntu."
+msgstr ""
+"Be sure to edit the ``etc/network/interfaces`` file with extreme care. "
+"Please refer to the Ubuntu `guide on networking <https://help.ubuntu.com/"
+"lts/serverguide/network-configuration.html#ip-addressing>`__ before "
+"proceeding."
+
+#: ../source/installer.rst:35
 msgid ":ref:`deploy`"
 msgstr ":ref:`deploy`"
 
-#: ../source/installer.rst:39
+#: ../source/installer.rst:38
 msgid "Для развертывания из инсталлятора выполните следующие действия:"
 msgstr "To deploy from an installer, do the following:"
 
-#: ../source/installer.rst:41
+#: ../source/installer.rst:40
 msgid "Загрузите файл инсталлятора ``<findface-security-xxx>.run``."
 msgstr "Download the installer file ``<findface-security-xxx>.run``."
 
-#: ../source/installer.rst:42
+#: ../source/installer.rst:41
 msgid ""
 "Поместите файл ``.run`` в любую папку на сервере установки (например, ``/"
 "home/username``)."
@@ -88,15 +86,15 @@ msgstr ""
 "Put the ``.run`` file into some directory on the designated host (for "
 "example, ``/home/username``)."
 
-#: ../source/installer.rst:43
+#: ../source/installer.rst:42
 msgid "Из данной папки сделайте файл ``.run`` исполняемым."
 msgstr "From this directory, make the ``.run`` file executable."
 
-#: ../source/installer.rst:49
+#: ../source/installer.rst:48
 msgid "Запустите файл ``.run``."
 msgstr "Execute the ``.run`` file."
 
-#: ../source/installer.rst:55
+#: ../source/installer.rst:54
 msgid ""
 "Инсталлятор проверит, соответствует ли сервер системным требованиям. После "
 "этого компоненты FindFace Security будут автоматически установлены, "
@@ -107,72 +105,72 @@ msgstr ""
 "will be automatically installed, configured and/or started in the following "
 "configuration:"
 
-#: ../source/installer.rst:59
+#: ../source/installer.rst:58
 msgid "Компонент"
 msgstr "Component"
 
-#: ../source/installer.rst:59
+#: ../source/installer.rst:58
 msgid "Особенности установки"
 msgstr "Details"
 
-#: ../source/installer.rst:61
+#: ../source/installer.rst:60
 msgid "findface-postgres-facen"
 msgstr "findface-postgres-facen"
 
-#: ../source/installer.rst:61 ../source/installer.rst:63
-#: ../source/installer.rst:65 ../source/installer.rst:67
-#: ../source/installer.rst:69 ../source/installer.rst:71
-#: ../source/installer.rst:73 ../source/installer.rst:77
+#: ../source/installer.rst:60 ../source/installer.rst:62
+#: ../source/installer.rst:64 ../source/installer.rst:66
+#: ../source/installer.rst:68 ../source/installer.rst:70
+#: ../source/installer.rst:72 ../source/installer.rst:76
 msgid "Устанавливается и запускается."
 msgstr "Installed and started."
 
-#: ../source/installer.rst:63
+#: ../source/installer.rst:62
 msgid "ffsecurity"
 msgstr "ffsecurity"
 
-#: ../source/installer.rst:65
+#: ../source/installer.rst:64
 msgid "ffsecurity-ui"
 msgstr "ffsecurity-ui"
 
-#: ../source/installer.rst:67
+#: ../source/installer.rst:66
 msgid "fkvideo_detector"
 msgstr "fkvideo_detector"
 
-#: ../source/installer.rst:69
+#: ../source/installer.rst:68
 msgid "findface-extraction-api"
 msgstr "findface-extraction-api"
 
-#: ../source/installer.rst:71
+#: ../source/installer.rst:70
 msgid "NTLS"
 msgstr "NTLS"
 
-#: ../source/installer.rst:73
+#: ../source/installer.rst:72
 msgid "nginx"
 msgstr "nginx"
 
-#: ../source/installer.rst:75
+#: ../source/installer.rst:74
 msgid "База данных PostgreSQL"
 msgstr "PostgreSQL database"
 
-#: ../source/installer.rst:75
+#: ../source/installer.rst:74
 msgid "Устанавливается и запускается в стандартной конфигурации."
 msgstr "Installed and started in a standard configuration."
 
-#: ../source/installer.rst:77
+#: ../source/installer.rst:76
 msgid "Сетевое хранилище Redis"
 msgstr "Redis"
 
-#: ../source/installer.rst:79
+#: ../source/installer.rst:78
 msgid "jq"
 msgstr "jq"
 
-#: ../source/installer.rst:79
+#: ../source/installer.rst:78
 msgid ""
 "Устанавливается. Используется для структурирования API-ответов от FindFace "
 "Security в формате JSON."
 msgstr "Installed. Used to pretty-print API responses from FindFace Security."
 
-#: ../source/installer.rst:82
+#: ../source/installer.rst:81
 msgid ""
 "По завершении установки в консоль будет выведена информация, необходимая "
 "для использования FindFace Security:"
@@ -180,7 +178,7 @@ msgstr ""
 "Once the installation is complete, the following output will be shown on "
 "the console:"
 
-#: ../source/installer.rst:85
+#: ../source/installer.rst:84
 msgid "Обязательно сохраните эти данные: они вам понадобятся."
 msgstr "Be sure to save this data: you will need it later."
 
@@ -203,3 +201,22 @@ msgstr ""
 "The host IP address is shown in the links to FindFace web services in the "
 "following way: as an external IP address if the host belongs to a network, "
 "or ``127.0.0.1`` otherwise."
+
+#: ../source/installer.rst:105
+msgid ""
+"Не передавайте данные ``superuser`` (Супер Администратора) третьим лицам. "
+"Для администрирования системы создайте назначаемого администратора. Отличие "
+"назначаемого администратора от Супер Администратора в том, что последний не "
+"может лишиться прав администратора даже при смене роли."
+msgstr ""
+"Do not disclose the ``superuser`` (Super Administrator) credentials to "
+"others. To administer the system, create a new user with the administrator "
+"privileges. Whatever the role, Super Administrator cannot be deprived of "
+"its rights."
+
+#~ msgid ""
+#~ "Для развертывания FindFace Security рекомендуется создать отдельную "
+#~ "учетную запись Ubuntu. Не передавайте данные ``superuser`` третьим лицам."
+#~ msgstr ""
+#~ "We recommend that you create a new Ubuntu account to deploy FindFace "
+#~ "Security in it. Do not disclose the ``superuser`` credentials to others."
