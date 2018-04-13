@@ -1,7 +1,7 @@
 .. _deploy:
 
 
-Пошаговое развертывание FindFace Security
+Пошаговое развертывание
 ===============================================
 
 Данный раздел содержит сведения о пошаговом развертывании компонентов FindFace Security на одиночном сервере. Выполните приведенные ниже инструкции, придерживаясь заданного порядка.
@@ -34,13 +34,13 @@
 
    .. code::
 
-      sudo dpkg -i <ffsecurity-repo>.deb
+      sudo dpkg -i <findface-security-repo>.deb
 
 #. Добавьте ключ подписи.
 
    .. code::
 
-      sudo apt-key add /var/ffsecurity-repo/public.key
+      sudo apt-key add /var/findface-security-repo/public.key
       sudo apt-get update
 
 #. Распакуйте пакет с моделью нейронной сети. 
@@ -140,10 +140,10 @@
 #. Откройте файл конфигурации ``/etc/ffsecurity/config.py``. В параметре ``EXTERNAL_ADDRESS`` укажите актуальный внешний IP-адрес или URL сервера установки, по которому будет доступен веб-интерфейс. Придумайте токен для авторизации видеодетектора лиц в сервисе ``ffsecurity`` и укажите его в параметре ``VIDEO_DETECTOR_TOKEN`` (данный токен также нужно будет продублировать в :ref:`настройках видеодетектора <identification>`). 
 
    .. tip::
-      Для обеспечения безопасности данных включите :ref:`SSL-шифрование <https>`. 
+      Если необходимо обеспечить безопасность данных, включите :ref:`SSL-шифрование <https>`. 
 
    .. tip::
-      При необходимости установите ``'IGNORE_UNMATCHED': True``, чтобы отключить запись события в базу данных, если на обнаруженное лицо отсутствует досье. Данную настройку рекомендуется использовать при большом количестве посетителей. 
+      При необходимости установите ``'IGNORE_UNMATCHED': True``, чтобы отключить запись события в базу данных, если обнаруженное лицо отсутствует в списках наблюдения (верификация дала отрицательный результат). Данную настройку рекомендуется использовать при большом количестве посетителей. Пороговая степень схожести при верификации лиц определяется параметром ``CONFIDENCE_THRESHOLD``.
  
    .. _quality:   
 
@@ -157,7 +157,7 @@
       MEDIA_ROOT="/var/lib/ffsecurity/uploads"
       STATIC_ROOT="/var/lib/ffsecurity/static"
 
-      EXTERNAL_ADDRESS="http://192.168.104.204"
+      EXTERNAL_ADDRESS="192.168.104.204"
 
       DEBUG = False
 
@@ -209,6 +209,9 @@
 
 #. Запустите сервисы.
 
+   .. important::
+      Компонент ``ffsecurity`` включает в себя сервисы ``findface-security-proto`` (отвечает за HTTP и web-сокет) и ``findface-security-worker`` (обеспечивает взаимодействие остальных компонентов системы). Количество экземпляров ``findface-security-worker`` рассчитывается по формуле N=(количество ядер CPU-1). Количество экземпляров задается после знака ``@``, например, ``findface-security-worker@{1,2,3}`` для активации 3-х экземпляров.  
+
    .. code::
 
       sudo systemctl enable redis-server findface-security-proto findface-security-worker@{1,2,3,4}
@@ -238,9 +241,9 @@
 
       sudo vi /etc/fkvideo.ini
       
-      api-url=http://127.0.0.1:8002
+      api-url=127.0.0.1:8002
 
-      api-token=<Значение 'VIDEO_DETECTOR_TOKEN'>
+      api-token=<'VIDEO_DETECTOR_TOKEN'>
 
       detector-name=detector1
 

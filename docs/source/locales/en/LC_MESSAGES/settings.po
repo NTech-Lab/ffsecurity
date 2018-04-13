@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NtechLab
+# This file is distributed under the same license as the FindFace Security
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Security 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-13 16:42+0700\n"
+"PO-Revision-Date: 2018-04-13 16:42+0700\n"
+"Last-Translator: \n"
+"Language: en\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: ../source/settings.rst:5
+msgid "Настройка точности распознавания лиц"
+msgstr "Configure Confidence Threshold"
+
+#: ../source/settings.rst:7
+msgid ""
+"FindFace Security принимает решение о совпадении (положительной "
+"верификации) обнаруженного лица с лицом из досье на основании "
+"предустановленной пороговой степени схожести. По умолчанию установлено "
+"оптимальное пороговое значение, равное 0.75. При необходимости вы можете "
+"изменить данное значение на вкладке :guilabel:`Настройки`."
+msgstr ""
+"FindFace Security verifies that a detected face and some face from the "
+"dossiers belong to the same person (i. e. the faces match), based on the "
+"pre-defined similarity threshold. The default threshold is set to 0.75 "
+"which can be considered as optimum. If necessary, you can change the "
+"threshold on the :guilabel:`Settings` tab."
+
+#: ../source/settings.rst:10
+msgid ""
+"Чем выше пороговая степень схожести, тем меньше шансов на положительную "
+"ложную верификацию человека, однако некоторые подходящие фотографии "
+"могут также не пройти верификацию."
+msgstr ""
+"The higher is the threshold, the less are chances that a wrong person "
+"will be positively verified, however, some valid photos may also fail "
+"verification."
+
+#: ../source/settings.rst:12
+msgid "|settings_ru|"
+msgstr "|settings_en|"
+
+#: ../source/settings.rst:22
+msgid ""
+"Систему можно настроить таким образом, что событие будет записываться и "
+"отображаться в веб-интерфейсе только в том случае, если лица совпадают "
+"(параметр ``IGNORE_UNMATCHED`` в файле ``/etc/ffsecurity/config.py``, "
+"см. :ref:`basic-deployment`)."
+msgstr ""
+"You can configure your system to save and display an event only if the "
+"faces match (the ``IGNORE_UNMATCHED`` option at ``/etc/ffsecurity/config."
+"py``, see :ref:`basic-deployment`)."

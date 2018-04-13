@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-09 21:09+0700\n"
-"PO-Revision-Date: 2018-04-10 15:11+0700\n"
+"POT-Creation-Date: 2018-04-12 18:40+0700\n"
+"PO-Revision-Date: 2018-04-13 15:31+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Generator: Poedit 2.0.6\n"
 
 #: ../source/deploy.rst:5
-msgid "Пошаговое развертывание FindFace Security"
+msgid "Пошаговое развертывание"
 msgstr "Deploy Step-By-Step"
 
 #: ../source/deploy.rst:7
@@ -241,18 +241,24 @@ msgstr ""
 
 #: ../source/deploy.rst:143
 msgid ""
-"Для обеспечения безопасности данных включите :ref:`SSL-шифрование <https>`."
-msgstr "To ensure data security, enable :ref:`SSL <https>`."
+"Если необходимо обеспечить безопасность данных, включите :ref:`SSL-шифрование "
+"<https>`."
+msgstr "If necessary, ensure data security by enabling :ref:`SSL <https>`."
 
 #: ../source/deploy.rst:146
 msgid ""
 "При необходимости установите ``'IGNORE_UNMATCHED': True``, чтобы отключить "
-"запись события в базу данных, если на обнаруженное лицо отсутствует досье. "
-"Данную настройку рекомендуется использовать при большом количестве посетителей."
+"запись события в базу данных, если обнаруженное лицо отсутствует в списках "
+"наблюдения (верификация дала отрицательный результат). Данную настройку "
+"рекомендуется использовать при большом количестве посетителей. Пороговая "
+"степень схожести при верификации лиц определяется параметром "
+"``CONFIDENCE_THRESHOLD``."
 msgstr ""
 "If necessary, set ``’IGNORE_UNMATCHED’: True`` to disable logging events for "
-"faces which have no match in the dossiers. Enable this option if the system has "
-"to process a large number of faces."
+"faces which have no match in the dossiers (negative verification result). "
+"Enable this option if the system has to process a large number of faces. The "
+"face similarity threshold for verification is defined by the "
+"``CONFIDENCE_THRESHOLD`` parameter."
 
 #: ../source/deploy.rst:151
 msgid ""
@@ -311,11 +317,27 @@ msgstr "Super Administrator cannot be deprived of its rights, whatever the role.
 msgid "Запустите сервисы."
 msgstr "Start the services."
 
-#: ../source/deploy.rst:222
+#: ../source/deploy.rst:213
+msgid ""
+"Компонент ``ffsecurity`` включает в себя сервисы ``findface-security-proto`` "
+"(отвечает за HTTP и web-сокет) и ``findface-security-worker`` (обеспечивает "
+"взаимодействие остальных компонентов системы). Количество экземпляров "
+"``findface-security-worker`` рассчитывается по формуле N=(количество ядер "
+"CPU-1). Количество экземпляров задается после знака ``@``, например, ``findface-"
+"security-worker@{1,2,3}`` для активации 3-х экземпляров."
+msgstr ""
+"The ``ffsecurity`` service includes ``findface-security-proto`` (provides HTTP "
+"and web socket) and ``findface-security-worker`` (provides interaction of the "
+"other system components). The number of the ``findface-security-worker`` "
+"instances is calculated using the formula: N=(number of CPU cores-1). It is "
+"specified after the ``@`` character, for example, ``findface-security-"
+"worker@{1,2,3}`` for 3 instances."
+
+#: ../source/deploy.rst:225
 msgid "Установка модуля биометрической видео-идентификации"
 msgstr "Video-Based Biometric Identification"
 
-#: ../source/deploy.rst:224
+#: ../source/deploy.rst:227
 msgid ""
 "Установка модуля биометрической видео-идентификации (компонентов "
 "``fkvideo_detector`` и ``extraction-api``) выполняется следующим образом:"
@@ -323,18 +345,18 @@ msgstr ""
 "To install ``fkvideo_detector`` and ``extraction-api``, components for video-"
 "based biometric identification, do the following:"
 
-#: ../source/deploy.rst:226
+#: ../source/deploy.rst:229
 msgid "Установите видеодетектор лиц."
 msgstr "Install the video face detector."
 
-#: ../source/deploy.rst:232
+#: ../source/deploy.rst:235
 msgid ""
 "Откройте файл конфигурации видеодетектора и отредактируйте в нем следующие "
 "настройки:"
 msgstr ""
 "Open the video face detector configuration file and edit the following settings:"
 
-#: ../source/deploy.rst:235
+#: ../source/deploy.rst:238
 msgid ""
 "Обратите внимание, что в параметре ``api-token`` нужно указать значение "
 "``VIDEO_DETECTOR_TOKEN`` из ``/etc/ffsecurity/config.py`` (см. :ref:`basic-"
@@ -343,7 +365,7 @@ msgstr ""
 "Note that the values of ``api-token`` and ``VIDEO_DETECTOR_TOKEN`` (``/etc/"
 "ffsecurity/config.py``) must be the same (see :ref:`basic-deployment`)."
 
-#: ../source/deploy.rst:251
+#: ../source/deploy.rst:254
 msgid ""
 "Добавьте сервис ``fkvideo_detector`` в автозагрузку Ubuntu и запустите его. "
 "Убедитесь, что сервис активен."
@@ -351,11 +373,11 @@ msgstr ""
 "Enable the ``fkvideo_detector`` service autostart and launch the service. Make "
 "sure that the service is active."
 
-#: ../source/deploy.rst:259
+#: ../source/deploy.rst:262
 msgid "Установите компонент ``extraction-api``."
 msgstr "Install the ``extraction-api`` component."
 
-#: ../source/deploy.rst:265
+#: ../source/deploy.rst:268
 msgid ""
 "В файле конфигурации ``extraction-api`` включите опцию ``quality_estimator`` "
 "для оценки качества лица."
@@ -363,7 +385,7 @@ msgstr ""
 "In the ``extraction-api`` configuration file, enable the ``quality_estimator`` "
 "to be able to estimate the face quality in a dossier."
 
-#: ../source/deploy.rst:268
+#: ../source/deploy.rst:271
 msgid ""
 ":ref:`Минимальное качество лица <quality>` на фотографии в досье задается "
 "параметром ``MINIMUM_DOSSIER_QUALITY`` в файле конфигурации ``/etc/ffsecurity/"
@@ -372,7 +394,7 @@ msgstr ""
 "The :ref:`minimum face quality <quality>` in a dossier photo is set as "
 "``MINIMUM_DOSSIER_QUALITY`` in ``/etc/ffsecurity/config.py``."
 
-#: ../source/deploy.rst:276
+#: ../source/deploy.rst:279
 msgid ""
 "В файле конфигурации ``extraction-api`` выключите поиск моделей для "
 "распознавания пола, возраста и эмоций, передав пустые значения в параметры "
@@ -382,7 +404,7 @@ msgstr ""
 "recognition models search by passing empty values to the ``gender``, ``age`` "
 "and ``emotions`` parameters:"
 
-#: ../source/deploy.rst:279
+#: ../source/deploy.rst:282
 msgid ""
 "Не удаляйте сами параметры, поскольку в этом случае будет выполняться поиск "
 "моделей по умолчанию."
@@ -390,7 +412,7 @@ msgstr ""
 "Do not remove the parameters themselves as in this case the system will be "
 "searching for default models."
 
-#: ../source/deploy.rst:288
+#: ../source/deploy.rst:291
 msgid ""
 "Добавьте сервис ``extraction-api`` в автозагрузку Ubuntu и запустите его. "
 "Убедитесь, что сервис активен."

@@ -13,6 +13,7 @@
    camera_management
    guests
    user_management
+   settings
    event_cleaner
    troubleshooting
    protocol
