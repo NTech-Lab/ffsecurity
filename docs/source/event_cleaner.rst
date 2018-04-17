@@ -1,4 +1,4 @@
-.. _events:
+.. _event-cleaner:
 
 ***************************************************
 Очистка базы данных событий c ``event-cleaner``
@@ -45,5 +45,10 @@ Cправка по утилите вызывается следующей ком
 
    sudo findface-security cleanup_events --age 5
 
+Для автоматического удаления событий создайте задание в планировщике ``cron``. Команда в примере ниже добавляет в ``cron`` файл скрипта ``/etc/cron.d/cleanup``, который удаляет события старше 60 дней. Скрипт выполняется ежедневно в 00:05.
+
+.. code::
+
+   `echo '5 0 * * * root /usr/bin/findface-security cleanup_events --age 60' | sudo tee /etc/cron.d/cleanup`
 
 
