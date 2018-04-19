@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-17 16:54+0700\n"
-"PO-Revision-Date: 2018-04-17 16:57+0700\n"
+"POT-Creation-Date: 2018-04-19 14:35+0700\n"
+"PO-Revision-Date: 2018-04-19 14:42+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -48,10 +48,10 @@ msgstr ""
 
 #: ../source/architecture.rst:15
 msgid ""
-"Пакет с моделью нейронной сети для извлечения биометрических образцов лиц :"
+"Пакеты с моделями нейронных сетей для извлечения биометрических образцов лиц :"
 "program:`<findface-data>.deb`."
 msgstr ""
-"A package with a biometric neural network model :program:`<findface-data>."
+"Packages with the biometric neural network models :program:`<findface-data>."
 "deb`."
 
 #: ../source/architecture.rst:18
@@ -149,9 +149,11 @@ msgstr "``extraction-api``"
 #: ../source/_tables/components.csv:1
 msgid ""
 "Сервис, который используется для извлечения биометрического образца (вектора "
-"признаков) лица. Для работы необходим пакет c моделью нейронной сети :program:"
-"`<findface-data>.deb`."
-msgstr "A service which extracts face biometric data (feature vector)."
+"признаков) лица. Для работы необходимы пакеты c моделями нейронных сетей :"
+"program:`<findface-data>.deb`."
+msgstr ""
+"A service which extracts face biometric data (feature vector). Requires the "
+"packages with the neural network models :program:`<findface-data>.deb`."
 
 #: ../source/_tables/components.csv:1
 msgid "``findface-postgres-facen``"

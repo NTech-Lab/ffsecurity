@@ -22,6 +22,7 @@
 
 .. code::
 
+   sudo apt-get update
    sudo apt install -y postgresql-server-dev-9.5 redis-server
 
 
@@ -43,11 +44,11 @@
       sudo apt-key add /var/findface-security-repo/public.key
       sudo apt-get update
 
-#. Распакуйте пакет с моделью нейронной сети. 
+#. Распакуйте пакеты с моделями нейронных сетей. 
 
    .. code::
    
-      sudo dpkg -i <findface-data>.deb
+      sudo dpkg -i findface-data*.deb
 
 
 Установка локального сервера лицензий NTLS
@@ -100,7 +101,7 @@
   
       sudo apt install -y findface-postgres-9.5-facen
 
-#. В :program:`PostgreSQL` создайте пользователя ``ntech`` и базу данных ``ffsecurity``. Загрузите в базу данных расширение ``findface-postgres-9.5-facen`` с помощью метки ``facen-compare-bytea``.
+#. В консоли :program:`PostgreSQL` создайте пользователя ``ntech`` и базу данных ``ffsecurity``. Загрузите в базу данных расширение ``findface-postgres-9.5-facen`` с помощью метки ``facen-compare-bytea``.
 
    .. code::
 
@@ -113,6 +114,8 @@
       postgres=# \c ffsecurity;
 
       ffsecurity=# CREATE EXTENSION "facen-compare-bytea";
+
+   Для выхода из консоли ``PostgreSQL`` введите ``\q`` и нажмите :kbd:`Enter`.   
 
 #. Разрешите авторизацию в :program:`PostgreSQL` по UID  клиента сокета. Перезапустите :program:`PostgreSQL`.
 
@@ -192,7 +195,7 @@
 
       sudo ln -s /etc/nginx/sites-available/ffsecurity-nginx.conf /etc/nginx/sites-enabled/
 
-      nginx -s reload
+      sudo nginx -s reload
 
 #. Перенесите схему базы данных из FindFace Security в :program:`PostgreSQL`, создайте группы пользователей с :ref:`предустановленными правами <users>` и  первого пользователя с правами администратора (т. н. Супер Администратора).
 
@@ -251,13 +254,18 @@
 
       camera-url=/video-detector/cameras/
 
+      realtime=0
+
+   .. important::
+      По умолчанию видеодетектор подбирает лучшее изображение лица в режиме реального времени (``realtime=1``). В этом режиме видеодетектор начинает отправлять в ``ffsecurity`` изображения лица сразу после его появления в поле зрения видеокамеры. Для более эффективного подбора лучшего изображения лица рекомендуется установить буферный режим (``realtime=0``). В буферном режиме видеодетектор использует меньший объем дискового пространства, поскольку для каждого лица отправляет в ``ffsecurity`` только одно изображение, но наивысшего качества.
+
 #. Добавьте сервис ``fkvideo_detector`` в автозагрузку Ubuntu и запустите его. Убедитесь, что сервис активен. 
 
    .. code::
 
-      sudo systemctl enable fkvideo_detector@fkvideo && sudo service fkvideo_detector@fkvideo start
+      sudo systemctl enable fkvideo_detector@fkvideo && sudo systemctl start fkvideo_detector@fkvideo
 
-      sudo service fkvideo_detector@fkvideo status
+      sudo systemctl status fkvideo_detector@fkvideo
 
 #. Установите компонент ``extraction-api``.
 
@@ -294,7 +302,7 @@
 
       sudo systemctl enable findface-extraction-api && sudo systemctl start findface-extraction-api
 
-      sudo service findface-extraction-api status
+      sudo systemctl status findface-extraction-api
       
 
 
