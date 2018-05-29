@@ -49,6 +49,6 @@ Cправка по утилите вызывается следующей ком
 
 .. code::
 
-   `echo '5 0 * * * root /usr/bin/findface-security cleanup_events --age 60' | sudo tee /etc/cron.d/cleanup`
+   echo '5 0 * * * root /usr/bin/findface-security cleanup_events --age 60' | sudo tee /etc/cron.d/cleanup
 
 
