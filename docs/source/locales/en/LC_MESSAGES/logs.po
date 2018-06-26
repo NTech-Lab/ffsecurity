@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NtechLab
+# This file is distributed under the same license as the FindFace Security
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Security 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-26 16:46+0700\n"
+"PO-Revision-Date: 2018-06-26 16:49+0700\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.0.7\n"
+
+#: ../source/logs.rst:2
+msgid "Аудит-логи"
+msgstr "Audit-logs"
+
+#: ../source/logs.rst:4
+msgid ""
+"При разборе нештатных ситуаций используйте аудит-логи, содержащие "
+"подробную деталировку всех событий, произошедших в системе."
+msgstr ""
+"Audit logs contain detailed information about all the events occurred in "
+"the system and are great for troubleshooting."
+
+#: ../source/logs.rst:7
+msgid ""
+"Для того чтобы включить хранение аудит-логов на жестком диске, в файле "
+"``etc/systemd/journald.conf`` раскомментируйте и измените параметр "
+"``Storage`` следующим образом:"
+msgstr ""
+"In order to enable saving audit logs to your hard drive, uncomment and "
+"edit the ``Storage`` parameter in the ``etc/systemd/journald.conf`` file:"
+
+#: ../source/logs.rst:16
+msgid ""
+"При необходимости также раскомментируйте и измените значение параметра "
+"``SystemMaxUse``. Данный параметр определяет в процентах максимальный "
+"объем логов на жестком диске (по умолчанию 10%)."
+msgstr ""
+"If necessary, uncomment and edit the ``SystemMaxUse`` parameter as well. "
+"This parameter determines the maximum volume of log files on your hard "
+"drive (10% by default)."
+
+#: ../source/logs.rst:23
+msgid "Для того чтобы просмотреть аудит-логи, выполните следующую команду:"
+msgstr "To view audit logs, execute:"
+
+#: ../source/logs.rst:30
+msgid ""
+"При расшифровке аудит-логов в первую очередь обращайте внимание на "
+"следующие параметры:"
+msgstr ""
+"When interpreting audit logs, first of all pay attention on the following "
+"parameters:"
+
+#: ../source/logs.rst:32
+msgid "``REQUEST_USER``: пользователь, который выполнил изменения;"
+msgstr "``REQUEST_USER``: user who made the changes;"
+
+#: ../source/logs.rst:33
+msgid "``REQUEST_PATH``: URL запроса;"
+msgstr "``REQUEST_PATH``: URL of the request;"
+
+#: ../source/logs.rst:34
+msgid "``REQUEST_DATA``: данные запроса."
+msgstr "``REQUEST_DATA``: detailed information of the request."
+
+#: ../source/logs.rst:36
+msgid ""
+"Ниже приведен пример лога создания досье с ``id=1879`` пользователем "
+"``admin``."
+msgstr "In the log below, the ``admin`` user creates a dossier ``id=1879``."
+
+#: ../source/logs.rst:69
+msgid "В следующем примере для досье с ``id=1879`` запрашивается список лиц."
+msgstr ""
+"In the next log, the list of faces is requested for the dossier "
+"``id=1879``."
