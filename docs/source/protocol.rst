@@ -16,35 +16,40 @@
 
    .. code::
 
-      sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/ssl/nginx.key -out /etc/nginx/ssl/nginx.crt
+      sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/ssl/my-example-domain.com.key -out /etc/nginx/ssl/my-example-domain.com.crt
 
-   Для заполнения полей сертификата вам будет предложено несколько вопросов. Ответьте на них, уделив особое внимание строке ``Common Name``. В ней нужно ввести имя или публичный IP-адрес домена, связанного с сервером.  Созданные файлы ключа ``nginx.key`` и сертификата ``nginx.crt`` будут сохранены в каталоге ``/etc/nginx/ssl``.
+   Для заполнения полей сертификата вам будет предложено несколько вопросов. Ответьте на них, уделив особое внимание строке ``Common Name``. В ней нужно ввести имя или публичный IP-адрес домена, связанного с сервером.  Созданные файлы ключа ``my-example-domain.com.key`` и сертификата ``my-example-domain.com.crt`` будут сохранены в каталоге ``/etc/nginx/ssl``.
 
-#. Настройте nginx для использования SSL. Откройте файл конфигурации nginx. Добавьте в него строку ``listen 443 ssl`` и данные о сертификате ``ssl_certificate`` и ключе ``ssl_certificate_key`` (отмечены знаком комментария ## в примере ниже). 
+#. Настройте nginx для использования SSL. Откройте файл конфигурации nginx. Скопируйте в него код из примера ниже. 
 
    .. code::
 
       sudo vi /etc/nginx/nginx.conf
 
+      # redirect from http to https version of the site
       server {
-              listen 80 default_server;
-              listen [::]:80 default_server ipv6only=on;
-              
-              ##
+              listen 80; 
+              server_name my-example-domain.com www.my-example-domain.com;
+              rewrite ^(.*) https://my-example-domain.com$1 permanent;
+              access_log off;
+      }
+
+      server {
               listen 443 ssl;
+              server_name my-example-domain.com;
 
-              root /usr/share/nginx/html;
-              index index.html index.htm;
+              ssl_certificate     /etc/nginx/ssl/my-example-domain.com.crt;
+              ssl_certificate_key /etc/nginx/ssl/my-example-domain.com.key;
 
-              server_name your_domain.com;
-              ##
-              ssl_certificate /etc/nginx/ssl/nginx.crt;
-              ##
-              ssl_certificate_key /etc/nginx/ssl/nginx.key;
+              root /usr/share/ffsecurity-ui
 
-              location / {
-                      try_files $uri $uri/ =404;
-              }
+              location / { 
+                      try_files $uri $uri/ @ffsec;
+              }   
+
+              location @ffsec {
+                      proxy_pass http://127.0.0.1:8002;
+              }   
       }
 
 #. Перезапустите nginx.
@@ -59,7 +64,7 @@
 
       sudo vi /etc/ffsecurity/config.py
  
-      EXTERNAL_ADDRESS="https://192.168.104.204"
+      EXTERNAL_ADDRESS="https://my-example-domain.com"
 
 
 
