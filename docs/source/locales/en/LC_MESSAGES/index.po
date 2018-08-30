@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-17 17:50+0700\n"
-"PO-Revision-Date: 2018-04-17 17:51+0700\n"
+"POT-Creation-Date: 2018-08-24 17:48+0700\n"
+"PO-Revision-Date: 2018-08-30 15:11+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -18,70 +18,79 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.1.1\n"
 
-#: ../source/index.rst:3
+#: ../docs/index.rst:3
 msgid "Система распознавания лиц FindFace Security"
 msgstr "Welcome to FindFace Security’s documentation!"
 
-#: ../source/index.rst:6
+#: ../docs/index.rst:6
 msgid "Полное руководство"
 msgstr "About FindFace Security"
 
-#: ../source/index.rst:9
+#: ../docs/index.rst:9
 msgid ""
 "Система распознавания лиц FindFace Security предназначена для "
 "автоматизации основной деятельности сотрудников служб безопасности и "
-"гостеприимства при построении взаимоотношений с посетителями."
+"гостеприимства и может использоваться в таких областях, как транспорт, "
+"розничная торговля, банковское обслуживание, индустрия развлечений, "
+"спортивные мероприятия, организация мероприятий, сервисы знакомств, "
+"видеонаблюдение, общественная и корпоративная безопасность."
 msgstr ""
 "FindFace Security is a video-based biometric identification system that "
-"automates Security and Hospitality Operations Management."
+"automates Security and Hospitality Operations Management. It can be "
+"harnessed in such areas as retail, banking, social networking, "
+"entertainment, sports, event management, dating services, video "
+"surveillance, public safety, homeland security, etc."
 
-#: ../source/index.rst:11
+#: ../docs/index.rst:11
 msgid ""
 "Работа FindFace Security основывается на биометрической видео-"
 "идентификации, т. е. на распознавании лиц на видеоизображении в режиме "
-"реального времени. FindFace Security распознает лица нежелательных "
-"посетителей и VIP-гостей и оповещает сотрудников служб безопасности и "
-"гостеприимства об их приходе."
+"реального времени. FindFace Security распознает лица нежелательных персон "
+"и VIP-гостей и оповещает сотрудников служб безопасности и гостеприимства "
+"об их приходе."
 msgstr ""
-"FindFace Security detects and recognizes faces of the unwanted visitors "
-"and VIP guests in live video, and notifies security and hospitality "
-"managers about their arrival."
+"FindFace Security detects and identifies faces of the unwanted persons "
+"and VIP guests in video, and notifies security and hospitality managers "
+"about their arrival."
 
-#: ../source/index.rst:13
+#: ../docs/index.rst:13
 msgid ""
-"Раннее распознавание прихода нежелательных посетителей и VIP-гостей "
-"позволяет решать следующие задачи:"
+"Раннее распознавание прихода нежелательных персон и VIP-гостей позволяет "
+"решать следующие задачи:"
 msgstr ""
-"Early recognition of the arrival of unwanted visitors and VIP guests "
+"Early recognition of the arrival of unwanted persons and VIP guests "
 "allows for solving the following problems:"
 
-#: ../source/index.rst:15
-msgid ""
-"снижение операционных потерь от мошеннических действий клиентов и "
-"посетителей;"
-msgstr "Operational losses due to visitors fraudulent activity"
+#: ../docs/index.rst:15
+msgid "снижение операционных потерь от мошеннических действий;"
+msgstr "Operational losses due to fraudulent activity"
 
-#: ../source/index.rst:16
+#: ../docs/index.rst:16
 msgid "снижение репутационных потерь и предотвращение конфликтных ситуаций;"
 msgstr "Reputational losses and conflicts"
 
-#: ../source/index.rst:17
-msgid "повышение качества обслуживания клиентов, в частности VIP-гостей."
-msgstr "Better catering to the needs of VIP guests."
+#: ../docs/index.rst:17
+msgid "повышение качества обслуживания клиентов, в частности VIP-гостей;"
+msgstr "Better catering to the needs of VIP guests"
 
-#: ../source/index.rst:20
+#: ../docs/index.rst:18
+msgid ""
+"предотвращение потенциально опасных ситуаций, угрожающих жизни и здоровью "
+"людей."
+msgstr "Prevention of life threatening situations"
+
+#: ../docs/index.rst:20
 msgid ""
 "Настоящий документ предназначен для администраторов, операторов и "
 "пользователей FindFace Security. Он также будет полезен специалистам, "
 "обслуживающим систему и ее комплекс технических средств."
 msgstr ""
-"This guide is intended for FindFace Security administrators, security and "
-"hospitality managers, as well as for FindFace Security maintenance "
-"engineers."
+"This guide is intended for the FindFace Security administrators, security "
+"and hospitality managers, and maintenance engineers."
 
-#: ../source/index.rst:23
+#: ../docs/index.rst:23
 msgid ""
 "Документ доступен по адресу https://docs.findface.pro/ffsec/ru/latest/"
 "index.html и во встроенном фреймворке ``http://<ffsecurity_ip>/doc/`` "
@@ -90,6 +99,14 @@ msgstr ""
 "You can find this guide at https://docs.findface.pro/ffsec/en/latest/"
 "index.html and at ``http://<ffsecurity_ip>/doc/`` after installation."
 
-#: ../source/index.rst:27
+#: ../docs/index.rst:27
 msgid "Содержание"
 msgstr "Contents"
+
+#~ msgid ""
+#~ "Система распознавания лиц FindFace Security предназначена для "
+#~ "автоматизации основной деятельности сотрудников служб безопасности и "
+#~ "гостеприимства при построении взаимоотношений с посетителями."
+#~ msgstr ""
+#~ "FindFace Security is a video-based biometric identification system "
+#~ "that automates Security and Hospitality Operations Management."

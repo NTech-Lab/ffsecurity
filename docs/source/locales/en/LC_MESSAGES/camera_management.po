@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-10 14:54+0700\n"
-"PO-Revision-Date: 2018-04-10 14:56+0700\n"
+"POT-Creation-Date: 2018-08-29 12:51+0700\n"
+"PO-Revision-Date: 2018-08-30 16:33+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -18,93 +18,93 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.1.1\n"
 
-#: ../source/camera_management.rst:5
+#: ../docs/camera_management.rst:5
 msgid "Управление видеокамерами"
 msgstr "Camera Management"
 
-#: ../source/camera_management.rst:7
+#: ../docs/camera_management.rst:7
 msgid ""
-"Для настройки видео-идентификации лиц добавьте камеры в FindFace "
-"Security, сгруппировав их c учетом расположения."
+"Для настройки видео-идентификации лиц добавьте камеры в FindFace Security, "
+"сгруппировав их c учетом расположения."
 msgstr ""
-"To configure video-based biometric identification, add cameras to "
-"FindFace Security, grouping them subject to their location."
+"To configure video-based biometric identification, add cameras to FindFace "
+"Security, grouping them subject to their location."
 
-#: ../source/camera_management.rst:10
+#: ../docs/camera_management.rst:10
 msgid "В этой главе:"
 msgstr "In this chapter:"
 
-#: ../source/camera_management.rst:16
+#: ../docs/camera_management.rst:16
 msgid "Создание группы камер"
 msgstr "Create Group of Cameras"
 
-#: ../source/camera_management.rst:18
+#: ../docs/camera_management.rst:18
 msgid "Для создания группы камер выполните следующие действия:"
 msgstr "To create a group of cameras, do the following:"
 
-#: ../source/camera_management.rst:20
+#: ../docs/camera_management.rst:20
 msgid "В веб-интерфейсе перейдите на вкладку :guilabel:`Группы камер`."
 msgstr "Navigate to the :guilabel:`Camera groups` tab."
 
-#: ../source/camera_management.rst:22
+#: ../docs/camera_management.rst:22
 msgid "|create_camera_group_ru|"
 msgstr "|create_camera_group_en|"
 
-#: ../source/camera_management.rst:30
+#: ../docs/camera_management.rst:30
 msgid "Нажмите на кнопку :guilabel:`Создать`."
 msgstr "Click :guilabel:`Create`."
 
-#: ../source/camera_management.rst:31
+#: ../docs/camera_management.rst:31
 msgid "Введите имя группы и при необходимости комментарий к ней."
 msgstr "Specify the group name. Add a comment."
 
-#: ../source/camera_management.rst:33
-msgid "|camera_group_ru|"
-msgstr "|camera_group_en|"
-
-#: ../source/camera_management.rst:42
+#: ../docs/camera_management.rst:32
 msgid ""
-"Если события от камер, принадлежащих одной группе, требуется "
-"дедуплицировать, т. е. исключить одинаковые события, поставьте флажок :"
-"guilabel:`Дедуплицировать события` и задайте интервал дедупликации "
-"(интервал, с которым события проверяются на уникальность)."
+"Если события от камер, принадлежащих одной группе, требуется дедуплицировать, "
+"т. е. исключить одинаковые события, поставьте флажок :guilabel:"
+"`Дедуплицировать события` и задайте интервал дедупликации (интервал, с которым "
+"события проверяются на уникальность)."
 msgstr ""
-"If you want to deduplicate events from cameras that belong to the same "
-"group, i. e. exclude coinciding events, check :guilabel:`Deduplicate "
-"Events` and specify the deduplication interval (interval between 2 "
-"consecutive checks for event uniqueness)."
+"If you want to deduplicate events from cameras that belong to the same group, "
+"i. e. exclude coinciding events, check :guilabel:`Deduplicate Events` and "
+"specify the deduplication interval (interval between 2 consecutive checks for "
+"event uniqueness)."
 
-#: ../source/camera_management.rst:43 ../source/camera_management.rst:88
+#: ../docs/camera_management.rst:33 ../docs/camera_management.rst:76
 msgid "Поставьте флажок :guilabel:`Активная`."
 msgstr "Check :guilabel:`Active`."
 
-#: ../source/camera_management.rst:44 ../source/camera_management.rst:89
+#: ../docs/camera_management.rst:35
+msgid "|camera_group_ru|"
+msgstr "|camera_group_en|"
+
+#: ../docs/camera_management.rst:43 ../docs/camera_management.rst:111
 msgid "Нажмите на кнопку :guilabel:`Сохранить`."
 msgstr "Click :guilabel:`Save`."
 
-#: ../source/camera_management.rst:48
+#: ../docs/camera_management.rst:47
 msgid "Добавление камеры в группу"
 msgstr "Add Camera to Group"
 
-#: ../source/camera_management.rst:50
+#: ../docs/camera_management.rst:49
 msgid "Для добавления камеры в группу выполните следующие действия:"
 msgstr "To add a camera to a group, do the following:"
 
-#: ../source/camera_management.rst:52
+#: ../docs/camera_management.rst:51
 msgid "В веб-интерфейсе перейдите на вкладку :guilabel:`Камеры`."
 msgstr "In the web interface, go to the :guilabel:`Cameras` tab."
 
-#: ../source/camera_management.rst:54
+#: ../docs/camera_management.rst:53
 msgid "|create_camera_ru|"
 msgstr "|create_camera_en|"
 
-#: ../source/camera_management.rst:63
+#: ../docs/camera_management.rst:62
 msgid "Нажмите на кнопку :guilabel:`Добавить`."
 msgstr "Click :guilabel:`Add`."
 
-#: ../source/camera_management.rst:64
+#: ../docs/camera_management.rst:63
 msgid ""
 "Введите название камеры и добавьте ее в одну из групп. При необходимости "
 "введите комментарий к камере."
@@ -112,33 +112,284 @@ msgstr ""
 "Specify the name of a camera and add it to a group. If necessary, add a "
 "comment."
 
-#: ../source/camera_management.rst:66
+#: ../docs/camera_management.rst:65
 msgid "|camera_ru|"
 msgstr "|camera_en|"
 
-#: ../source/camera_management.rst:75
-msgid "Задайте URL камеры."
-msgstr "Specify the camera URL."
+#: ../docs/camera_management.rst:74
+msgid "Задайте URL камеры или адрес видеофайла для обработки."
+msgstr "Specify the camera URL or path to the video file."
 
-#: ../source/camera_management.rst:76
+#: ../docs/camera_management.rst:77
 msgid ""
-"При необходимости включите детектирование и отслеживание лиц только "
-"внутри заданной прямоугольной области, задав параметр ``ROT``. "
-"Используйте данную опцию, чтобы уменьшить нагрузку на "
+"Нажмите на кнопку :guilabel:`Параметры`, чтобы задать параметры обработки "
+"видеопотока:"
+msgstr "Click :guilabel:`Parameters` to configure video processing:"
+
+#: ../docs/camera_management.rst:79
+msgid ""
+"``min_score``: Минимальное качество изображения лица при выборе лучшего. "
+"Определяется эмпирически: отрицательные значения вблизи 0 = наиболее "
+"качественные прямые изображения лиц анфас, -1 = хорошее качество, -2 = "
+"удовлетворительное качество, отрицательные значения -5 и меньше = перевернутые "
+"лица и лица, повернутые под большими углами, распознавание может быть "
+"неэффективным."
+msgstr ""
+"``min_score``: Minimum quality of a face snapshot when searching for the best "
+"one. To be fitted empirically: negatives values around 0 = high quality faces, "
+"-1 = good quality, -2 = satisfactory quality, -5 = inverted faces and large "
+"face angles, face recognition may be inefficient."
+
+#: ../docs/camera_management.rst:80
+msgid ""
+"``min_d_score``: Максимальное отклонение лица от положения анфас при выборе "
+"лучшего. Определяется эмпирически: -3.5 = слишком большие углы поворота, "
+"распознавание лиц может быть неэффективным,  -2.5 = удовлетворительное "
+"отклонение, -0.05 = близко к положению анфас, 0 = анфас."
+msgstr ""
+"``min_d_score``: Maximum deviation of a face from its frontal position. To be "
+"fitted empirically: -3.5 = large face angles, face recognition may be "
+"inefficient, -2.5 = satisfactory deviation, -0.05 = close to the frontal "
+"position, 0 = frontal face."
+
+#: ../docs/camera_management.rst:81
+msgid ""
+"``min_face_size``: Минимальный размер лица в пикселях при выборе лучшего. Чем "
+"меньше значение, тем дольше осуществляется обнаружение и отслеживание лиц. "
+"Оптимальное значение: 80-100-120. Если 0, фильтр выключен."
+msgstr ""
+"``min_face_size``: Minimum face size in pixels. The less the value, the longer "
+"it takes to detect and track faces. Optimum value: 80-100-120. If 0, the "
+"filter is off."
+
+#: ../docs/camera_management.rst:82
+msgid ""
+"``max_face_size``: Максимальный размер лица в пикселях при выборе лучшего. "
+"Если 0, фильтр выключен."
+msgstr "``max_face_size``: Maximum face size in pixels. If 0, the filter is off."
+
+#: ../docs/camera_management.rst:83
+msgid ""
+"``realtime``: Режим реального времени. Выбирать лучший кадр с лицом в каждом "
+"интервале времени ``realtime_dly``. Если ``realtime_post_perm: true``, "
+"отправка лучшего кадра происходит по завершению каждого интервала "
+"``realtime_dly``; если ``false``, лучший кадр отправляется, только если его "
+"качество улучшилось по сравнению с предыдущим отправленным кадром."
+msgstr ""
+"``realtime``: Realtime mode. Pick up the best snapshot within each "
+"``realtime_dly`` time interval. If ``realtime_post_perm: true``, the best "
+"snapshot is posted at the end of each interval; if false, the best snapshot is "
+"posted only if its quality has improved comparing to the previously posted "
+"snapshot."
+
+#: ../docs/camera_management.rst:84
+msgid ""
+"``realtime_post_perm``: Если ``true``, отправлять лучший кадр в каждом "
+"интервале времени ``realtime_dly`` в режиме реального времени. Если ``false``, "
+"отправлять лучший кадр, только если его качество улучшилось по сравнению с "
+"предыдущим отправленным кадром."
+msgstr ""
+"``realtime_post_perm``: If ``true``, post the best snapshot obtained within "
+"each ``realtime_dly`` time interval in realtime mode. If ``false``, post the "
+"best snapshot only if its quality has improved comparing to the previously "
+"posted snapshot."
+
+#: ../docs/camera_management.rst:85
+msgid ""
+"``realtime_dly``: Временной интервал в миллисекундах, в течение которого в "
+"режиме реального времени выбирается лучший кадр с лицом."
+msgstr ""
+"``realtime_dly``: Time interval in milliseconds within which the face tracker "
+"picks up the best snapshot in realtime mode."
+
+#: ../docs/camera_management.rst:86
+msgid ""
+"``overall``: Буферный режим. Отправлять для лица один кадр наилучшего качества."
+msgstr ""
+"``overall``: Offline mode. Enable posting one snapshot of the best quality for "
+"each face."
+
+#: ../docs/camera_management.rst:87
+msgid ""
+"``ROT``: Детектирование и отслеживание лиц только внутри заданной "
+"прямоугольной области. Используйте данную опцию, чтобы уменьшить нагрузку на "
 "``fkvideo_detector``."
 msgstr ""
-"If necessary, specify the value of the ``ROT`` parameter to enable "
-"detecting and tracking faces only inside a clipping rectangle. You can "
-"use this option to reduce the ``fkvideo_detector`` load."
+"``ROT``: Enable detecting and tracking faces only inside a clipping rectangle. "
+"Use this option to reduce the ``fkvideo_detector`` load."
 
-#: ../source/camera_management.rst:78
-msgid "|roi_rot_ru|"
-msgstr "|roi_rot_en|"
-
-#: ../source/camera_management.rst:87
+#: ../docs/camera_management.rst:88
 msgid ""
-"При небходимости включите отправку в компонент ``ffsecurity`` только тех "
-"лиц, которые были обнаружены внутри интересующей области ``ROI``."
+"``ROI``: Отправка в компонент ``ffsecurity`` только тех лиц, которые были "
+"обнаружены внутри интересующей области."
+msgstr "``ROI``: Enable posting faces detected only inside a region of interest."
+
+#: ../docs/camera_management.rst:97
+msgid ""
+"Для задания ROT/ROI удобно использовать визуальный мастер. Сначала создайте "
+"камеру без ROT/ROI, затем откройте ее для редактирования и нажмите на кнопку :"
+"guilabel:`Параметры`. Вы увидите визуальный мастер."
 msgstr ""
-"If necessary, specify the value of the ``ROI`` parameter to enable "
-"posting faces detected only inside a region of interest."
+"To specify ROT/ROI, use the visual wizard. First, create a camera without ROT/"
+"ROI. Then open it for editing and click :guilabel:`Parameters`. You will see "
+"the visual wizard appear."
+
+#: ../docs/camera_management.rst:99
+msgid ""
+"Нажмите на кнопку :guilabel:`Дополнительные параметры`, чтобы задать "
+"опциональные параметры обработки видеопотока:"
+msgstr ""
+"Click :guilabel:`Advanced Parameters` to specify optional video processing "
+"parameters:"
+
+#: ../docs/camera_management.rst:101
+msgid ""
+"``ffmpeg_params``: Опции ffmpeg для видеопотока. Задаются массивом строк ключ-"
+"значение, например, ``[\"rtsp_transpotr=tcp\", \"ss=00:20:00\"]``."
+msgstr ""
+"``ffmpeg_params``: FFMPEG options for a video stream in the key-value format "
+"[“rtsp_transpotr=tcp”, “ss=00:20:00”]."
+
+#: ../docs/camera_management.rst:102
+msgid ""
+"``fd_frame_height``: Размер кадра для детектора лиц в пикселях. Отрицательные "
+"значения соответствуют исходному размеру. Оптимальные значения для уменьшения "
+"нагрузки: 640-720."
+msgstr ""
+"``fd_frame_height``: Video frame height in pixels for the face tracker. "
+"Negative values correspond to the initial size. Optimum value to reduce load: "
+"640-720."
+
+#: ../docs/camera_management.rst:103
+msgid ""
+"``npersons``: Максимальное количество лиц, одновременно отслеживаемых "
+"детектором лиц. Влияет на производительность."
+msgstr ""
+"``npersons``: Maximum number of faces simultaneously tracked by the face "
+"tracker. This parameter severely affects performance."
+
+#: ../docs/camera_management.rst:104
+msgid ""
+"``tracker_threads``: Количество тредов отслеживания для детектора лиц. Должно "
+"быть меньше или равно значению параметра npersons. Оптимально, когда они "
+"равны. Если количество тредов отслеживания меньше, чем максимальное количество "
+"отслеживаемых лиц, потребление ресурсов уменьшается, однако также уменьшается "
+"и скорость отслеживания."
+msgstr ""
+"``tracker_threads``: Number of tracking threads for the face tracker. This "
+"value should be less or equal to npersons. Recommended to set them equal. If "
+"the number of tracking threads is less than the maximum number of tracked "
+"faces, resource consumption is reduced but so is the tracking speed."
+
+#: ../docs/camera_management.rst:105
+msgid "``jpeg_quality``: Качество сжатия полного кадра для отправки."
+msgstr "``jpeg_quality``: Full frame compression quality."
+
+#: ../docs/camera_management.rst:106
+msgid "``draw_track``: Рисовать в bbox след от движения лица."
+msgstr "``draw_track``: Enable drawing a face motion track in a bbox."
+
+#: ../docs/camera_management.rst:107
+msgid "``api_timeout``: Время ожидания в миллисекундах ответа на API-запрос."
+msgstr "``api_timeout``: Response timeout for an API request."
+
+#: ../docs/camera_management.rst:108
+msgid ""
+"``md_threshold``: Минимальная интенсивность движения, которая будет "
+"регистрироваться детектором движения. Определяется эмпирически: 0 = детектор "
+"выключен, 0.002 = значение по умолчанию, 0.05 = минимальная интенсивность "
+"слишком высока, чтобы зарегистрировать движение."
+msgstr ""
+"``md_threshold``: Minimum motion intensity to be detected by the motion "
+"detector. To be fitted empirically: 0 = detector disabled, 0.002 = default "
+"value, 0.05 = minimum intensity is too high to detect motion."
+
+#: ../docs/camera_management.rst:109
+msgid ""
+"``md_scale``: Размер кадра для детектора движения относительно исходного "
+"размера от 0 до 1. Кадр должен быть уменьшен при больших разрешениях камеры, "
+"отображении лиц крупным планом, а также при чрезмерной загрузке процессора — "
+"для снижения потребления системных ресурсов."
+msgstr ""
+"``md_scale``: Video frame scaling coefficient for the motion detector from 0 "
+"to 1. Scale down in the case of high resolution cameras, or close up faces, or "
+"if the CPU load is too high, to reduce the system resources consumption."
+
+#: ../docs/camera_management.rst:114
+msgid "Мониторинг работы камер"
+msgstr "Monitor Camera Operation"
+
+#: ../docs/camera_management.rst:116
+msgid "Мониторинг работы камер выполняется на вкладке :guilabel:`Камеры`."
+msgstr ""
+"To monitor the operation of cameras, navigate to the :guilabel:`Cameras` tab."
+
+#: ../docs/camera_management.rst:118
+msgid "|monitor_cameras_ru|"
+msgstr "|monitor_cameras_en|"
+
+#: ../docs/camera_management.rst:123
+msgid "Статусы камер:"
+msgstr "Camera statuses:"
+
+#: ../docs/camera_management.rst:125
+msgid "Зеленый: идет обработка видеопотока с камеры, проблем не обнаружено."
+msgstr "Green: the video stream is being processed without errors."
+
+#: ../docs/camera_management.rst:126
+msgid ""
+"Желтый: камера работает менее 30 секунд или имеют место ошибки при отправке "
+"лиц."
+msgstr ""
+"Yellow: the video stream is being processed for less than 30 seconds, or an "
+"error occurred when posting a face."
+
+#: ../docs/camera_management.rst:127
+msgid "Красный: камера не работает."
+msgstr "Red: the video stream cannot be processed."
+
+#: ../docs/camera_management.rst:129
+msgid ""
+"Для каждой камеры приводятся следующие статистические данные по обработке "
+"видеопотока: длительность обработки/количество успешно отправленных лиц/"
+"количество лиц, обработанных с ошибками."
+msgstr ""
+"For each camera, you will be provided with the following statistics: current "
+"session duration/ the number of successfully posted faces/ the number of faces "
+"processed with errors."
+
+#: ../docs/camera_management.rst:131
+msgid ""
+"Для перезапуска камеры нажмите на кнопку :guilabel:`Перезапустить` в столбце :"
+"guilabel:`Статус`."
+msgstr ""
+"To restart a camera, click :guilabel:`Restart` in the :guilabel:`Status` "
+"column."
+
+#: ../docs/camera_management.rst:133
+msgid "При большом количестве камер в системе используйте следующие фильтры:"
+msgstr "With a large number of cameras in the system, use the following filters:"
+
+#: ../docs/camera_management.rst:135
+msgid ":guilabel:`Группа камер`,"
+msgstr ":guilabel:`Camera group`,"
+
+#: ../docs/camera_management.rst:136
+msgid ":guilabel:`Активная`,"
+msgstr ":guilabel:`Active`,"
+
+#: ../docs/camera_management.rst:137
+msgid ":guilabel:`Статус`."
+msgstr ":guilabel:`Status`."
+
+#~ msgid "Задайте URL камеры."
+#~ msgstr "Specify the camera URL."
+
+#~ msgid "|roi_rot_ru|"
+#~ msgstr "|roi_rot_en|"
+
+#~ msgid "Для задания ROT/ROI удобно использовать визуальный мастер."
+#~ msgstr ""
+#~ "To specify ROT and ROI, use the visual wizard. First, create a camera "
+#~ "without ROT and ROI, then open it for editing and click :guilabel:"
+#~ "`Parameters`. You will see the visual wizard appear."

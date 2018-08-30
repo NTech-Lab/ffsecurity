@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-26 17:34+0700\n"
-"PO-Revision-Date: 2018-06-26 17:34+0700\n"
+"POT-Creation-Date: 2018-08-24 17:48+0700\n"
+"PO-Revision-Date: 2018-08-29 15:09+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -18,50 +18,49 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.1.1\n"
 
-#: ../source/remove_instance.rst:2
+#: ../docs/remove_instance.rst:2
 msgid "Удаление экземпляра продукта"
 msgstr "Remove Instance"
 
-#: ../source/remove_instance.rst:4
+#: ../docs/remove_instance.rst:4
 msgid ""
 "Вы можете автоматически удалить FindFace Security вместе с базой данных "
 "с помощью скрипта :program:`ffsecurity_uninstall.sh`. Перед удалением "
-"будут созданы резервные копии файлов конфигурации и базы данных FindFace "
-"Security."
+"будут созданы резервные копии файлов конфигурации и базы данных."
 msgstr ""
 "You can automatically remove FindFace Security along with the database "
 "by using the :program:`ffsecurity_uninstall.sh` script. The FindFace "
 "Security configuration files and database will be backed up."
 
-#: ../source/remove_instance.rst:6
+#: ../docs/remove_instance.rst:6
 msgid "Выполните следующие действия:"
 msgstr "Do the following:"
 
-#: ../source/remove_instance.rst:8
+#: ../docs/remove_instance.rst:8
 msgid ""
 "Загрузите скрипт :download:`ffsecurity_uninstall.sh <_scripts/"
-"ffsecurity_uninstall.sh>` в любую папку на сервере установки (например, "
-"в ``/home/username/``)."
+"ffsecurity_uninstall.sh>` в любой каталог на сервере установки "
+"(например, в ``/home/username/``)."
 msgstr ""
 "Download the :download:`ffsecurity_uninstall.sh <_scripts/"
 "ffsecurity_uninstall.sh>` script to some directory on a designated host "
 "(for example, to ``/home/username/``)."
 
-#: ../source/remove_instance.rst:10
+#: ../docs/remove_instance.rst:10
 msgid ""
-"Из данной папки сделайте скрипт :program:`ffsecurity_uninstall.sh` "
+"Из данного каталога сделайте скрипт :program:`ffsecurity_uninstall.sh` "
 "исполняемым."
 msgstr ""
 "From this directory, make the :program:`ffsecurity_uninstall.sh` script "
 "executable."
 
-#: ../source/remove_instance.rst:16
+#: ../docs/remove_instance.rst:16
 msgid "Запустите скрипт :program:`ffsecurity_uninstall.sh`."
 msgstr "Launch the :program:`ffsecurity_uninstall.sh` script."
 
-#: ../source/remove_instance.rst:22
+#: ../docs/remove_instance.rst:22
 msgid ""
 "Ответьте **all** на вопрос интерактивного мастера удаления, чтобы "
 "полностью удалить FindFace Security вместе с базой данных."
