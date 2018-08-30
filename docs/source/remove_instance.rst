@@ -1,13 +1,13 @@
 Удаление экземпляра продукта
 ==============================================
 
-Вы можете автоматически удалить FindFace Security вместе с базой данных с помощью скрипта :program:`ffsecurity_uninstall.sh`. Перед удалением будут созданы резервные копии файлов конфигурации и базы данных FindFace Security.
+Вы можете автоматически удалить FindFace Security вместе с базой данных с помощью скрипта :program:`ffsecurity_uninstall.sh`. Перед удалением будут созданы резервные копии файлов конфигурации и базы данных.
 
 Выполните следующие действия: 
 
-#. Загрузите скрипт :download:`ffsecurity_uninstall.sh <_scripts/ffsecurity_uninstall.sh>` в любую папку на сервере установки (например, в ``/home/username/``).
+#. Загрузите скрипт :download:`ffsecurity_uninstall.sh <_scripts/ffsecurity_uninstall.sh>` в любой каталог на сервере установки (например, в ``/home/username/``).
 
-#.  Из данной папки сделайте скрипт :program:`ffsecurity_uninstall.sh` исполняемым. 
+#.  Из данного каталога сделайте скрипт :program:`ffsecurity_uninstall.sh` исполняемым. 
 
    .. code::
 

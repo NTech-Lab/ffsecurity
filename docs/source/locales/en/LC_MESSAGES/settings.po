@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-13 16:42+0700\n"
-"PO-Revision-Date: 2018-04-13 16:42+0700\n"
+"POT-Creation-Date: 2018-08-24 17:48+0700\n"
+"PO-Revision-Date: 2018-08-29 13:53+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -18,13 +18,13 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.1.1\n"
 
-#: ../source/settings.rst:5
-msgid "Настройка точности распознавания лиц"
-msgstr "Configure Confidence Threshold"
+#: ../docs/settings.rst:5
+msgid "Настройка порога верификации"
+msgstr "Configuring Confidence Threshold"
 
-#: ../source/settings.rst:7
+#: ../docs/settings.rst:7
 msgid ""
 "FindFace Security принимает решение о совпадении (положительной "
 "верификации) обнаруженного лица с лицом из досье на основании "
@@ -38,7 +38,7 @@ msgstr ""
 "which can be considered as optimum. If necessary, you can change the "
 "threshold on the :guilabel:`Settings` tab."
 
-#: ../source/settings.rst:10
+#: ../docs/settings.rst:10
 msgid ""
 "Чем выше пороговая степень схожести, тем меньше шансов на положительную "
 "ложную верификацию человека, однако некоторые подходящие фотографии "
@@ -48,11 +48,11 @@ msgstr ""
 "will be positively verified, however, some valid photos may also fail "
 "verification."
 
-#: ../source/settings.rst:12
+#: ../docs/settings.rst:13
 msgid "|settings_ru|"
 msgstr "|settings_en|"
 
-#: ../source/settings.rst:22
+#: ../docs/settings.rst:23
 msgid ""
 "Систему можно настроить таким образом, что событие будет записываться и "
 "отображаться в веб-интерфейсе только в том случае, если лица совпадают "
@@ -62,3 +62,6 @@ msgstr ""
 "You can configure your system to save and display an event only if the "
 "faces match (the ``IGNORE_UNMATCHED`` option at ``/etc/ffsecurity/config."
 "py``, see :ref:`basic-deployment`)."
+
+#~ msgid "Настройка точности распознавания лиц"
+#~ msgstr "Configure Confidence Threshold"

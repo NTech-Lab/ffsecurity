@@ -8,42 +8,61 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-09 21:09+0700\n"
-"PO-Revision-Date: 2018-04-11 16:26+0700\n"
+"POT-Creation-Date: 2018-08-24 17:48+0700\n"
+"PO-Revision-Date: 2018-08-30 16:20+0700\n"
+"Last-Translator: \n"
+"Language: en\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: en\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.1.1\n"
 
-#: ../source/ffsec.rst:5
+#: ../docs/ffsec.rst:5
 msgid "Развертывание FindFace Security"
 msgstr "Deploy FindFace Security"
 
-#: ../source/ffsec.rst:8
+#: ../docs/ffsec.rst:8
 msgid ""
-"Для вашего удобства мы предлагаем 2 варианта развертывания FindFace "
-"Security. Выберите наиболее подходящий вариант в зависимости от "
-"выбранной вами архитектуры:"
-msgstr ""
-"To make your user experience great, we offer 2 types of deployment. "
-"Choose the most convenient one, given your architecture outline:"
+"Для вашего удобства мы предлагаем несколько вариантов развертывания "
+"FindFace Security:"
+msgstr "Use one of the following deployment methods:"
 
-#: ../source/ffsec.rst:10
-msgid "Развертывание на группе серверов может быть только пошаговым."
-msgstr "The cluster deployment can only be done step-by-step."
+#: ../docs/ffsec.rst:10
+msgid "Развертывание из консольного инсталлятора."
+msgstr "Deploy from a console installer"
 
-#: ../source/ffsec.rst:11
+#: ../docs/ffsec.rst:11
+msgid "Пошаговое развертывание."
+msgstr "Deploy step-by-step"
+
+#: ../docs/ffsec.rst:12
 msgid ""
-"Развертывание на одиночном сервере может быть выполнено как пошагово, "
-"так и из консольного инсталлятора."
+"Развертывание только компонента ``video-worker`` на удаленном сервере из "
+"мини-инсталлятора."
 msgstr ""
-"The standalone deployment can be done step-by-step and from a developer-"
-"friendly console installer."
+"Deploy ``video-worker`` on a remote host from the additional installer."
 
-#: ../source/ffsec.rst:13
+#: ../docs/ffsec.rst:15
 msgid "В этой главе:"
 msgstr "In this chapter:"
+
+#~ msgid ""
+#~ "Для вашего удобства мы предлагаем 2 варианта развертывания FindFace "
+#~ "Security. Выберите наиболее подходящий вариант в зависимости от "
+#~ "выбранной вами архитектуры:"
+#~ msgstr ""
+#~ "To make your user experience great, we offer 2 types of deployment. "
+#~ "Choose the most convenient one, given your architecture outline:"
+
+#~ msgid "Развертывание на группе серверов может быть только пошаговым."
+#~ msgstr "The cluster deployment can only be done step-by-step."
+
+#~ msgid ""
+#~ "Развертывание на одиночном сервере может быть выполнено как пошагово, "
+#~ "так и из консольного инсталлятора."
+#~ msgstr ""
+#~ "The standalone deployment can be done step-by-step and from a "
+#~ "developer-friendly console installer."

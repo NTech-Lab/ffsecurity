@@ -1,3 +1,5 @@
+.. _operator-guide:
+
 Руководство оператора
 ===============================
 
@@ -7,9 +9,9 @@
    :caption: Содержание
 
    wui_operator
-   guests_operator
-   events
    face_search
+   events
+   guests_operator
 
 
 
