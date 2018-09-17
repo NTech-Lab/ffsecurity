@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NtechLab
+# This file is distributed under the same license as the FindFace Security
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Security 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-17 14:21+0700\n"
+"PO-Revision-Date: 2018-09-17 14:37+0700\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.1.1\n"
+
+#: ../source/compare.rst:5
+msgid "Сравнение лиц"
+msgstr "Compare Faces"
+
+#: ../source/compare.rst:7
+msgid ""
+"FindFace Security позволяет выполнять сравнение 2-х лиц. Выполните "
+"следующие действия:"
+msgstr ""
+"FindFace Security allows you to compare 2 faces. Do the following:"
+
+#: ../source/compare.rst:10
+msgid "Перейдите на вкладку :guilabel:`Сравнение`."
+msgstr "Navigate to the :guilabel:`Verify` tab."
+
+#: ../source/compare.rst:12
+msgid "|compare_ru|"
+msgstr "|compare_en|"
+
+#: ../source/compare.rst:20
+msgid ""
+"Укажите id событий, лица из которых нужно сравнить, и/или загрузите "
+"фотографии с лицами."
+msgstr ""
+"Specify the IDs of events that feature the faces you want to compare, "
+"and/or upload photos with the faces."
+
+#: ../source/compare.rst:21
+msgid ""
+"Нажмите :guilabel:`Сравнить`. В результате будет отображена вероятность "
+"принадлежности лиц одному человеку."
+msgstr ""
+"Click :guilabel:`Verify`. You will see the probability of the faces "
+"belonging to the same person appear."
+
+#: ../source/compare.rst:23
+msgid "|comparison_result_ru|"
+msgstr "|comparison_result_en|"
