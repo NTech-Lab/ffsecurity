@@ -11,6 +11,7 @@
    wui_operator
    face_search
    events
+   compare
    guests_operator
 
 

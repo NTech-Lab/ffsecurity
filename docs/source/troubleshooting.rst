@@ -7,4 +7,5 @@
    :caption: В этой главе:
 
    logs
+   video_allocation
    remove_instance
