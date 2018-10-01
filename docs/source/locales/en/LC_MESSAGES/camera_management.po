@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-17 15:22+0700\n"
-"PO-Revision-Date: 2018-09-17 15:23+0700\n"
+"POT-Creation-Date: 2018-10-01 17:13+0700\n"
+"PO-Revision-Date: 2018-10-01 17:21+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -66,14 +66,16 @@ msgid ""
 "компонента ``video-worker``, создайте или выберите из уже созданных одну или "
 "несколько меток для привязки группы камер к экземпляру."
 msgstr ""
-"If you are going to allocate a certain ``video-worker`` instance to process the "
-"camera group video streams, create or select one or several allocation labels."
+"If you want to allocate a certain ``video-worker`` instance to process video "
+"streams from the group, create or select one or several allocation labels."
 
 #: ../source/camera_management.rst:35
-msgid "Привязка выполняется через файл конфигурации ``video-worker``."
+msgid ""
+"Привязка выполняется через файл конфигурации ``video-worker`` (см. :ref:`video-"
+"allocation`)."
 msgstr ""
-"To complete the allocation, specify the labels in the ``video-worker`` "
-"configuration file."
+"To complete the allocation, :ref:`specify <video-allocation>` the labels in the "
+"``video-worker`` configuration file."
 
 #: ../source/camera_management.rst:37
 msgid ""
@@ -135,12 +137,13 @@ msgid "Задайте URL камеры или адрес видеофайла д
 msgstr "Specify the camera URL or path to the video file."
 
 #: ../source/camera_management.rst:82
+#, fuzzy
 msgid ""
-"Для задания параметров обработки видеопотока на CPU, нажмите на кнопку :guilabel:"
-"`Параметры` и перейдите на вкладку :guilabel:`CPU`."
+"Если вы используете версию FindFace Security с обработкой видео на CPU, нажмите "
+"на кнопку :guilabel:`Параметры` и перейдите на вкладку :guilabel:`CPU`."
 msgstr ""
-"To configure CPU-based video processing, click :guilabel:`Parameters` and "
-"navigate to the :guilabel:`CPU` tab."
+"To configure GPU-based video processing, click :guilabel:`Parameters` and "
+"navigate to the :guilabel:`GPU` tab."
 
 #: ../source/camera_management.rst:84
 msgid ""
@@ -252,9 +255,10 @@ msgstr ""
 "visual wizard appear."
 
 #: ../source/camera_management.rst:104
+#, fuzzy
 msgid ""
-"При необходимости задайте опциональные параметры обработки видеопотока на CPU. "
-"Для это нажмите на кнопку :guilabel:`Дополнительные параметры`."
+"При необходимости задайте опциональные параметры обработки видео на CPU. Для это "
+"нажмите на кнопку :guilabel:`Дополнительные параметры`."
 msgstr ""
 "If necessary, specify optional parameters for CPU-based video processing. Click :"
 "guilabel:`Advanced Parameters`."
@@ -332,9 +336,10 @@ msgstr ""
 "if the CPU load is too high, to reduce the system resources consumption."
 
 #: ../source/camera_management.rst:116
+#, fuzzy
 msgid ""
-"Для задания параметров обработки видеопотока на GPU, нажмите на кнопку :guilabel:"
-"`Параметры` и перейдите на вкладку :guilabel:`GPU`."
+"Если вы используете версию FindFace Security с обработкой видео на GPU, нажмите "
+"на кнопку :guilabel:`Параметры` и перейдите на вкладку :guilabel:`GPU`."
 msgstr ""
 "To configure GPU-based video processing, click :guilabel:`Parameters` and "
 "navigate to the :guilabel:`GPU` tab."
@@ -494,3 +499,10 @@ msgstr ":guilabel:`Status`."
 #~ msgstr ""
 #~ "Click :guilabel:`Advanced Parameters` to specify optional video processing "
 #~ "parameters:"
+
+#~ msgid ""
+#~ "Для задания параметров обработки видеопотока на CPU, нажмите на кнопку :"
+#~ "guilabel:`Параметры` и перейдите на вкладку :guilabel:`CPU`."
+#~ msgstr ""
+#~ "To configure CPU-based video processing, click :guilabel:`Parameters` and "
+#~ "navigate to the :guilabel:`CPU` tab."
