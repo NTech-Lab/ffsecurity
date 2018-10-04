@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-01 17:13+0700\n"
-"PO-Revision-Date: 2018-10-01 17:21+0700\n"
+"POT-Creation-Date: 2018-10-04 17:42+0700\n"
+"PO-Revision-Date: 2018-10-04 17:44+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -81,13 +81,13 @@ msgstr ""
 msgid ""
 "Если события от камер, принадлежащих одной группе, требуется дедуплицировать, т. "
 "е. исключить одинаковые события, поставьте флажок :guilabel:`Дедуплицировать "
-"события` и задайте интервал дедупликации (интервал, с которым события "
+"события` и задайте в секундах интервал дедупликации (интервал, с которым события "
 "проверяются на уникальность)."
 msgstr ""
 "If you want to deduplicate events from cameras that belong to the same group, i. "
 "e. exclude coinciding events, check :guilabel:`Deduplicate Events` and specify "
-"the deduplication interval (interval between 2 consecutive checks for event "
-"uniqueness)."
+"the deduplication interval in seconds (interval between 2 consecutive checks for "
+"event uniqueness)."
 
 #: ../source/camera_management.rst:38 ../source/camera_management.rst:81
 msgid "Поставьте флажок :guilabel:`Активная`."
@@ -137,7 +137,6 @@ msgid "Задайте URL камеры или адрес видеофайла д
 msgstr "Specify the camera URL or path to the video file."
 
 #: ../source/camera_management.rst:82
-#, fuzzy
 msgid ""
 "Если вы используете версию FindFace Security с обработкой видео на CPU, нажмите "
 "на кнопку :guilabel:`Параметры` и перейдите на вкладку :guilabel:`CPU`."
@@ -255,7 +254,6 @@ msgstr ""
 "visual wizard appear."
 
 #: ../source/camera_management.rst:104
-#, fuzzy
 msgid ""
 "При необходимости задайте опциональные параметры обработки видео на CPU. Для это "
 "нажмите на кнопку :guilabel:`Дополнительные параметры`."
@@ -336,7 +334,6 @@ msgstr ""
 "if the CPU load is too high, to reduce the system resources consumption."
 
 #: ../source/camera_management.rst:116
-#, fuzzy
 msgid ""
 "Если вы используете версию FindFace Security с обработкой видео на GPU, нажмите "
 "на кнопку :guilabel:`Параметры` и перейдите на вкладку :guilabel:`GPU`."
