@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-04 18:56+0700\n"
-"PO-Revision-Date: 2018-10-04 18:56+0700\n"
+"POT-Creation-Date: 2018-10-04 19:22+0700\n"
+"PO-Revision-Date: 2018-10-04 19:24+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -31,10 +31,10 @@ msgid ""
 "на Python. Используйте скрипт, когда требуется загрузить большое "
 "количество фотографий (более 10000)."
 msgstr ""
-"To bulk-upload photos into the Dossier Database, you can use the Python "
-"script included into the FindFace Security package (in addition to the "
-"web interface upload functionality). Use this script when you need to "
-"upload a large number of photos (more than 10,000)."
+"To bulk-upload photos to the dossier database, you can use the Python "
+"script from the FindFace Security package (in addition to the web "
+"interface upload functionality). Use this script when you need to upload "
+"a large number of photos (more than 10,000)."
 
 #: ../source/bulk_upload.rst:8
 msgid "Выполните следующие действия:"
@@ -42,7 +42,7 @@ msgstr "Do the following:"
 
 #: ../source/bulk_upload.rst:10
 msgid "Подготовьте CSV- или TSV-файл со списком фотографий и метаданными."
-msgstr "Write the list of photos and metadata to a CSV or TSV file."
+msgstr "Write the list of photos and metastrings to a CSV or TSV file."
 
 #: ../source/bulk_upload.rst:13
 msgid ""
@@ -50,7 +50,7 @@ msgid ""
 "``путь к фотографии | метаданные``."
 msgstr ""
 "The file used as a metadata source must have the following format: "
-"``path to photo | metadata``."
+"``path to photo | metastring``."
 
 #: ../source/bulk_upload.rst:15
 msgid ""
@@ -105,11 +105,11 @@ msgstr "``--format``: input file format, ``tsv`` by default."
 
 #: ../source/bulk_upload.rst:42
 msgid ""
-"``--delimiter``: используемый разделитель, по умолчанию i\\'s \"\\\\t\" "
-"для TSV-файла, \",\" для формата CSV."
+"``--delimiter``: используемый разделитель, по умолчанию ``i\\'s \"\\\\t"
+"\"`` для TSV-файла, ``\",\"`` для формата CSV."
 msgstr ""
-"``--delimiter``: field delimiter, by default I\\’s “\\t” for TSV and “,” "
-"for CSV."
+"``--delimiter``: field delimiter, by default ``I\\’s “\\t”`` for TSV and "
+"``“,”`` for CSV."
 
 #: ../source/bulk_upload.rst:45
 msgid ""
@@ -133,9 +133,9 @@ msgid ""
 "Чем больше потоков, тем быстрее будет завершена загрузка, однако также "
 "потребуется и большее количество ресурсов."
 msgstr ""
-"``--parallel``: the number of photo upload streams, 10 by default. The "
-"more streams you use, the faster the batch photo upload is completed, "
-"however it requires more resources too."
+"``--parallel``: the number of photo upload threads, 10 by default. The "
+"more threads you use, the faster the bulk upload is completed, however "
+"it requires more resources too."
 
 #: ../source/bulk_upload.rst:56
 msgid ""
