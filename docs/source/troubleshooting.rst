@@ -8,4 +8,5 @@
 
    logs
    video_allocation
+   bulk_upload
    remove_instance
