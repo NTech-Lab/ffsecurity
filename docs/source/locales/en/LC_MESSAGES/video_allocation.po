@@ -8,15 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-01 17:13+0700\n"
-"PO-Revision-Date: 2018-10-01 17:35+0700\n"
+"POT-Creation-Date: 2018-10-09 17:12+0700\n"
+"PO-Revision-Date: 2018-10-09 17:27+0700\n"
+"Last-Translator: \n"
+"Language: en\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: en\n"
 "X-Generator: Poedit 2.1.1\n"
 
 #: ../source/video_allocation.rst:4
@@ -25,21 +26,36 @@ msgstr "Allocate ``video-worker`` to Camera Group"
 
 #: ../source/video_allocation.rst:6
 msgid ""
+"Часто в распределенной архитектуре (например, сеть гостиниц, магазинов, "
+"несколько проходных) обработку видеоизображения с группы камер требуется "
+"выполнять локально, не обращаясь к центральному серверу. В этом случае "
+"группу камер привязывают к локально установленному экземпляру компонента "
+"``video-worker``."
+msgstr ""
+"In distributed architectures, it is often necessary that video streams "
+"from a group of cameras be processed in situ, without participation of "
+"the main server. Among typical use cases are hotel chains, chain stores, "
+"several security checkpoints in the same building, etc. If this case, "
+"simply allocate the locally installed ``video-worker`` instance to the "
+"camera group."
+
+#: ../source/video_allocation.rst:8
+msgid ""
 "Для обработки видео с группы камер в определенном экземпляре компонента "
 "``video-worker`` выполните следующие действия:"
 msgstr ""
 "FindFace Security allows you to allocate a certain ``video-worker`` "
 "instance to process video streams from a camera group. Do the following:"
 
-#: ../source/video_allocation.rst:8
+#: ../source/video_allocation.rst:10
 msgid "В веб-интерфейсе перейдите на вкладку :guilabel:`Группы камер`."
 msgstr "Navigate to the :guilabel:`Camera groups` tab."
 
-#: ../source/video_allocation.rst:9
+#: ../source/video_allocation.rst:11
 msgid "Откройте настройки группы камер."
 msgstr "Open the camera group settings."
 
-#: ../source/video_allocation.rst:10
+#: ../source/video_allocation.rst:12
 msgid ""
 "В поле :guilabel:`Метки` создайте или выберите из уже созданных одну или "
 "несколько меток для привязки группы камер к экземпляру ``video-worker``. "
@@ -48,7 +64,7 @@ msgstr ""
 "In the :guilabel:`Labels`, create or select one or several allocation "
 "labels. Save changes."
 
-#: ../source/video_allocation.rst:11
+#: ../source/video_allocation.rst:13
 msgid ""
 "Откройте файл конфигурации экземпляра ``video-worker`` и укажите в нем "
 "заданные метки в формате ``имя_метки=true`` (``terminal_1`` в примере "
@@ -58,6 +74,6 @@ msgstr ""
 "labels in the following format: ``label_name=true`` (label "
 "``terminal_1`` in the example below)."
 
-#: ../source/video_allocation.rst:19
+#: ../source/video_allocation.rst:21
 msgid "Перезапустите ``video-worker``."
 msgstr "Restart ``video-worker``."
