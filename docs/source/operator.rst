@@ -13,6 +13,7 @@
    events
    compare
    guests_operator
+   mobile
 
 
 
