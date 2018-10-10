@@ -8,17 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-04 17:42+0700\n"
+"POT-Creation-Date: 2018-10-10 15:54+0700\n"
 "PO-Revision-Date: 2018-10-04 17:44+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"X-Generator: Poedit 2.1.1\n"
 
 #: ../source/camera_management.rst:5
 msgid "Управление видеокамерами"
@@ -26,11 +25,11 @@ msgstr "Camera Management"
 
 #: ../source/camera_management.rst:7
 msgid ""
-"Для настройки видео-идентификации лиц добавьте камеры в FindFace Security, "
-"сгруппировав их c учетом расположения."
+"Для настройки видео-идентификации лиц добавьте камеры в FindFace "
+"Security, сгруппировав их c учетом расположения."
 msgstr ""
-"To configure video-based biometric identification, add cameras to FindFace "
-"Security, grouping them subject to their location."
+"To configure video-based biometric identification, add cameras to "
+"FindFace Security, grouping them subject to their location."
 
 #: ../source/camera_management.rst:10
 msgid "В этой главе:"
@@ -62,403 +61,405 @@ msgstr "Specify the group name. Add a comment."
 
 #: ../source/camera_management.rst:32
 msgid ""
-"Если видео с группы камер требуется обрабатывать в определенном экземпляре "
-"компонента ``video-worker``, создайте или выберите из уже созданных одну или "
-"несколько меток для привязки группы камер к экземпляру."
+"Если события от камер, принадлежащих одной группе, требуется "
+"дедуплицировать, т. е. исключить одинаковые события, поставьте флажок "
+":guilabel:`Дедуплицировать события` и задайте в секундах интервал "
+"дедупликации (интервал, с которым события проверяются на уникальность)."
 msgstr ""
-"If you want to allocate a certain ``video-worker`` instance to process video "
-"streams from the group, create or select one or several allocation labels."
+"If you want to deduplicate events from cameras that belong to the same "
+"group, i. e. exclude coinciding events, check :guilabel:`Deduplicate "
+"Events` and specify the deduplication interval in seconds (interval "
+"between 2 consecutive checks for event uniqueness)."
 
-#: ../source/camera_management.rst:35
-msgid ""
-"Привязка выполняется через файл конфигурации ``video-worker`` (см. :ref:`video-"
-"allocation`)."
-msgstr ""
-"To complete the allocation, :ref:`specify <video-allocation>` the labels in the "
-"``video-worker`` configuration file."
-
-#: ../source/camera_management.rst:37
-msgid ""
-"Если события от камер, принадлежащих одной группе, требуется дедуплицировать, т. "
-"е. исключить одинаковые события, поставьте флажок :guilabel:`Дедуплицировать "
-"события` и задайте в секундах интервал дедупликации (интервал, с которым события "
-"проверяются на уникальность)."
-msgstr ""
-"If you want to deduplicate events from cameras that belong to the same group, i. "
-"e. exclude coinciding events, check :guilabel:`Deduplicate Events` and specify "
-"the deduplication interval in seconds (interval between 2 consecutive checks for "
-"event uniqueness)."
-
-#: ../source/camera_management.rst:38 ../source/camera_management.rst:81
+#: ../source/camera_management.rst:33 ../source/camera_management.rst:76
 msgid "Поставьте флажок :guilabel:`Активная`."
 msgstr "Check :guilabel:`Active`."
 
-#: ../source/camera_management.rst:40
+#: ../source/camera_management.rst:35
 msgid "|camera_group_ru|"
 msgstr "|camera_group_en|"
 
-#: ../source/camera_management.rst:48 ../source/camera_management.rst:129
+#: ../source/camera_management.rst:43 ../source/camera_management.rst:124
 msgid "Нажмите на кнопку :guilabel:`Сохранить`."
 msgstr "Click :guilabel:`Save`."
 
-#: ../source/camera_management.rst:52
+#: ../source/camera_management.rst:47
 msgid "Добавление камеры в группу"
 msgstr "Add Camera to Group"
 
-#: ../source/camera_management.rst:54
+#: ../source/camera_management.rst:49
 msgid "Для добавления камеры в группу выполните следующие действия:"
 msgstr "To add a camera to a group, do the following:"
 
-#: ../source/camera_management.rst:56
+#: ../source/camera_management.rst:51
 msgid "В веб-интерфейсе перейдите на вкладку :guilabel:`Камеры`."
 msgstr "In the web interface, go to the :guilabel:`Cameras` tab."
 
-#: ../source/camera_management.rst:58
+#: ../source/camera_management.rst:53
 msgid "|create_camera_ru|"
 msgstr "|create_camera_en|"
 
-#: ../source/camera_management.rst:67
+#: ../source/camera_management.rst:62
 msgid "Нажмите на кнопку :guilabel:`Добавить`."
 msgstr "Click :guilabel:`Add`."
 
-#: ../source/camera_management.rst:68
+#: ../source/camera_management.rst:63
 msgid ""
-"Введите название камеры и добавьте ее в одну из групп. При необходимости введите "
-"комментарий к камере."
+"Введите название камеры и добавьте ее в одну из групп. При необходимости "
+"введите комментарий к камере."
 msgstr ""
-"Specify the name of a camera and add it to a group. If necessary, add a comment."
+"Specify the name of a camera and add it to a group. If necessary, add a "
+"comment."
 
-#: ../source/camera_management.rst:70
+#: ../source/camera_management.rst:65
 msgid "|camera_ru|"
 msgstr "|camera_en|"
 
-#: ../source/camera_management.rst:79
+#: ../source/camera_management.rst:74
 msgid "Задайте URL камеры или адрес видеофайла для обработки."
 msgstr "Specify the camera URL or path to the video file."
 
+#: ../source/camera_management.rst:77
+msgid ""
+"Если вы используете версию FindFace Security с обработкой видео на CPU, "
+"нажмите на кнопку :guilabel:`Параметры` и перейдите на вкладку "
+":guilabel:`CPU`."
+msgstr ""
+"To configure GPU-based video processing, click :guilabel:`Parameters` and"
+" navigate to the :guilabel:`GPU` tab."
+
+#: ../source/camera_management.rst:79
+msgid ""
+"``Min face quality``: Минимальное качество изображения лица при выборе "
+"лучшего. Определяется эмпирически: отрицательные значения вблизи 0 = "
+"наиболее качественные прямые изображения лиц анфас, -1 = хорошее "
+"качество, -2 = удовлетворительное качество, отрицательные значения -5 и "
+"меньше = перевернутые лица и лица, повернутые под большими углами, "
+"распознавание может быть неэффективным."
+msgstr ""
+"``Min face quality``: Minimum quality of a face snapshot when searching "
+"for the best one. To be fitted empirically: negatives values around 0 = "
+"high quality faces, -1 = good quality, -2 = satisfactory quality, -5 = "
+"inverted faces and large face angles, face recognition may be "
+"inefficient."
+
+#: ../source/camera_management.rst:80
+msgid ""
+"``Max face angle``: Максимальное отклонение лица от положения анфас при "
+"выборе лучшего. Определяется эмпирически: -3.5 = слишком большие углы "
+"поворота, распознавание лиц может быть неэффективным,  -2.5 = "
+"удовлетворительное отклонение, -0.05 = близко к положению анфас, 0 = "
+"анфас."
+msgstr ""
+"``Max face angle``: Maximum deviation of a face from its frontal "
+"position. To be fitted empirically: -3.5 = large face angles, face "
+"recognition may be inefficient, -2.5 = satisfactory deviation, -0.05 = "
+"close to the frontal position, 0 = frontal face."
+
+#: ../source/camera_management.rst:81
+msgid ""
+"``Min face size``: Минимальный размер лица в пикселях при выборе лучшего."
+" Чем меньше значение, тем дольше осуществляется обнаружение и "
+"отслеживание лиц. Оптимальное значение: 80-100-120. Если 0, фильтр "
+"выключен."
+msgstr ""
+"``Min face size``: Minimum face size in pixels. The less the value, the "
+"longer it takes to detect and track faces. Optimum value: 80-100-120. If "
+"0, the filter is off."
+
 #: ../source/camera_management.rst:82
 msgid ""
-"Если вы используете версию FindFace Security с обработкой видео на CPU, нажмите "
-"на кнопку :guilabel:`Параметры` и перейдите на вкладку :guilabel:`CPU`."
+"``Max face size``: Максимальный размер лица в пикселях при выборе "
+"лучшего. Если 0, фильтр выключен."
+msgstr "``Max face size``: Maximum face size in pixels. If 0, the filter is off."
+
+#: ../source/camera_management.rst:83
+msgid ""
+"``Realtime mode``: Режим реального времени. Выбирать лучший кадр с лицом "
+"в каждом интервале времени ``Snapshot picking interval``. Если ``Post "
+"each best snapshot: true``, отправка лучшего кадра происходит по "
+"завершению каждого интервала ``Snapshot picking interval``; если "
+"``false``, лучший кадр отправляется, только если его качество улучшилось "
+"по сравнению с предыдущим отправленным кадром."
 msgstr ""
-"To configure GPU-based video processing, click :guilabel:`Parameters` and "
-"navigate to the :guilabel:`GPU` tab."
+"``Realtime mode``: Realtime mode. Pick up the best snapshot within each "
+"``Snapshot picking interval`` time interval. If ``Post each best "
+"snapshot: true``, the best snapshot is posted at the end of each "
+"interval; if ``false``, the best snapshot is posted only if its quality "
+"has improved comparing to the previously posted snapshot."
 
 #: ../source/camera_management.rst:84
 msgid ""
-"``Min face quality``: Минимальное качество изображения лица при выборе лучшего. "
-"Определяется эмпирически: отрицательные значения вблизи 0 = наиболее "
-"качественные прямые изображения лиц анфас, -1 = хорошее качество, -2 = "
-"удовлетворительное качество, отрицательные значения -5 и меньше = перевернутые "
-"лица и лица, повернутые под большими углами, распознавание может быть "
-"неэффективным."
+"``Post each best snapshot``: Если ``true``, отправлять лучший кадр в "
+"каждом интервале времени ``Snapshot picking interval`` в режиме реального"
+" времени. Если ``false``, отправлять лучший кадр, только если его "
+"качество улучшилось по сравнению с предыдущим отправленным кадром."
 msgstr ""
-"``Min face quality``: Minimum quality of a face snapshot when searching for the "
-"best one. To be fitted empirically: negatives values around 0 = high quality "
-"faces, -1 = good quality, -2 = satisfactory quality, -5 = inverted faces and "
-"large face angles, face recognition may be inefficient."
+"``Post each best snapshot``: If ``true``, post the best snapshot obtained"
+" within each ``Snapshot picking interval`` time interval in realtime "
+"mode. If ``false``, post the best snapshot only if its quality has "
+"improved comparing to the previously posted snapshot."
 
 #: ../source/camera_management.rst:85
 msgid ""
-"``Max face angle``: Максимальное отклонение лица от положения анфас при выборе "
-"лучшего. Определяется эмпирически: -3.5 = слишком большие углы поворота, "
-"распознавание лиц может быть неэффективным,  -2.5 = удовлетворительное "
-"отклонение, -0.05 = близко к положению анфас, 0 = анфас."
+"``Snapshot picking interval``: Временной интервал в миллисекундах, в "
+"течение которого в режиме реального времени выбирается лучший кадр с "
+"лицом."
 msgstr ""
-"``Max face angle``: Maximum deviation of a face from its frontal position. To be "
-"fitted empirically: -3.5 = large face angles, face recognition may be "
-"inefficient, -2.5 = satisfactory deviation, -0.05 = close to the frontal "
-"position, 0 = frontal face."
+"``Snapshot picking interval``: Time interval in milliseconds within which"
+" the face tracker picks up the best snapshot in realtime mode."
 
 #: ../source/camera_management.rst:86
 msgid ""
-"``Min face size``: Минимальный размер лица в пикселях при выборе лучшего. Чем "
-"меньше значение, тем дольше осуществляется обнаружение и отслеживание лиц. "
-"Оптимальное значение: 80-100-120. Если 0, фильтр выключен."
+"``Offline mode``: Буферный режим. Отправлять для лица один кадр "
+"наилучшего качества."
 msgstr ""
-"``Min face size``: Minimum face size in pixels. The less the value, the longer "
-"it takes to detect and track faces. Optimum value: 80-100-120. If 0, the filter "
-"is off."
+"``Offline mode``: Offline mode. Enable posting one snapshot of the best "
+"quality for each face."
 
 #: ../source/camera_management.rst:87
 msgid ""
-"``Max face size``: Максимальный размер лица в пикселях при выборе лучшего. Если "
-"0, фильтр выключен."
-msgstr "``Max face size``: Maximum face size in pixels. If 0, the filter is off."
+"``ROT``: Детектирование и отслеживание лиц только внутри заданной "
+"прямоугольной области. Используйте данную опцию, чтобы уменьшить нагрузку"
+" на видеодетектор лиц."
+msgstr ""
+"``ROT``: Enable detecting and tracking faces only inside a clipping "
+"rectangle. Use this option to reduce the video face detector load."
 
 #: ../source/camera_management.rst:88
 msgid ""
-"``Realtime mode``: Режим реального времени. Выбирать лучший кадр с лицом в "
-"каждом интервале времени ``Snapshot picking interval``. Если ``Post each best "
-"snapshot: true``, отправка лучшего кадра происходит по завершению каждого "
-"интервала ``Snapshot picking interval``; если ``false``, лучший кадр "
-"отправляется, только если его качество улучшилось по сравнению с предыдущим "
-"отправленным кадром."
-msgstr ""
-"``Realtime mode``: Realtime mode. Pick up the best snapshot within each "
-"``Snapshot picking interval`` time interval. If ``Post each best snapshot: "
-"true``, the best snapshot is posted at the end of each interval; if ``false``, "
-"the best snapshot is posted only if its quality has improved comparing to the "
-"previously posted snapshot."
-
-#: ../source/camera_management.rst:89
-msgid ""
-"``Post each best snapshot``: Если ``true``, отправлять лучший кадр в каждом "
-"интервале времени ``Snapshot picking interval`` в режиме реального времени. Если "
-"``false``, отправлять лучший кадр, только если его качество улучшилось по "
-"сравнению с предыдущим отправленным кадром."
-msgstr ""
-"``Post each best snapshot``: If ``true``, post the best snapshot obtained within "
-"each ``Snapshot picking interval`` time interval in realtime mode. If ``false``, "
-"post the best snapshot only if its quality has improved comparing to the "
-"previously posted snapshot."
-
-#: ../source/camera_management.rst:90
-msgid ""
-"``Snapshot picking interval``: Временной интервал в миллисекундах, в течение "
-"которого в режиме реального времени выбирается лучший кадр с лицом."
-msgstr ""
-"``Snapshot picking interval``: Time interval in milliseconds within which the "
-"face tracker picks up the best snapshot in realtime mode."
-
-#: ../source/camera_management.rst:91
-msgid ""
-"``Offline mode``: Буферный режим. Отправлять для лица один кадр наилучшего "
-"качества."
-msgstr ""
-"``Offline mode``: Offline mode. Enable posting one snapshot of the best quality "
-"for each face."
-
-#: ../source/camera_management.rst:92
-msgid ""
-"``ROT``: Детектирование и отслеживание лиц только внутри заданной прямоугольной "
-"области. Используйте данную опцию, чтобы уменьшить нагрузку на видеодетектор лиц."
-msgstr ""
-"``ROT``: Enable detecting and tracking faces only inside a clipping rectangle. "
-"Use this option to reduce the video face detector load."
-
-#: ../source/camera_management.rst:93
-msgid ""
-"``ROI``: Отправка в компонент ``ffsecurity`` только тех лиц, которые были "
-"обнаружены внутри интересующей области."
+"``ROI``: Отправка в компонент ``ffsecurity`` только тех лиц, которые были"
+" обнаружены внутри интересующей области."
 msgstr "``ROI``: Enable posting faces detected only inside a region of interest."
+
+#: ../source/camera_management.rst:97
+msgid ""
+"Для задания ROT/ROI удобно использовать визуальный мастер. Сначала "
+"создайте камеру без ROT/ROI, затем откройте ее для редактирования и "
+"нажмите на кнопку :guilabel:`Параметры`. Вы увидите визуальный мастер."
+msgstr ""
+"To specify ROT/ROI, use the visual wizard. First, create a camera without"
+" ROT/ROI. Then open it for editing and click :guilabel:`Parameters`. You "
+"will see the visual wizard appear."
+
+#: ../source/camera_management.rst:99
+msgid ""
+"При необходимости задайте опциональные параметры обработки видео на CPU. "
+"Для это нажмите на кнопку :guilabel:`Дополнительные параметры`."
+msgstr ""
+"If necessary, specify optional parameters for CPU-based video processing."
+" Click :guilabel:`Advanced Parameters`."
+
+#: ../source/camera_management.rst:101 ../source/camera_management.rst:118
+msgid ""
+"``FFMPEG options``: Опции ffmpeg для видеопотока. Задаются массивом строк"
+" ключ-значение, например, ``[\"rtsp_transpotr=tcp\", \"ss=00:20:00\"]``."
+msgstr ""
+"``FFMPEG options``: FFMPEG options for a video stream in the key-value "
+"format [“rtsp_transpotr=tcp”, “ss=00:20:00”]."
 
 #: ../source/camera_management.rst:102
 msgid ""
-"Для задания ROT/ROI удобно использовать визуальный мастер. Сначала создайте "
-"камеру без ROT/ROI, затем откройте ее для редактирования и нажмите на кнопку :"
-"guilabel:`Параметры`. Вы увидите визуальный мастер."
+"``Frame height``: Размер кадра для детектора лиц в пикселях. "
+"Отрицательные значения соответствуют исходному размеру. Оптимальные "
+"значения для уменьшения нагрузки: 640-720."
 msgstr ""
-"To specify ROT/ROI, use the visual wizard. First, create a camera without ROT/"
-"ROI. Then open it for editing and click :guilabel:`Parameters`. You will see the "
-"visual wizard appear."
+"``Frame height``: Video frame height in pixels for the face tracker. "
+"Negative values correspond to the initial size. Optimum value to reduce "
+"load: 640-720."
+
+#: ../source/camera_management.rst:103
+msgid ""
+"``Tracked faces``: Максимальное количество лиц, одновременно "
+"отслеживаемых детектором лиц. Влияет на производительность."
+msgstr ""
+"``Tracked faces``: Maximum number of faces simultaneously tracked by the "
+"face tracker. This parameter severely affects performance."
 
 #: ../source/camera_management.rst:104
 msgid ""
-"При необходимости задайте опциональные параметры обработки видео на CPU. Для это "
-"нажмите на кнопку :guilabel:`Дополнительные параметры`."
+"``Tracker threads``: Количество тредов отслеживания для детектора лиц. "
+"Должно быть меньше или равно значению параметра npersons. Оптимально, "
+"когда они равны. Если количество тредов отслеживания меньше, чем "
+"максимальное количество отслеживаемых лиц, потребление ресурсов "
+"уменьшается, однако также уменьшается и скорость отслеживания."
 msgstr ""
-"If necessary, specify optional parameters for CPU-based video processing. Click :"
-"guilabel:`Advanced Parameters`."
+"``Tracker threads``: Number of tracking threads for the face tracker. "
+"This value should be less or equal to npersons. Recommended to set them "
+"equal. If the number of tracking threads is less than the maximum number "
+"of tracked faces, resource consumption is reduced but so is the tracking "
+"speed."
 
-#: ../source/camera_management.rst:106 ../source/camera_management.rst:123
-msgid ""
-"``FFMPEG options``: Опции ffmpeg для видеопотока. Задаются массивом строк ключ-"
-"значение, например, ``[\"rtsp_transpotr=tcp\", \"ss=00:20:00\"]``."
-msgstr ""
-"``FFMPEG options``: FFMPEG options for a video stream in the key-value format "
-"[“rtsp_transpotr=tcp”, “ss=00:20:00”]."
-
-#: ../source/camera_management.rst:107
-msgid ""
-"``Frame height``: Размер кадра для детектора лиц в пикселях. Отрицательные "
-"значения соответствуют исходному размеру. Оптимальные значения для уменьшения "
-"нагрузки: 640-720."
-msgstr ""
-"``Frame height``: Video frame height in pixels for the face tracker. Negative "
-"values correspond to the initial size. Optimum value to reduce load: 640-720."
-
-#: ../source/camera_management.rst:108
-msgid ""
-"``Tracked faces``: Максимальное количество лиц, одновременно отслеживаемых "
-"детектором лиц. Влияет на производительность."
-msgstr ""
-"``Tracked faces``: Maximum number of faces simultaneously tracked by the face "
-"tracker. This parameter severely affects performance."
-
-#: ../source/camera_management.rst:109
-msgid ""
-"``Tracker threads``: Количество тредов отслеживания для детектора лиц. Должно "
-"быть меньше или равно значению параметра npersons. Оптимально, когда они равны. "
-"Если количество тредов отслеживания меньше, чем максимальное количество "
-"отслеживаемых лиц, потребление ресурсов уменьшается, однако также уменьшается и "
-"скорость отслеживания."
-msgstr ""
-"``Tracker threads``: Number of tracking threads for the face tracker. This value "
-"should be less or equal to npersons. Recommended to set them equal. If the "
-"number of tracking threads is less than the maximum number of tracked faces, "
-"resource consumption is reduced but so is the tracking speed."
-
-#: ../source/camera_management.rst:110 ../source/camera_management.rst:122
+#: ../source/camera_management.rst:105 ../source/camera_management.rst:117
 msgid "``JPEG quality``: Качество сжатия полного кадра для отправки."
 msgstr "``JPEG quality``: Full frame compression quality."
 
-#: ../source/camera_management.rst:111
+#: ../source/camera_management.rst:106
 msgid "``Draw track``: Рисовать в bbox след от движения лица."
 msgstr "``Draw track``: Enable drawing a face motion track in a bbox."
 
-#: ../source/camera_management.rst:112
+#: ../source/camera_management.rst:107
 msgid "``Response timeout``: Время ожидания в миллисекундах ответа на API-запрос."
 msgstr "``Response timeout``: Response timeout in milliseconds for an API request."
 
+#: ../source/camera_management.rst:108
+msgid ""
+"``Min motion intensity``: Минимальная интенсивность движения, которая "
+"будет регистрироваться детектором движения. Определяется эмпирически: 0 ="
+" детектор выключен, 0.002 = значение по умолчанию, 0.05 = минимальная "
+"интенсивность слишком высока, чтобы зарегистрировать движение."
+msgstr ""
+"``Min motion intensity``: Minimum motion intensity to be detected by the "
+"motion detector. To be fitted empirically: 0 = detector disabled, 0.002 ="
+" default value, 0.05 = minimum intensity is too high to detect motion."
+
+#: ../source/camera_management.rst:109
+msgid ""
+"``Scale frame``: Размер кадра для детектора движения относительно "
+"исходного размера от 0 до 1. Кадр должен быть уменьшен при больших "
+"разрешениях камеры, отображении лиц крупным планом, а также при "
+"чрезмерной загрузке процессора — для снижения потребления системных "
+"ресурсов."
+msgstr ""
+"``Scale frame``: Video frame scaling coefficient for the motion detector "
+"from 0 to 1. Scale down in the case of high resolution cameras, or close "
+"up faces, or if the CPU load is too high, to reduce the system resources "
+"consumption."
+
+#: ../source/camera_management.rst:111
+msgid ""
+"Если вы используете версию FindFace Security с обработкой видео на GPU, "
+"нажмите на кнопку :guilabel:`Параметры` и перейдите на вкладку "
+":guilabel:`GPU`."
+msgstr ""
+"To configure GPU-based video processing, click :guilabel:`Parameters` and"
+" navigate to the :guilabel:`GPU` tab."
+
 #: ../source/camera_management.rst:113
 msgid ""
-"``Min motion intensity``: Минимальная интенсивность движения, которая будет "
-"регистрироваться детектором движения. Определяется эмпирически: 0 = детектор "
-"выключен, 0.002 = значение по умолчанию, 0.05 = минимальная интенсивность "
-"слишком высока, чтобы зарегистрировать движение."
+"``Filter min face quality``: Минимальное качество изображения лица для "
+"отправки на сервер. Определяется эмпирически: отрицательные значения "
+"вблизи 0 = наиболее качественные прямые изображения лиц анфас, -1 = "
+"хорошее качество, -2 = удовлетворительное качество, отрицательные "
+"значения -5 и меньше = перевернутые лица и лица, повернутые под большими "
+"углами, распознавание может быть неэффективным."
 msgstr ""
-"``Min motion intensity``: Minimum motion intensity to be detected by the motion "
-"detector. To be fitted empirically: 0 = detector disabled, 0.002 = default "
-"value, 0.05 = minimum intensity is too high to detect motion."
+"``Filter min face quality``: Minimum quality of a face snapshot to post. "
+"To be fitted empirically: negatives values around 0 = high quality faces,"
+" -1 = good quality, -2 = satisfactory quality, -5 = inverted faces and "
+"large face angles, face recognition may be inefficient."
 
-#: ../source/camera_management.rst:114
+#: ../source/camera_management.rst:114 ../source/camera_management.rst:116
 msgid ""
-"``Scale frame``: Размер кадра для детектора движения относительно исходного "
-"размера от 0 до 1. Кадр должен быть уменьшен при больших разрешениях камеры, "
-"отображении лиц крупным планом, а также при чрезмерной загрузке процессора — для "
-"снижения потребления системных ресурсов."
+"``Min face size``: Минимальный размер лица в пикселях для отправки на "
+"сервер. Если 0, фильтр выключен."
 msgstr ""
-"``Scale frame``: Video frame scaling coefficient for the motion detector from 0 "
-"to 1. Scale down in the case of high resolution cameras, or close up faces, or "
-"if the CPU load is too high, to reduce the system resources consumption."
+"``Min face size``: Minimum face size in pixels to post. If 0, the filter "
+"is off."
 
-#: ../source/camera_management.rst:116
+#: ../source/camera_management.rst:115
 msgid ""
-"Если вы используете версию FindFace Security с обработкой видео на GPU, нажмите "
-"на кнопку :guilabel:`Параметры` и перейдите на вкладку :guilabel:`GPU`."
-msgstr ""
-"To configure GPU-based video processing, click :guilabel:`Parameters` and "
-"navigate to the :guilabel:`GPU` tab."
+"``Max face size``: Максимальный размер лица в пикселях для отправки на "
+"сервер."
+msgstr "``Max face size``: Maximum face size in pixels in post."
 
-#: ../source/camera_management.rst:118
+#: ../source/camera_management.rst:119
 msgid ""
-"``Filter min face quality``: Минимальное качество изображения лица для отправки "
-"на сервер. Определяется эмпирически: отрицательные значения вблизи 0 = наиболее "
-"качественные прямые изображения лиц анфас, -1 = хорошее качество, -2 = "
-"удовлетворительное качество, отрицательные значения -5 и меньше = перевернутые "
-"лица и лица, повернутые под большими углами, распознавание может быть "
-"неэффективным."
+"``Post only the best snapshot``: Буферный режим. Отправлять для лица один"
+" кадр наилучшего качества."
 msgstr ""
-"``Filter min face quality``: Minimum quality of a face snapshot to post. To be "
-"fitted empirically: negatives values around 0 = high quality faces, -1 = good "
-"quality, -2 = satisfactory quality, -5 = inverted faces and large face angles, "
-"face recognition may be inefficient."
-
-#: ../source/camera_management.rst:119 ../source/camera_management.rst:121
-msgid ""
-"``Min face size``: Минимальный размер лица в пикселях для отправки на сервер. "
-"Если 0, фильтр выключен."
-msgstr ""
-"``Min face size``: Minimum face size in pixels to post. If 0, the filter is off."
+"``Post only the best snapshot``: Offline mode. Enable posting one "
+"snapshot of the best quality for each face."
 
 #: ../source/camera_management.rst:120
 msgid ""
-"``Max face size``: Максимальный размер лица в пикселях для отправки на сервер."
-msgstr "``Max face size``: Maximum face size in pixels in post."
-
-#: ../source/camera_management.rst:124
-msgid ""
-"``Post only the best snapshot``: Буферный режим. Отправлять для лица один кадр "
-"наилучшего качества."
-msgstr ""
-"``Post only the best snapshot``: Offline mode. Enable posting one snapshot of "
-"the best quality for each face."
-
-#: ../source/camera_management.rst:125
-msgid ""
-"``Posting timeout``: Время ожидания в миллисекундах ответа на отправленный "
-"запрос с лицом."
+"``Posting timeout``: Время ожидания в миллисекундах ответа на "
+"отправленный запрос с лицом."
 msgstr "``Posting timeout``: Response timeout in milliseconds for an API request."
 
-#: ../source/camera_management.rst:126
+#: ../source/camera_management.rst:121
 msgid ""
 "``Retrieve timestamps from stream``: Если ``true``, отправлять на сервер "
-"временные метки из потока. Если ``false``, отправлять текущие дату и время."
+"временные метки из потока. Если ``false``, отправлять текущие дату и "
+"время."
 msgstr ""
-"``Retrieve timestamps from stream``: If ``true``, retrieve and post timestamps "
-"from a video stream. If ``false``, post the actual date and time."
+"``Retrieve timestamps from stream``: If ``true``, retrieve and post "
+"timestamps from a video stream. If ``false``, post the actual date and "
+"time."
+
+#: ../source/camera_management.rst:122
+msgid ""
+"``Add to timestamp``: Прибавлять указанное количество секунд к временным "
+"меткам из потока."
+msgstr ""
+"``Add to timestamp``: Add the specified number of seconds to timestamps "
+"from a stream."
 
 #: ../source/camera_management.rst:127
-msgid ""
-"``Add to timestamp``: Прибавлять указанное количество секунд к временным меткам "
-"из потока."
-msgstr ""
-"``Add to timestamp``: Add the specified number of seconds to timestamps from a "
-"stream."
-
-#: ../source/camera_management.rst:132
 msgid "Мониторинг работы камер"
 msgstr "Monitor Camera Operation"
 
-#: ../source/camera_management.rst:134
+#: ../source/camera_management.rst:129
 msgid "Мониторинг работы камер выполняется на вкладке :guilabel:`Камеры`."
 msgstr ""
-"To monitor the operation of cameras, navigate to the :guilabel:`Cameras` tab."
+"To monitor the operation of cameras, navigate to the :guilabel:`Cameras` "
+"tab."
 
-#: ../source/camera_management.rst:136
+#: ../source/camera_management.rst:131
 msgid "|monitor_cameras_ru|"
 msgstr "|monitor_cameras_en|"
 
-#: ../source/camera_management.rst:145
+#: ../source/camera_management.rst:140
 msgid "Статусы камер:"
 msgstr "Camera statuses:"
 
-#: ../source/camera_management.rst:147
+#: ../source/camera_management.rst:142
 msgid "Зеленый: идет обработка видеопотока с камеры, проблем не обнаружено."
 msgstr "Green: the video stream is being processed without errors."
 
-#: ../source/camera_management.rst:148
+#: ../source/camera_management.rst:143
 msgid ""
-"Желтый: камера работает менее 30 секунд или имеют место ошибки при отправке лиц."
+"Желтый: камера работает менее 30 секунд или имеют место ошибки при "
+"отправке лиц."
 msgstr ""
-"Yellow: the video stream is being processed for less than 30 seconds, or an "
-"error occurred when posting a face."
+"Yellow: the video stream is being processed for less than 30 seconds, or "
+"an error occurred when posting a face."
 
-#: ../source/camera_management.rst:149
+#: ../source/camera_management.rst:144
 msgid "Красный: камера не работает."
 msgstr "Red: the video stream cannot be processed."
 
-#: ../source/camera_management.rst:151
+#: ../source/camera_management.rst:146
 msgid ""
-"Для каждой камеры приводятся следующие статистические данные по обработке "
-"видеопотока: длительность обработки/количество успешно отправленных лиц/"
-"количество лиц, обработанных с ошибками."
+"Для каждой камеры приводятся следующие статистические данные по обработке"
+" видеопотока: длительность обработки/количество успешно отправленных "
+"лиц/количество лиц, обработанных с ошибками."
 msgstr ""
-"For each camera, you will be provided with the following statistics: current "
-"session duration/ the number of successfully posted faces/ the number of faces "
-"processed with errors."
+"For each camera, you will be provided with the following statistics: "
+"current session duration/ the number of successfully posted faces/ the "
+"number of faces processed with errors."
 
-#: ../source/camera_management.rst:153
+#: ../source/camera_management.rst:148
 msgid ""
-"Для перезапуска камеры нажмите на кнопку :guilabel:`Перезапустить` в столбце :"
-"guilabel:`Состояние`."
+"Для перезапуска камеры нажмите на кнопку :guilabel:`Перезапустить` в "
+"столбце :guilabel:`Состояние`."
 msgstr ""
-"To restart a camera, click :guilabel:`Restart` in the :guilabel:`State` column."
+"To restart a camera, click :guilabel:`Restart` in the :guilabel:`State` "
+"column."
 
-#: ../source/camera_management.rst:155
+#: ../source/camera_management.rst:150
 msgid "При большом количестве камер в системе используйте следующие фильтры:"
 msgstr "With a large number of cameras in the system, use the following filters:"
 
-#: ../source/camera_management.rst:157
+#: ../source/camera_management.rst:152
 msgid ":guilabel:`Группа камер`,"
 msgstr ":guilabel:`Camera group`,"
 
-#: ../source/camera_management.rst:158
+#: ../source/camera_management.rst:153
 msgid ":guilabel:`Активная`,"
 msgstr ":guilabel:`Active`,"
 
-#: ../source/camera_management.rst:159
+#: ../source/camera_management.rst:154
 msgid ":guilabel:`Статус`."
 msgstr ":guilabel:`Status`."
 
@@ -470,36 +471,73 @@ msgstr ":guilabel:`Status`."
 
 #~ msgid "Для задания ROT/ROI удобно использовать визуальный мастер."
 #~ msgstr ""
-#~ "To specify ROT and ROI, use the visual wizard. First, create a camera without "
-#~ "ROT and ROI, then open it for editing and click :guilabel:`Parameters`. You "
-#~ "will see the visual wizard appear."
+#~ "To specify ROT and ROI, use the"
+#~ " visual wizard. First, create a "
+#~ "camera without ROT and ROI, then "
+#~ "open it for editing and click "
+#~ ":guilabel:`Parameters`. You will see the "
+#~ "visual wizard appear."
 
 #~ msgid ""
-#~ "Нажмите на кнопку :guilabel:`Параметры`, чтобы задать параметры обработки "
-#~ "видеопотока:"
+#~ "Нажмите на кнопку :guilabel:`Параметры`, чтобы"
+#~ " задать параметры обработки видеопотока:"
 #~ msgstr "Click :guilabel:`Parameters` to configure video processing:"
 
 #~ msgid ""
-#~ "``realtime_post_perm``: Если ``true``, отправлять лучший кадр в каждом "
-#~ "интервале времени ``realtime_dly`` в режиме реального времени. Если "
-#~ "``false``, отправлять лучший кадр, только если его качество улучшилось по "
-#~ "сравнению с предыдущим отправленным кадром."
+#~ "``realtime_post_perm``: Если ``true``, отправлять"
+#~ " лучший кадр в каждом интервале "
+#~ "времени ``realtime_dly`` в режиме реального"
+#~ " времени. Если ``false``, отправлять лучший"
+#~ " кадр, только если его качество "
+#~ "улучшилось по сравнению с предыдущим "
+#~ "отправленным кадром."
 #~ msgstr ""
-#~ "``realtime_post_perm``: If ``true``, post the best snapshot obtained within "
-#~ "each ``realtime_dly`` time interval in realtime mode. If ``false``, post the "
-#~ "best snapshot only if its quality has improved comparing to the previously "
+#~ "``realtime_post_perm``: If ``true``, post the"
+#~ " best snapshot obtained within each "
+#~ "``realtime_dly`` time interval in realtime "
+#~ "mode. If ``false``, post the best "
+#~ "snapshot only if its quality has "
+#~ "improved comparing to the previously "
 #~ "posted snapshot."
 
 #~ msgid ""
-#~ "Нажмите на кнопку :guilabel:`Дополнительные параметры`, чтобы задать "
-#~ "опциональные параметры обработки видеопотока:"
+#~ "Нажмите на кнопку :guilabel:`Дополнительные "
+#~ "параметры`, чтобы задать опциональные "
+#~ "параметры обработки видеопотока:"
 #~ msgstr ""
-#~ "Click :guilabel:`Advanced Parameters` to specify optional video processing "
-#~ "parameters:"
+#~ "Click :guilabel:`Advanced Parameters` to "
+#~ "specify optional video processing parameters:"
 
 #~ msgid ""
-#~ "Для задания параметров обработки видеопотока на CPU, нажмите на кнопку :"
-#~ "guilabel:`Параметры` и перейдите на вкладку :guilabel:`CPU`."
+#~ "Для задания параметров обработки видеопотока"
+#~ " на CPU, нажмите на кнопку "
+#~ ":guilabel:`Параметры` и перейдите на вкладку"
+#~ " :guilabel:`CPU`."
 #~ msgstr ""
-#~ "To configure CPU-based video processing, click :guilabel:`Parameters` and "
-#~ "navigate to the :guilabel:`CPU` tab."
+#~ "To configure CPU-based video processing,"
+#~ " click :guilabel:`Parameters` and navigate "
+#~ "to the :guilabel:`CPU` tab."
+
+#~ msgid ""
+#~ "Если видео с группы камер требуется "
+#~ "обрабатывать в определенном экземпляре "
+#~ "компонента ``video-worker``, создайте или "
+#~ "выберите из уже созданных одну или "
+#~ "несколько меток для привязки группы "
+#~ "камер к экземпляру."
+#~ msgstr ""
+#~ "If you want to allocate a certain"
+#~ " ``video-worker`` instance to process "
+#~ "video streams from the group, create "
+#~ "or select one or several allocation "
+#~ "labels."
+
+#~ msgid ""
+#~ "Привязка выполняется через файл конфигурации"
+#~ " ``video-worker`` (см. :ref:`video-"
+#~ "allocation`)."
+#~ msgstr ""
+#~ "To complete the allocation, :ref:`specify "
+#~ "<video-allocation>` the labels in the"
+#~ " ``video-worker`` configuration file."
+

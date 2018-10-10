@@ -15,8 +15,6 @@
    user_management
    settings
    event_cleaner
-   advanced
    troubleshooting
-   protocol
 
 

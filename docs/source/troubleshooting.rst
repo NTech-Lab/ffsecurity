@@ -7,4 +7,4 @@
    :caption: В этой главе:
 
    logs
-   remove_instance
+  
