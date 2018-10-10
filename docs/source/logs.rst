@@ -3,7 +3,7 @@
 
 При разборе нештатных ситуаций используйте логи, содержащие подробную деталировку всех событий, произошедших в системе.
 
-Для того чтобы просмотреть логи, перейдите :menuselection:`Menu Start --> FindFace Security --> Logs Monitor`.
+Для того чтобы просмотреть логи, перейдите в :menuselection:`Menu Start --> FindFace Security --> Logs Monitor`.
 
     |view_logs|
 

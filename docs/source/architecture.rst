@@ -22,4 +22,4 @@ FindFace Security в ОС Windows развертывается на одиноч
    Работа с FindFace Security выполняется через веб-интерфейс.
 
 .. note::
-   Для очистки базы данных от устаревших событий используйте :ref:`утилиту <event-cleaner>` ``event-cleaner``.
+   Для очистки базы данных от устаревших событий используйте :ref:`утилиту <event-cleaner>` ``cleanup-events.exe``.
