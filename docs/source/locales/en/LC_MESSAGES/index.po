@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-24 17:48+0700\n"
-"PO-Revision-Date: 2018-08-30 15:11+0700\n"
+"POT-Creation-Date: 2018-10-15 16:13+0700\n"
+"PO-Revision-Date: 2018-10-15 16:21+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -20,15 +20,15 @@ msgstr ""
 "Generated-By: Babel 2.5.3\n"
 "X-Generator: Poedit 2.1.1\n"
 
-#: ../docs/index.rst:3
+#: ../source/index.rst:3
 msgid "Система распознавания лиц FindFace Security"
 msgstr "Welcome to FindFace Security’s documentation!"
 
-#: ../docs/index.rst:6
+#: ../source/index.rst:6
 msgid "Полное руководство"
 msgstr "About FindFace Security"
 
-#: ../docs/index.rst:9
+#: ../source/index.rst:9
 msgid ""
 "Система распознавания лиц FindFace Security предназначена для "
 "автоматизации основной деятельности сотрудников служб безопасности и "
@@ -43,7 +43,7 @@ msgstr ""
 "entertainment, sports, event management, dating services, video "
 "surveillance, public safety, homeland security, etc."
 
-#: ../docs/index.rst:11
+#: ../source/index.rst:11
 msgid ""
 "Работа FindFace Security основывается на биометрической видео-"
 "идентификации, т. е. на распознавании лиц на видеоизображении в режиме "
@@ -55,7 +55,7 @@ msgstr ""
 "and VIP guests in video, and notifies security and hospitality managers "
 "about their arrival."
 
-#: ../docs/index.rst:13
+#: ../source/index.rst:13
 msgid ""
 "Раннее распознавание прихода нежелательных персон и VIP-гостей позволяет "
 "решать следующие задачи:"
@@ -63,25 +63,25 @@ msgstr ""
 "Early recognition of the arrival of unwanted persons and VIP guests "
 "allows for solving the following problems:"
 
-#: ../docs/index.rst:15
+#: ../source/index.rst:15
 msgid "снижение операционных потерь от мошеннических действий;"
 msgstr "Operational losses due to fraudulent activity"
 
-#: ../docs/index.rst:16
+#: ../source/index.rst:16
 msgid "снижение репутационных потерь и предотвращение конфликтных ситуаций;"
 msgstr "Reputational losses and conflicts"
 
-#: ../docs/index.rst:17
+#: ../source/index.rst:17
 msgid "повышение качества обслуживания клиентов, в частности VIP-гостей;"
 msgstr "Better catering to the needs of VIP guests"
 
-#: ../docs/index.rst:18
+#: ../source/index.rst:18
 msgid ""
 "предотвращение потенциально опасных ситуаций, угрожающих жизни и здоровью "
 "людей."
 msgstr "Prevention of life threatening situations"
 
-#: ../docs/index.rst:20
+#: ../source/index.rst:20
 msgid ""
 "Настоящий документ предназначен для администраторов, операторов и "
 "пользователей FindFace Security. Он также будет полезен специалистам, "
@@ -90,16 +90,17 @@ msgstr ""
 "This guide is intended for the FindFace Security administrators, security "
 "and hospitality managers, and maintenance engineers."
 
-#: ../docs/index.rst:23
+#: ../source/index.rst:23
 msgid ""
-"Документ доступен по адресу https://docs.findface.pro/ffsec/ru/latest/"
-"index.html и во встроенном фреймворке ``http://<ffsecurity_ip>/doc/`` "
-"(после установки)."
+"Документ доступен по адресу http://docs.findface.pro (выберите нужную "
+"версию) и во встроенном фреймворке ``http://<ffsecurity_ip>/doc/ru/index."
+"html`` (после установки)."
 msgstr ""
-"You can find this guide at https://docs.findface.pro/ffsec/en/latest/"
-"index.html and at ``http://<ffsecurity_ip>/doc/`` after installation."
+"You can find this guide at http://docs.findface.pro (choose the version "
+"you need) and at ``http://<ffsecurity_ip>/doc/en/index.html`` after "
+"installation."
 
-#: ../docs/index.rst:27
+#: ../source/index.rst:27
 msgid "Содержание"
 msgstr "Contents"
 

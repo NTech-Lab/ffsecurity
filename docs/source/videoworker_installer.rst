@@ -7,19 +7,19 @@
 
 Для развертывания ``video-worker`` из мини-инсталлятора выполните следующие действия:
 
-#. Загрузите файл инсталлятора ``<fkvideo-worker-xxx>.run``.
+#. Загрузите файл инсталлятора ``<video-worker-xxx>.run``.
 #. Поместите файл ``.run`` в любой каталог на сервере установки (например, ``/home/username``).
 #. Из данного каталога сделайте файл ``.run`` исполняемым.
 
    .. code::
 
-       chmod +x <fkvideo-worker-xxx>.run
+       chmod +x <video-worker-xxx>.run
 
 #. Запустите файл ``.run``. Компонент ``video-worker`` будет автоматически установлен.
 
    .. code::
 
-       sudo ./<fkvideo-worker-xxx>.run
+       sudo ./<video-worker-xxx>.run
 
 #. Откройте для редактирования файл конфигурации ``/etc/video-worker.ini``.
 
