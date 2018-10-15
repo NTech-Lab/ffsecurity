@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-30 13:24+0700\n"
-"PO-Revision-Date: 2018-08-30 13:27+0700\n"
+"POT-Creation-Date: 2018-10-15 16:13+0700\n"
+"PO-Revision-Date: 2018-10-15 16:55+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -20,29 +20,29 @@ msgstr ""
 "Generated-By: Babel 2.5.3\n"
 "X-Generator: Poedit 2.1.1\n"
 
-#: ../docs/user_management.rst:5
+#: ../source/user_management.rst:5
 msgid "Управление пользователями"
 msgstr "User Management"
 
-#: ../docs/user_management.rst:7
+#: ../source/user_management.rst:7
 msgid ""
 "Управление пользователями FindFace Security выполняется через веб-интерфейс "
 "системы на вкладке :guilabel:`Пользователи`."
 msgstr "To manage FindFace Security users, navigate to the :guilabel:`Users` tab."
 
-#: ../docs/user_management.rst:10
+#: ../source/user_management.rst:10
 msgid "В этой главе:"
 msgstr "In this chapter:"
 
-#: ../docs/user_management.rst:16
+#: ../source/user_management.rst:16
 msgid "Роли"
 msgstr "Roles"
 
-#: ../docs/user_management.rst:18
+#: ../source/user_management.rst:18
 msgid "Для работы с FindFace Security предусмотрены следующие роли:"
 msgstr "FindFace Security provides the following pre-defined roles:"
 
-#: ../docs/user_management.rst:20
+#: ../source/user_management.rst:20
 msgid ""
 "Администратор. Обладает полными правами на :ref:`управление видеокамерами "
 "<cameras>`, :ref:`базой данных досье <guests>`, событий, пользователями "
@@ -51,7 +51,7 @@ msgstr ""
 "Administrator has rights to :ref:`manage cameras <cameras>`, events, FindFace "
 "Security users, and the :ref:`dossier database <guests>`."
 
-#: ../docs/user_management.rst:23
+#: ../source/user_management.rst:23
 msgid ""
 "Первый :ref:`созданный из консоли <basic-deployment>` администратор (Супер "
 "Администратор) не может лишиться прав даже при смене роли."
@@ -59,45 +59,43 @@ msgstr ""
 "Whatever the role, the first administrator :ref:`created on the console <basic-"
 "deployment>` (Super Administrator) cannot be deprived of its rights."
 
-#: ../docs/user_management.rst:25
+#: ../source/user_management.rst:25
 msgid ""
 "Оператор. Обладает правами на :ref:`создание досье вручную <create-dossier-"
-"operator>`, подтверждение событий и поиск лиц в базе событий, досье и "
-"социальных сетях. Остальная информация доступна в режиме чтения. :ref:`Пакетное "
-"<batch-upload>` создание досье невозможно."
+"operator>`, подтверждение событий и поиск лиц в базе событий и базе досье. "
+"Остальная информация доступна в режиме чтения. :ref:`Пакетное <batch-upload>` "
+"создание досье невозможно."
 msgstr ""
 "Operator can :ref:`create dossiers manually <create-dossier-operator>`, receive "
-"and acknowledge events, and search for faces in the event list, dossier "
-"database and social networks. The other data is available read-only. The :ref:"
-"`batch <batch-upload>` dossier creation is unavailable."
+"and acknowledge events, and search for faces in the event list and dossier "
+"database. The other data is available read-only. The :ref:`batch <batch-"
+"upload>` dossier creation is unavailable."
 
-#: ../docs/user_management.rst:26
+#: ../source/user_management.rst:26
 msgid ""
 "Пользователь. Обладает правами только на подтверждение событий и поиск лиц в "
-"базе событий, досье и социальных сетях. Остальная информация доступна в режиме "
-"чтения."
+"базе событий и базе досье. Остальная информация доступна в режиме чтения."
 msgstr ""
 "User has a right to receive and acknowledge events, and to search for faces in "
-"the event list, dossier database and social networks. The other data is "
-"available read-only."
+"the event list and dossier database. The other data is available read-only."
 
-#: ../docs/user_management.rst:30
+#: ../source/user_management.rst:30
 msgid "Создание пользователя"
 msgstr "Create User"
 
-#: ../docs/user_management.rst:32
+#: ../source/user_management.rst:32
 msgid "Для создания нового пользователя выполните следующие действия:"
 msgstr "To create a user, do the following:"
 
-#: ../docs/user_management.rst:34 ../docs/user_management.rst:57
+#: ../source/user_management.rst:34 ../source/user_management.rst:57
 msgid "Нажмите на кнопку :guilabel:`Создать`."
 msgstr "Click :guilabel:`Create`."
 
-#: ../docs/user_management.rst:36
+#: ../source/user_management.rst:36
 msgid "|create_user_ru|"
 msgstr "|create_user_en|"
 
-#: ../docs/user_management.rst:45
+#: ../source/user_management.rst:45
 msgid ""
 "Введите такие данные пользователя, как имя, логин и пароль, и из "
 "раскрывающегося списка :guilabel:`Роль` выберите одну из 3-х возможных ролей. "
@@ -106,19 +104,19 @@ msgstr ""
 "Specify such user data as name, login and password. From the :guilabel:`Role` "
 "drop-down menu, select the user role. If necessary, add a comment."
 
-#: ../docs/user_management.rst:47
+#: ../source/user_management.rst:47
 msgid "|user_ru|"
 msgstr "|user_en|"
 
-#: ../docs/user_management.rst:56
+#: ../source/user_management.rst:56
 msgid "Поставьте флажок :guilabel:`Активный`."
 msgstr "Check :guilabel:`Active`."
 
-#: ../docs/user_management.rst:61
+#: ../source/user_management.rst:61
 msgid "Деактивация или удаление пользователя"
 msgstr "Deactivate or Delete User"
 
-#: ../docs/user_management.rst:63
+#: ../source/user_management.rst:63
 msgid ""
 "Для того чтобы деактивировать или удалить пользователя из FindFace Security, "
 "выполните следующие действия:"
@@ -126,17 +124,17 @@ msgstr ""
 "In order to deactivate or delete a user from FindFace Security, do the "
 "following:"
 
-#: ../docs/user_management.rst:65
+#: ../source/user_management.rst:65
 msgid "Щелкните по логину пользователя в списке."
 msgstr "Click on the user login in the list."
 
-#: ../docs/user_management.rst:66
+#: ../source/user_management.rst:66
 msgid ""
 "Для деактивации снимите флажок :guilabel:`Активный`. Нажмите на кнопку :"
 "guilabel:`Обновить`."
 msgstr ""
 "To deactivate a user, uncheck :guilabel:`Active`. Click :guilabel:`Update`."
 
-#: ../docs/user_management.rst:67
+#: ../source/user_management.rst:67
 msgid "Для удаления нажмите на кнопку :guilabel:`Удалить`."
 msgstr "To delete the user, click :guilabel:`Delete`."

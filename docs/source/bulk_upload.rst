@@ -3,7 +3,7 @@
 Пакетная загрузка фотографий через консоль
 ======================================================
 
-Помимо веб-интерфейса, для пакетной загрузки фотографий в базу данных досье можно использовать поставляемый вместе с FindFace Security скрипт на Python :program:`findface-security-uploader.py`. Используйте скрипт, когда требуется загрузить большое количество фотографий (более 10000).
+Помимо веб-интерфейса, для пакетной загрузки фотографий в базу данных досье можно использовать поставляемый вместе с FindFace Security скрипт на Python :program:`findface-security-uploader`. Используйте скрипт, когда требуется загрузить большое количество фотографий (более 10000).
 
 Выполните следующие действия:
 
@@ -34,7 +34,7 @@
 
    .. code::
 
-      python3 findface-security-uploader.py add images.tsv
+      python3 findface-security-uploader add images.tsv
 
    Опции ``add``:
 
@@ -48,7 +48,7 @@
 
    .. code::
 
-      python3 findface-security-uploader.py run --dossier-lists 2 --api http://127.0.0.1:80 --user admin --password password
+      python3 findface-security-uploader run --dossier-lists 2 --api http://127.0.0.1:80 --user admin --password password
 
    Опции ``run``:
 
