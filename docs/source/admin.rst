@@ -7,7 +7,6 @@
    :caption: Содержание
 
    requirements
-   architecture
    ffsec
    wui
    camera_management

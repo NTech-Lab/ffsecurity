@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-10 15:54+0700\n"
-"PO-Revision-Date: 2018-10-10 18:49+0700\n"
+"POT-Creation-Date: 2018-10-15 18:18+0700\n"
+"PO-Revision-Date: 2018-10-15 18:42+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -93,7 +93,15 @@ msgstr "Operating system"
 msgid "Windows 10 (только 64-битная)"
 msgstr "Windows 10 (only x64)"
 
-#: ../source/requirements.rst:32
+#: ../source/requirements.rst:30
+msgid "Среда виртуализации"
+msgstr "Virtualization environment"
+
+#: ../source/requirements.rst:30
+msgid "Docker"
+msgstr "Docker"
+
+#: ../source/requirements.rst:34
 msgid ""
 "Минимальная конфигурация, необходимая для обработки 1 видеопотока 720p "
 "(1280×720) 25 FPS, состоит из процессора INTEL Core i5 6-го поколения с "

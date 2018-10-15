@@ -10,5 +10,7 @@
     .. |view_logs| image:: /_static/view_logs.png
        :scale: 60%
 
+При запуске утилита :program:`Logs Monitor` покажет последние 100 сообщений от каждого из внутренних сервисов и продолжит выводить новые, пока не будет закрыта.
+
 .. note::
-   Файл :guilabel:`Logs Monitor` :file:`ffsec-logs.cmd` хранится в :menuselection:`Program Data --> FindFace Security`.
+   Файл :program:`Logs Monitor` :file:`ffsec-logs.cmd` хранится в каталоге :menuselection:`ProgramData --> FindFace Security`.
