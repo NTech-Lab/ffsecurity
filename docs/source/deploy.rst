@@ -55,7 +55,6 @@
 
 .. code::
 
-   sudo apt-get update
    sudo apt install -y etcd
 
 
