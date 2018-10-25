@@ -15,16 +15,6 @@
    :local:
 
 
-Установка необходимого стороннего ПО
--------------------------------------------
-
-Для работы FindFace Security необходима система управления базами данных :program:`PostgreSQL`, сетевое хранилище :program:`Redis` и распределенное хранилище ключей :program:`ETCD`. Установите их из репозитория Ubuntu:
-
-.. code::
-
-   sudo apt-get update
-   sudo apt install -y postgresql-server-dev-9.5 redis-server etcd
-
 
 Подготовка deb-пакетов к установке
 -------------------------------------------
@@ -49,6 +39,17 @@
    .. code::
    
       sudo dpkg -i findface-data*.deb
+
+
+Установка необходимого стороннего ПО
+-------------------------------------------
+
+Для работы FindFace Security необходима система управления базами данных :program:`PostgreSQL`, сетевое хранилище :program:`Redis` и распределенное хранилище ключей :program:`ETCD`. Установите их из репозитория Ubuntu:
+
+.. code::
+
+   sudo apt-get update
+   sudo apt install -y postgresql-server-dev-9.5 redis-server etcd
 
 
 Установка сервера лицензий NTLS
