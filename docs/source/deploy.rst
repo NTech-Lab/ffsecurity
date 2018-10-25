@@ -44,12 +44,19 @@
 Установка необходимого стороннего ПО
 -------------------------------------------
 
-Для работы FindFace Security необходима система управления базами данных :program:`PostgreSQL`, сетевое хранилище :program:`Redis` и распределенное хранилище ключей :program:`ETCD`. Установите их из репозитория Ubuntu:
+Для работы базовой конфигурации FindFace Security необходима система управления базами данных :program:`PostgreSQL` и сетевое хранилище :program:`Redis`. Установите их из репозитория Ubuntu:
 
 .. code::
 
    sudo apt-get update
-   sudo apt install -y postgresql-server-dev-9.5 redis-server etcd
+   sudo apt install -y postgresql-server-dev-9.5 redis-server
+
+Для работы модуля биометрической видео-идентификации необходимо распределенное хранилище ключей :program:`ETCD`, также устанавливаемое из репозитория Ubuntu.
+
+.. code::
+
+   sudo apt-get update
+   sudo apt install -y etcd
 
 
 Установка сервера лицензий NTLS
