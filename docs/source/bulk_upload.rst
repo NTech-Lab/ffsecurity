@@ -3,7 +3,7 @@
 Пакетная загрузка фотографий через консоль
 ======================================================
 
-Помимо веб-интерфейса, для пакетной загрузки фотографий в базу данных досье можно использовать поставляемый вместе с FindFace Security скрипт на Python :program:`findface-security-uploader`. Используйте скрипт, когда требуется загрузить большое количество фотографий (более 10000).
+Помимо веб-интерфейса, для пакетной загрузки фотографий в базу данных досье можно использовать поставляемую вместе с FindFace Security утилиту :program:`findface-security-uploader`. Используйте утилиту, когда требуется загрузить большое количество фотографий (более 10000).
 
 Выполните следующие действия:
 
@@ -27,14 +27,13 @@
 
    .. code::
 
-      find /home/user/25_celeb/ -type f -iname '*g' | while read x; do printf "%s\t%s\n" "$x" "${${x%.*}##*/}"; done
+      find photos/ -type f -iname '*g' | while read x; do y="${x%.*}"; printf "%s\t%s\n" "$x" "${y##*/}"; done
 
-
-#. Создайте файл задания (job-файл) из CSV- или TSV-файла, используя метод ``add`` скрипта. 
+#. Создайте файл задания (job-файл) из CSV- или TSV-файла, используя метод ``add`` утилиты. 
 
    .. code::
 
-      python3 findface-security-uploader add images.tsv
+      findface-security-uploader add images.tsv
 
    Опции ``add``:
 
@@ -44,11 +43,11 @@
    .. note::
       Файл job представляет собой sqlite-базу, которая может быть открыта в консоли :program:`sqlite3`.
  
-#. Выполните задание job, используя метод ``run`` скрипта.
+#. Выполните задание job, используя метод ``run`` утилиты.
 
    .. code::
 
-      python3 findface-security-uploader run --dossier-lists 2 --api http://127.0.0.1:80 --user admin --password password
+      findface-security-uploader run --dossier-lists 2 --api http://127.0.0.1:80 --user admin --password password
 
    Опции ``run``:
 

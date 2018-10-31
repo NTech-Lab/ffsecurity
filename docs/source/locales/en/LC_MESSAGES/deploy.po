@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 17:51+0700\n"
-"PO-Revision-Date: 2018-10-25 17:55+0700\n"
+"POT-Creation-Date: 2018-10-31 18:42+0700\n"
+"PO-Revision-Date: 2018-10-31 19:07+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -96,17 +96,18 @@ msgstr ""
 
 #: ../source/deploy.rst:54
 msgid ""
-"Для работы модуля биометрической видео-идентификации необходимо распределенное "
-"хранилище ключей :program:`ETCD`, также устанавливаемое из репозитория Ubuntu."
+"Для работы модуля биометрической видео-идентификации установите распределенное "
+"хранилище ключей :program:`ETCD` из распакованного пакета с компонентами "
+"FindFace Security."
 msgstr ""
 "The FindFace Security video-based biometric identification requires :program:"
-"`ETCD` also installed from the Ubuntu repository:"
+"`ETCD`. Install it from the FindFace Security package with components:"
 
-#: ../source/deploy.rst:63
+#: ../source/deploy.rst:62
 msgid "Установка сервера лицензий NTLS"
 msgstr "Licensing"
 
-#: ../source/deploy.rst:65
+#: ../source/deploy.rst:64
 msgid ""
 "Вы получаете файл лицензии вместе с установочными пакетами FindFace Security. "
 "Для лицензирования в закрытой сети вам также будет предоставлен ключ аппаратной "
@@ -116,17 +117,17 @@ msgstr ""
 "Security distributable packages. For on-premise licensing, you will be also "
 "provided with a Guardant USB dongle."
 
-#: ../source/deploy.rst:67
+#: ../source/deploy.rst:66
 msgid ""
 "Для того чтобы установить и настроить сервер лицензий NTLS, выполните следующие "
 "действия:"
 msgstr "To install and configure the license server (NTLS), do the following:"
 
-#: ../source/deploy.rst:69
+#: ../source/deploy.rst:68
 msgid "Установите компонент NTLS:"
 msgstr "Install the NTLS component:"
 
-#: ../source/deploy.rst:77
+#: ../source/deploy.rst:76
 msgid ""
 "В файле конфигурации NTLS вы можете изменить папку для хранения файла лицензии "
 "и настроить удаленный доступ к веб-интерфейсу NTLS, используемому для "
@@ -137,7 +138,7 @@ msgstr ""
 "web interface remote access settings. To open the NTLS configuration file, "
 "execute::"
 
-#: ../source/deploy.rst:81
+#: ../source/deploy.rst:80
 msgid ""
 "При необходимости укажите в параметре ``license-dir`` другую папку для хранения "
 "файла лицензии. По умолчанию файл лицензии хранится в папке ``/ntech/license``::"
@@ -145,7 +146,7 @@ msgstr ""
 "If necessary, change the license folder in the ``license-dir`` parameter. By "
 "default, license files are stored at ``/ntech/license``::"
 
-#: ../source/deploy.rst:85
+#: ../source/deploy.rst:84
 msgid ""
 "При необходимости раскомментируйте строку ``proxy`` и укажите IP-адрес прокси-"
 "сервера::"
@@ -153,7 +154,7 @@ msgstr ""
 "If necessary, uncomment the ``proxy`` line and specify your proxy server IP "
 "address::"
 
-#: ../source/deploy.rst:89
+#: ../source/deploy.rst:88
 msgid ""
 "По умолчанию доступ в веб-интерфейс NTLS возможен с любого удаленного сервера в "
 "пределах сети (``ui = 0.0.0.0:3185``). Для того чтобы обеспечить доступ к веб-"
@@ -164,11 +165,11 @@ msgstr ""
 "0.0.0.0:3185``). To indicate that accessing the NTLS web interface must "
 "originate from a specific IP address, edit the ``ui`` parameter::"
 
-#: ../source/deploy.rst:93
+#: ../source/deploy.rst:92
 msgid "Добавьте сервис NTLS в автозагрузку и запустите сервис:"
 msgstr "Enable the NTLS service autostart and launch the service:"
 
-#: ../source/deploy.rst:99
+#: ../source/deploy.rst:98
 msgid ""
 "Загрузите файл лицензии в веб-интерфейсе NTLS по адресу ``http://<IP-адрес "
 "NTLS>:3185/#/``."
@@ -176,16 +177,16 @@ msgstr ""
 "Upload the license file via the NTLS web interface ``http://"
 "<NTLS_IP_address>:3185/#/``."
 
-#: ../source/deploy.rst:100
+#: ../source/deploy.rst:99
 msgid "В случае лицензирования в закрытой сети вставьте ключ Guardant в USB-порт."
 msgstr ""
 "For the on-premise licensing, insert a Guardant USB dongle into a USB port."
 
-#: ../source/deploy.rst:106
+#: ../source/deploy.rst:105
 msgid "Установка базовой конфигурации"
 msgstr "Basic Configuration"
 
-#: ../source/deploy.rst:108
+#: ../source/deploy.rst:107
 msgid ""
 "Установка базовой конфигурации (базы данных c необходимыми расширениями, "
 "компонента ``ffsecurity`` и ``ffsecurity-ui``) выполняется следующим образом:"
@@ -194,7 +195,7 @@ msgstr ""
 "extensions, the ``ffsecurity`` and ``ffsecurity-ui`` components. To install the "
 "basic configuration, do the following:"
 
-#: ../source/deploy.rst:110
+#: ../source/deploy.rst:109
 msgid ""
 "Установите расширение ``findface-postgres-9.5-facen`` к :program:`PostgreSQL` "
 "из пакета :program:`<ffsecurity-repo>.deb`:"
@@ -202,7 +203,7 @@ msgstr ""
 "Install the ``findface-postgres-9.5-facen`` extension for :program:`PostgreSQL` "
 "from the :program:`<ffsecurity-repo>.deb` package:"
 
-#: ../source/deploy.rst:116
+#: ../source/deploy.rst:115
 msgid ""
 "В консоли :program:`PostgreSQL` создайте пользователя ``ntech`` и базу данных "
 "``ffsecurity``. Загрузите в базу данных расширение ``findface-postgres-9.5-"
@@ -212,13 +213,13 @@ msgstr ""
 "database ``ffsecurity``. Upload the ``findface-postgres-9.5-facen`` extension "
 "to the ``ffsecurity`` database by using the ``facen-compare-bytea`` label."
 
-#: ../source/deploy.rst:130
+#: ../source/deploy.rst:129
 msgid ""
 "Для выхода из консоли ``PostgreSQL`` введите ``\\q`` и нажмите :kbd:`Enter`."
 msgstr ""
 "To quit from the ``PostgreSQL`` console, type ``\\q`` и press :kbd:`Enter`."
 
-#: ../source/deploy.rst:132
+#: ../source/deploy.rst:131
 msgid ""
 "Разрешите авторизацию в :program:`PostgreSQL` по UID  клиента сокета. "
 "Перезапустите :program:`PostgreSQL`."
@@ -226,18 +227,18 @@ msgstr ""
 "Allow authentication in :program:`PostgreSQL` by UID of a socket client. "
 "Restart :program:`PostgreSQL`."
 
-#: ../source/deploy.rst:140
+#: ../source/deploy.rst:139
 msgid ""
 "Установите компонент ``ffsecurity`` из пакета :program:`<ffsecurity-repo>.deb`."
 msgstr ""
 "Install the ``ffsecurity`` component from the :program:`<ffsecurity-repo>.deb` "
 "package."
 
-#: ../source/deploy.rst:143
+#: ../source/deploy.rst:142
 msgid "Вместе с ``ffsecurity`` будет установлен nginx."
 msgstr "NginX will be automatically installed from dependencies."
 
-#: ../source/deploy.rst:149
+#: ../source/deploy.rst:148
 msgid ""
 "Установите веб-интерфейс ``ffsecurity-ui`` из пакета :program:`<ffsecurity-"
 "repo>.deb`."
@@ -245,7 +246,7 @@ msgstr ""
 "Install the ``ffsecurity-ui`` web interface from the :program:`<ffsecurity-"
 "repo>.deb` package."
 
-#: ../source/deploy.rst:155
+#: ../source/deploy.rst:154
 msgid ""
 "Откройте файл конфигурации ``/etc/ffsecurity/config.py``. В параметре "
 "``EXTERNAL_ADDRESS`` укажите актуальный внешний IP-адрес или URL сервера "
@@ -267,13 +268,13 @@ msgstr ""
 "and specify it as ``VIDEO_DETECTOR_TOKEN``. This token will be being passed to "
 "the ``videomanager-api`` jobs."
 
-#: ../source/deploy.rst:158
+#: ../source/deploy.rst:157
 msgid ""
 "Если необходимо обеспечить безопасность данных, включите :ref:`SSL-шифрование "
 "<https>`."
 msgstr "If necessary, ensure data security by enabling :ref:`SSL <https>`."
 
-#: ../source/deploy.rst:161
+#: ../source/deploy.rst:160
 msgid ""
 "При необходимости установите ``'IGNORE_UNMATCHED': True``, чтобы отключить "
 "запись события в базу данных, если обнаруженное лицо отсутствует в списках "
@@ -288,7 +289,7 @@ msgstr ""
 "face similarity threshold for verification is defined by the "
 "``CONFIDENCE_THRESHOLD`` parameter."
 
-#: ../source/deploy.rst:166
+#: ../source/deploy.rst:165
 msgid ""
 "Рекомендуется отредактировать значение параметра ``MINIMUM_DOSSIER_QUALITY``. "
 "Данный параметр определяет минимальное качество лица на фотографии в досье. "
@@ -309,7 +310,7 @@ msgstr ""
 "and less. By default, ``’MINIMUM_DOSSIER_QUALITY’: -2`` which is the average "
 "quality."
 
-#: ../source/deploy.rst:209
+#: ../source/deploy.rst:208
 msgid ""
 "При необходимости также отредактируйте файл конфигурации ``/etc/nginx/sites-"
 "available/ffsecurity-nginx.conf``."
@@ -317,7 +318,7 @@ msgstr ""
 "If necessary, edit the ``/etc/nginx/sites-available/ffsecurity-nginx.conf`` "
 "configuration file as well."
 
-#: ../source/deploy.rst:211
+#: ../source/deploy.rst:210
 msgid ""
 "Используя команду ``pwgen -sncy 50 1|tr \"'\" \".\"``, сгенерируйте ключ "
 "подписи для шифрования сессии (используется :program:`Django`) и задайте его в "
@@ -327,7 +328,7 @@ msgstr ""
 "by executing: ``pwgen -sncy 50 1|tr “’” “.”``. Specify this key as "
 "``SECRET_KEY``."
 
-#: ../source/deploy.rst:212
+#: ../source/deploy.rst:211
 msgid ""
 "Отключите сервер nginx, используемый по умолчанию, и добавьте в список "
 "включенных серверов сервер ``ffsecurity``. Перезапустите nginx."
@@ -335,7 +336,7 @@ msgstr ""
 "Disable the default nginx server and add the ``ffsecurity`` server to the list "
 "of enabled servers. Restart nginx."
 
-#: ../source/deploy.rst:222
+#: ../source/deploy.rst:221
 msgid ""
 "Перенесите схему базы данных из FindFace Security в :program:`PostgreSQL`, "
 "создайте группы пользователей с :ref:`предустановленными правами <users>` и  "
@@ -345,17 +346,17 @@ msgstr ""
 "`PostgreSQL`, create user groups with :ref:`pre-defined rights <users>` and the "
 "first user with administrator rights (a.k.a. Super Administrator)."
 
-#: ../source/deploy.rst:227
+#: ../source/deploy.rst:226
 msgid ""
 "Отличие назначаемого администратора от Супер Администратора в том, что "
 "последний не может лишиться прав администратора даже при смене роли."
 msgstr "Super Administrator cannot be deprived of its rights, whatever the role."
 
-#: ../source/deploy.rst:237
+#: ../source/deploy.rst:236
 msgid "Запустите сервисы."
 msgstr "Start the services."
 
-#: ../source/deploy.rst:240
+#: ../source/deploy.rst:239
 msgid ""
 "Компонент ``ffsecurity`` включает в себя сервисы ``findface-security-proto`` "
 "(отвечает за HTTP и web-сокет) и ``findface-security-worker`` (обеспечивает "
@@ -371,11 +372,11 @@ msgstr ""
 "specified after the ``@`` character, for example, ``findface-security-"
 "worker@{1,2,3}`` for 3 instances."
 
-#: ../source/deploy.rst:252
+#: ../source/deploy.rst:251
 msgid "Установка модуля биометрической видео-идентификации"
 msgstr "Video-Based Biometric Identification"
 
-#: ../source/deploy.rst:254
+#: ../source/deploy.rst:253
 msgid ""
 "Установка модуля биометрической видео-идентификации (компонентов ``videomanager-"
 "api``, ``video-worker`` и ``extraction-api``) выполняется следующим образом:"
@@ -383,17 +384,17 @@ msgstr ""
 "To install the ``videomanager-api``, ``video-worker``, and ``extraction-api`` "
 "components for video-based biometric identification, do the following:"
 
-#: ../source/deploy.rst:256
+#: ../source/deploy.rst:255
 msgid "Добавьте сервис ETCD в автозагрузку Ubuntu и запустите его."
 msgstr "Enable the ETCD service autostart and launch the service:"
 
-#: ../source/deploy.rst:262
+#: ../source/deploy.rst:261
 msgid ""
 "Установите компоненты ``videomanager-api``, ``video-worker`` и ``extraction-"
 "api``."
 msgstr "Install ``videomanager-api``, ``video-worker``, and ``extraction-api``."
 
-#: ../source/deploy.rst:268
+#: ../source/deploy.rst:267
 msgid ""
 "Откройте для редактирования файл конфигурации ``/etc/findface-videomanager-api."
 "conf``. В параметре ``router_url`` замените строку перед ``v0/frame``, указав "
@@ -407,7 +408,7 @@ msgstr ""
 "``EXTERNAL_ADDRESS`` at ``/etc/ffsecurity/config.py``). The ``video-worker`` "
 "component will be posting detected faces to the specified address."
 
-#: ../source/deploy.rst:276
+#: ../source/deploy.rst:275
 msgid ""
 "В параметре ``ntls -> url`` укажите IP-адрес сервера лицензирования NTLS, если "
 "NTLS установлен на удаленном физическом сервере."
@@ -415,11 +416,11 @@ msgstr ""
 "In the ``ntls -> url`` parameter, specify the NTLS host IP address if the NTLS "
 "host is remote."
 
-#: ../source/deploy.rst:283
+#: ../source/deploy.rst:282
 msgid "Откройте для редактирования файл конфигурации ``/etc/video-worker.ini``."
 msgstr "Open the ``/etc/video-worker.ini`` configuration file for editing."
 
-#: ../source/deploy.rst:289
+#: ../source/deploy.rst:288
 msgid ""
 "В параметре ``ntls-addr`` укажите IP-адрес сервера лицензирования NTLS, если "
 "NTLS установлен на удаленном физическом сервере."
@@ -427,7 +428,7 @@ msgstr ""
 "In the ``ntls-addr`` parameter, specify the NTLS host IP address if the NTLS "
 "host is remote."
 
-#: ../source/deploy.rst:295
+#: ../source/deploy.rst:294
 msgid ""
 "В параметре ``mgr-static`` укажите IP-адрес сервера с установленным компонентом "
 "``videomanager-api``, у которого компонент ``video-worker`` будет запрашивать "
@@ -437,7 +438,7 @@ msgstr ""
 "address, which provides ``video-worker`` with settings and the video stream "
 "list."
 
-#: ../source/deploy.rst:301
+#: ../source/deploy.rst:300
 msgid ""
 "В параметре ``capacity`` укажите максимальное количество видеопотоков, "
 "обрабатываемых компонентом ``video-worker``."
@@ -445,7 +446,7 @@ msgstr ""
 "In the ``capacity`` parameter, specify the maximum number of video streams to "
 "be processed by ``video-worker``."
 
-#: ../source/deploy.rst:307
+#: ../source/deploy.rst:306
 msgid ""
 "В файле конфигурации ``extraction-api`` включите опцию ``quality_estimator`` "
 "для оценки качества лица."
@@ -453,7 +454,7 @@ msgstr ""
 "In the ``extraction-api`` configuration file, enable the ``quality_estimator`` "
 "to be able to estimate the face quality in a dossier."
 
-#: ../source/deploy.rst:310
+#: ../source/deploy.rst:309
 msgid ""
 ":ref:`Минимальное качество лица <quality>` на фотографии в досье задается "
 "параметром ``MINIMUM_DOSSIER_QUALITY`` в файле конфигурации ``/etc/ffsecurity/"
@@ -462,7 +463,7 @@ msgstr ""
 "The :ref:`minimum face quality <quality>` in a dossier photo is set as "
 "``MINIMUM_DOSSIER_QUALITY`` in ``/etc/ffsecurity/config.py``."
 
-#: ../source/deploy.rst:318
+#: ../source/deploy.rst:317
 msgid ""
 "В файле конфигурации ``extraction-api`` выключите поиск моделей для "
 "распознавания пола, возраста, эмоций и страны, передав пустые значения в "
@@ -472,7 +473,7 @@ msgstr ""
 "age, emotions, and country recognition models by passing empty values to the "
 "``gender``, ``age`` and ``emotions`` and ``countries47`` parameters:"
 
-#: ../source/deploy.rst:321
+#: ../source/deploy.rst:320
 msgid ""
 "Не удаляйте сами параметры, поскольку в этом случае будет выполняться поиск "
 "моделей по умолчанию."
@@ -480,7 +481,7 @@ msgstr ""
 "Do not remove the parameters themselves as in this case the system will be "
 "searching for default models."
 
-#: ../source/deploy.rst:331
+#: ../source/deploy.rst:330
 msgid ""
 "В результате файл конфигурации ``extraction-api`` должен выглядеть примерно "
 "следующим образом:"
@@ -488,7 +489,7 @@ msgstr ""
 "As a result, the ``extraction-api`` configuration file should look something "
 "like this:"
 
-#: ../source/deploy.rst:369
+#: ../source/deploy.rst:368
 msgid ""
 "Добавьте сервисы ``videomanager-api``, ``video-worker``, ``extraction-api`` в "
 "автозагрузку Ubuntu и запустите их."

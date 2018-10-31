@@ -51,7 +51,7 @@
    sudo apt-get update
    sudo apt install -y postgresql-server-dev-9.5 redis-server
 
-Для работы модуля биометрической видео-идентификации необходимо распределенное хранилище ключей :program:`ETCD`, также устанавливаемое из репозитория Ubuntu.
+Для работы модуля биометрической видео-идентификации установите распределенное хранилище ключей :program:`ETCD` из распакованного пакета с компонентами FindFace Security.
 
 .. code::
 
@@ -351,7 +351,7 @@
           p_net_max_results: 0
       models:
         root: /usr/share/findface-data/models
-        facen: elderberry_160
+        facen: elderberry_576
         gender: ''
         age: ''
         emotions: ''
