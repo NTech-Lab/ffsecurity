@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-15 16:13+0700\n"
-"PO-Revision-Date: 2018-10-15 16:16+0700\n"
+"POT-Creation-Date: 2018-10-31 18:42+0700\n"
+"PO-Revision-Date: 2018-10-31 18:46+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -27,14 +27,14 @@ msgstr "Console Bulk Photo Upload"
 #: ../source/bulk_upload.rst:6
 msgid ""
 "Помимо веб-интерфейса, для пакетной загрузки фотографий в базу данных "
-"досье можно использовать поставляемый вместе с FindFace Security скрипт "
-"на Python :program:`findface-security-uploader`. Используйте скрипт, "
+"досье можно использовать поставляемую вместе с FindFace Security "
+"утилиту :program:`findface-security-uploader`. Используйте утилиту, "
 "когда требуется загрузить большое количество фотографий (более 10000)."
 msgstr ""
 "To bulk-upload photos to the dossier database, you can use the :program:"
-"`findface-security-uploader` script from the FindFace Security package "
-"(in addition to the web interface upload functionality). Use this Python "
-"script when you need to upload a large number of photos (more than "
+"`findface-security-uploader` utility from the FindFace Security package "
+"(in addition to the web interface upload functionality). Use this "
+"utility when you need to upload a large number of photos (more than "
 "10,000)."
 
 #: ../source/bulk_upload.rst:8
@@ -85,21 +85,21 @@ msgstr ""
 msgid "Пример использования команды ``find``:"
 msgstr "The ``find`` usage example:"
 
-#: ../source/bulk_upload.rst:33
+#: ../source/bulk_upload.rst:32
 msgid ""
 "Создайте файл задания (job-файл) из CSV- или TSV-файла, используя метод "
-"``add`` скрипта."
+"``add`` утилиты."
 msgstr "Create a job file out of a CSV or TSV file by using ``add``."
 
-#: ../source/bulk_upload.rst:39
+#: ../source/bulk_upload.rst:38
 msgid "Опции ``add``:"
 msgstr "The ``add`` options:"
 
-#: ../source/bulk_upload.rst:41
+#: ../source/bulk_upload.rst:40
 msgid "``--format``: формат файла, по умолчанию ``tsv``,"
 msgstr "``--format``: input file format, ``tsv`` by default."
 
-#: ../source/bulk_upload.rst:42
+#: ../source/bulk_upload.rst:41
 msgid ""
 "``--delimiter``: используемый разделитель, по умолчанию ``\"\\t\"`` для "
 "TSV-файла, ``\",\"`` для формата CSV."
@@ -107,7 +107,7 @@ msgstr ""
 "``--delimiter``: field delimiter, by default ``”\t”`` for TSV and "
 "``“,”`` for CSV."
 
-#: ../source/bulk_upload.rst:45
+#: ../source/bulk_upload.rst:44
 msgid ""
 "Файл job представляет собой sqlite-базу, которая может быть открыта в "
 "консоли :program:`sqlite3`."
@@ -115,15 +115,15 @@ msgstr ""
 "A job file represents a sqlite database which can be opened on the :"
 "program:`sqlite3` console."
 
-#: ../source/bulk_upload.rst:47
-msgid "Выполните задание job, используя метод ``run`` скрипта."
+#: ../source/bulk_upload.rst:46
+msgid "Выполните задание job, используя метод ``run`` утилиты."
 msgstr "Process the job file by using ``run``."
 
-#: ../source/bulk_upload.rst:53
+#: ../source/bulk_upload.rst:52
 msgid "Опции ``run``:"
 msgstr "The ``run`` options:"
 
-#: ../source/bulk_upload.rst:55
+#: ../source/bulk_upload.rst:54
 msgid ""
 "``--parallel``: количество потоков загрузки фотографий, по умолчанию 10. "
 "Чем больше потоков, тем быстрее будет завершена загрузка, однако также "
@@ -133,7 +133,7 @@ msgstr ""
 "more threads you use, the faster the bulk upload is completed, however "
 "it requires more resources too."
 
-#: ../source/bulk_upload.rst:56
+#: ../source/bulk_upload.rst:55
 msgid ""
 "``--api``: URL API компонента ``findface-security``, по умолчанию "
 "``http://127.0.0.1:80/``."
@@ -141,21 +141,21 @@ msgstr ""
 "``--api``:``findface-security`` API URL, ``http://127.0.0.1:80/`` by "
 "default."
 
-#: ../source/bulk_upload.rst:57
+#: ../source/bulk_upload.rst:56
 msgid "``--user``: имя пользователя."
 msgstr "``--user``: login."
 
-#: ../source/bulk_upload.rst:58
+#: ../source/bulk_upload.rst:57
 msgid "``--password``: пароль."
 msgstr "``--password``: password."
 
-#: ../source/bulk_upload.rst:59
+#: ../source/bulk_upload.rst:58
 msgid ""
 "``--dossier-lists``: перечень разделенных запятой id списков наблюдения, "
 "в которые нужно добавить фотографии."
 msgstr "``--dossier-lists``: comma-separated list of the watch lists id’s."
 
-#: ../source/bulk_upload.rst:60
+#: ../source/bulk_upload.rst:59
 msgid ""
 "``--failed``: в случае неудачи при обработке job-файла исправьте ошибку "
 "и повторите попытку с данной опцией."

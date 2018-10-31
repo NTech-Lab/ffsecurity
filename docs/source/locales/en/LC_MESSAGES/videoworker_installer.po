@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-15 16:13+0700\n"
-"PO-Revision-Date: 2018-10-15 16:18+0700\n"
+"POT-Creation-Date: 2018-10-31 18:42+0700\n"
+"PO-Revision-Date: 2018-10-31 18:47+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -31,17 +31,21 @@ msgid ""
 msgstr "Use the additional installer to install ``video-worker`` on a remote host."
 
 #: ../source/videoworker_installer.rst:8
+msgid ":ref:`video-allocation`"
+msgstr ":ref:`video-allocation`"
+
+#: ../source/videoworker_installer.rst:10
 msgid ""
 "Для развертывания ``video-worker`` из мини-инсталлятора выполните следующие "
 "действия:"
 msgstr ""
 "To deploy ``video-worker`` from the additional installer, do the following:"
 
-#: ../source/videoworker_installer.rst:10
+#: ../source/videoworker_installer.rst:12
 msgid "Загрузите файл инсталлятора ``<video-worker-xxx>.run``."
 msgstr "Download the installer file ``<video-worker-xxx>.run``."
 
-#: ../source/videoworker_installer.rst:11
+#: ../source/videoworker_installer.rst:13
 msgid ""
 "Поместите файл ``.run`` в любой каталог на сервере установки (например, ``/home/"
 "username``)."
@@ -49,11 +53,11 @@ msgstr ""
 "Put the ``.run`` file into some directory on the designated host (for example, "
 "``/home/username``)."
 
-#: ../source/videoworker_installer.rst:12
+#: ../source/videoworker_installer.rst:14
 msgid "Из данного каталога сделайте файл ``.run`` исполняемым."
 msgstr "From this directory, make the ``.run`` file executable."
 
-#: ../source/videoworker_installer.rst:18
+#: ../source/videoworker_installer.rst:20
 msgid ""
 "Запустите файл ``.run``. Компонент ``video-worker`` будет автоматически "
 "установлен."
@@ -61,17 +65,17 @@ msgstr ""
 "Execute the ``.run`` file. The ``video-worker`` component will be automatically "
 "installed."
 
-#: ../source/videoworker_installer.rst:24
+#: ../source/videoworker_installer.rst:26
 msgid "Откройте для редактирования файл конфигурации ``/etc/video-worker.ini``."
 msgstr "Open the ``/etc/video-worker.ini`` configuration file for editing."
 
-#: ../source/videoworker_installer.rst:30
+#: ../source/videoworker_installer.rst:32
 msgid ""
 "В параметре ``ntls-addr`` укажите IP-адрес локального сервера лицензирования "
 "NTLS."
 msgstr "In the ``ntls-addr`` parameter, specify the NTLS host IP address."
 
-#: ../source/videoworker_installer.rst:36
+#: ../source/videoworker_installer.rst:38
 msgid ""
 "В параметре ``mgr-static`` укажите IP-адрес сервера с установленным компонентом "
 "``videomanager-api``, у которого компонент ``video-worker`` будет запрашивать "
@@ -80,7 +84,7 @@ msgstr ""
 "In the ``mgr-static`` parameter, specify the ``videomanager-api`` host IP "
 "address, which provides ``video-worker`` with settings and the video stream list."
 
-#: ../source/videoworker_installer.rst:42
+#: ../source/videoworker_installer.rst:44
 msgid ""
 "В параметре ``capacity`` укажите максимальное количество видеопотоков, "
 "обрабатываемых компонентом ``video-worker``."

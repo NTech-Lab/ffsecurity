@@ -8,7 +8,7 @@
 
    .. code::
 
-       sudo vi etc/systemd/journald.conf
+       sudo vi /etc/systemd/journald.conf
        ...
        [Journal]
        Storage=persistent
