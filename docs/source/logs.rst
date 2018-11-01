@@ -51,7 +51,7 @@
       _PID=6579
       _COMM=findface-securi
       _EXE=/opt/ffsecurity/bin/python3
-      _CMDLINE=/opt/ffsecurity/bin/python /opt/ffsecurity/bin/findface-security-manage runworker
+      _CMDLINE=/opt/ffsecurity/bin/python /opt/ffsecurity/bin/findface-security runworker
       _SYSTEMD_CGROUP=/system.slice/system-findface\x2dsecurity\x2dworker.slice/findface-security-worker@4.service
       _SYSTEMD_UNIT=findface-security-worker@4.service
       _SYSTEMD_SLICE=system-findface\x2dsecurity\x2dworker.slice
@@ -83,7 +83,7 @@
       _TRANSPORT=journal
       _COMM=findface-securi
       _EXE=/opt/ffsecurity/bin/python3
-      _CMDLINE=/opt/ffsecurity/bin/python /opt/ffsecurity/bin/findface-security-manage runworker
+      _CMDLINE=/opt/ffsecurity/bin/python /opt/ffsecurity/bin/findface-security runworker
       _SYSTEMD_SLICE=system-findface\x2dsecurity\x2dworker.slice
       _PID=6588
       _SYSTEMD_CGROUP=/system.slice/system-findface\x2dsecurity\x2dworker.slice/findface-security-worker@2.service
