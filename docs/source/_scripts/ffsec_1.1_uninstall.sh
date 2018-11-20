@@ -1,10 +1,9 @@
 #!/bin/bash
 
-OLD_PACKAGES="fkvideo-detector"
-FFSEC11_PACKAGES="ntls fkvideo-worker findface-videomanager-api findface-extraction-api findface-postgres-9.5-facen ffsecurity ffsecurity-ui findface-data* grd-udev libnnd-data ntech-env videopipe-data findface-security-repo python3-ntech*"
-SIDE_PACKAGES="nginx redis-server redis-tools videopipe-data etcd-server etcd-client"
-FF_SERVICES="nginx etcd ntls findface-extraction-api 'findface-security-proto*' 'fkvideo*' video-worker findface-videomanager-api postgresql@9.5-main.service"
+SIDE_PACKAGES="nginx redis-server redis-tools etcd etcd-client etcd-server"
+FF_SERVICES="'findface-security-worker*' postgresql@9.5-main.service findface-videomanager-api 'fkvideo*' video-worker 'findface-security-proto*' findface-extraction-api ntls nginx etcd"
 
+findface_pkg=$(sudo dpkg -l | grep -E "videopipe-data|findface|fkvideo|ntls|ffsecurity|ntech" | awk '{print $2}')
 
 now=$(date +"%m_%d_%Y.%H:%M")
 bdir=ffsec_bak_$now
@@ -14,7 +13,7 @@ echo "
 #                                                                            #
 # ! This script will remove FindFace Security instance from current server ! #
 #                                                                            #
-          Config files and DB will be backed up to ~/$bdir/.
+  Config files and DB will be backed up to ~/$bdir/.
 #                                                                            #
 ##############################################################################
 "
@@ -26,7 +25,7 @@ backupCfg() {
     mv /etc/ffsecurity/config.py $HOME/$bdir/etc/ffsecurity/config.py.bak
     for cfg in /etc/{{findface-extraction-api,fkvideo*,video-worker}.ini,findface-videomanager-api.conf,ntls.cfg};
     do
-        if [ -f "$cfg" ]; then
+        if [[ -f "$cfg" ]]; then
             mv "$cfg" "$HOME/$bdir/${cfg}.bak"
             echo "File $cfg found and deleted. Backup created."
         else
@@ -37,6 +36,10 @@ backupCfg() {
 
 backupFfupload() {
   tar -cvzf $HOME/$bdir/var_lib_ffsecurity_uploads.tar.gz /var/lib/ffsecurity/uploads
+}
+
+backupETCD() {
+  tar -cvzf $HOME/$bdir/var_lib_etcd_default.tar.gz /var/lib/etcd/default
 }
 
 backupRedisDB() {
@@ -64,6 +67,7 @@ uninstallAll() {
 
   backupCfg
   backupPostgresDB
+  backupETCD
   backupNginxCfg
   backupRedisDB
   backupFfupload
@@ -71,18 +75,21 @@ uninstallAll() {
   echo "##############################################################################
   ##############################################################################"
   sudo -u postgres dropdb -i ffsecurity
-  apt-get purge -y $FFSEC11_PACKAGES
-  apt-get purge -y $OLD_PACKAGES
-  apt-get purge -y $SIDE_PACKAGES
+  apt-get purge $findface_pkg
+  dpkg --remove $SIDE_PACKAGES
 
   rm /etc/nginx/ntls.htpasswd
   rm -rf /opt/ntech
   rm -rf /var/findface-security-repo
   rm -rf /var/lib/ffsecurity
+  rm -rf /etc/ffsecurity
   rm -rf /usr/share/ffsecurity-ui
   rm -rf /opt/ffsecurity
+  rm -rf /var/lib/etcd/default
   rm /etc/nginx/sites-enabled/ntls
   rm /etc/nginx/sites-enabled/ffsecurity-nginx.conf
+  rm /etc/nginx/sites-available/ntls
+  rm /etc/nginx/sites-available/ffsecurity-nginx.conf
   rm /etc/apt/sources.list.d/ntechlab.list
 
   service nginx start
