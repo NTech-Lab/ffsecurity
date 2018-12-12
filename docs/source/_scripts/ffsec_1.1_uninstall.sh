@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SIDE_PACKAGES="nginx redis-server redis-tools etcd etcd-client etcd-server"
-FF_SERVICES="'findface-security-worker*' postgresql@9.5-main.service findface-videomanager-api 'fkvideo*' video-worker 'findface-security-proto*' findface-extraction-api ntls nginx etcd"
+FF_SERVICES=( 'findface-security-worker*' postgresql@9.5-main.service findface-videomanager-api 'fkvideo*' video-worker 'findface-security-proto*' findface-extraction-api ntls nginx etcd )
 
 findface_pkg=$(sudo dpkg -l | grep -E "videopipe-data|findface|fkvideo|ntls|ffsecurity|ntech" | awk '{print $2}')
 
@@ -63,7 +63,11 @@ backupNginxCfg() {
 }
 
 uninstallAll() {
-  service $FF_SERVICES stop
+  for i in "${FF_SERVICES[@]}"
+  do
+	echo service $i stop
+	service $i stop
+  done
 
   backupCfg
   backupPostgresDB
