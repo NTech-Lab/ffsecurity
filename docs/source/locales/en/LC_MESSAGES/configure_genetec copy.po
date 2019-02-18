@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, NtechLab
+# This file is distributed under the same license as the FindFace Security
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Security 1.2.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-18 18:19+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../source/configure_genetec copy.rst:6
+msgid "Configure Integration"
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:8
+msgid ""
+"Integration with Genetec Security Center is implemented via the "
+"``genetec`` plugin. By default, the plugin is enabled, and the FindFace "
+"Security navigation bar features the :guilabel:`Genetec` tab."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:11
+msgid ""
+"If it is not so in FindFace Security for Ubuntu, open the ``ffsecurity`` "
+"configuration file, and check whether it features the enabled line "
+"``INSTALLED_APPS.append('ffsecurity_genetec')``."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:26
+msgid ""
+"The ``genetec`` plugin cannot be disabled in FindFace Security for "
+"Windows."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:28
+msgid ""
+"Before getting started with the integration on the FindFace Security "
+"side, deploy the Genetec Web SDK and Media Gateway packages, and create "
+"an ``Alarm`` entity that will be triggered in Genetec Security Center "
+"when a face recognition event occurs in FindFace Security."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:31
+msgid "In this chapter:"
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:38
+msgid "Configure Genetec Web SDK and Media Gateway"
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:40
+msgid ""
+"To enable and configure Web SDK, use Genetec Config Tool. For details, "
+"refer to :menuselection:`Security Center Administrator Guide -> Chapter "
+"52: Role Types -> Web-based SDK configuration tabs`."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:42
+msgid "|websdk|"
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:47
+msgid ""
+"When enabling and configuring Media Getaway in Genetec Config Tool, refer"
+" to :menuselection:`Security Center Administrator Guide -> Chapter 24: "
+"Video Deployment`."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:49
+msgid "|mediagw|"
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:55
+msgid ""
+"Make sure that the firewall is configured so that the ports for the "
+"WebSDK and Media Gateway are open."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:61
+msgid "Create Alarm in Genetec Security Center"
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:63
+msgid ""
+"Create and configure a new ``Alarm`` entity in Genetec Config Tool. Refer"
+" to :menuselection:`Security Center Administrator Guide  -> Chapter 48: "
+"Alarms -> Creating Alarms` for details."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:65
+msgid "|alarm_properties|"
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:71
+msgid ""
+"On the :guilabel:`Properties` tab, select the :guilabel:`Video display "
+"option` that suits your needs the best. Available options are "
+":guilabel:`Live`, :guilabel:`Playback`, etc."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:74
+msgid ""
+"To enable alarm procedures and auto rotation of video right within the "
+"alarm pop-up window, enable :guilabel:`Content cycling`."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:76
+msgid ""
+"When configuring the integration in FindFace Security, you will have to "
+"enter the alarm logical id that is specified on the :guilabel:`Identity` "
+"tab."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:78
+msgid "|alarm_identity|"
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:85
+msgid "Configure Endpoints in FindFace Security"
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:87
+msgid ""
+"To establish connection between FindFace Security and Genetec Security "
+"Center, do the following:"
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:89
+msgid "Navigate to the :guilabel:`Genetec` tab in FindFace Security."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:91
+msgid "|genetec_config_en|"
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:96
+msgid ""
+"In the :guilabel:`Server` and :guilabel:`Media` sections, specify "
+":ref:`settings <websdk-media>` of the Web SDK and Media Gateway "
+"endpoints."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:99
+msgid "The ports for the WebSDK and Media Gateway need to be open."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:101
+msgid ""
+"In the :guilabel:`Ids` section, specify the :ref:`logical id <alarm>` of "
+"the ``Alarm`` entity that will be triggered in Genetec Security Center "
+"when a face recognition event occurs in FindFace Security."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:102
+msgid ""
+"Click :guilabel:`Save`. If the connection to Genetec Security Center is "
+"successfully established, you will see the :guilabel:`State` change to "
+":guilabel:`Configured`."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:105
+msgid "Import Cameras from Genetec Security Center"
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:107
+msgid ""
+"Once the connection to Genetec Security Center is established, import "
+"cameras. To do so, click :guilabel:`Cameras` on the :guilabel:`Genetec` "
+"tab. Click :guilabel:`Import`."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:109
+msgid "|genetec_cameras_en|"
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:114
+msgid ""
+"This action will create a :ref:`group of cameras <cameras>` ``Genetec`` "
+"listing all the cameras from Genetec Security Center."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:116
+msgid "|genetec_group_en|"
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:121
+msgid ""
+"To view this list of cameras, navigate to the :guilabel:`Cameras` tab on "
+"the FindFace Security navigation bar. If you want to exclude a camera "
+"from face recognition, simply deactivate it in the list."
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:124
+msgid "Create Watch Lists and Dossiers in FindFace Security"
+msgstr ""
+
+#: ../source/configure_genetec copy.rst:126
+msgid ""
+"After you have configured the endpoints and camera settings, finish the "
+"integration by creating a :ref:`dossier database <guests>`. Notifications"
+" about face recognition events will be automatically sent to Genetec "
+"Security Center. See :ref:`gsc`."
+msgstr ""
+

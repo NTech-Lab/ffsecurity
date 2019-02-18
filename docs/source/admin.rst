@@ -6,15 +6,14 @@
    :maxdepth: 2
    :caption: Содержание
 
-   requirements
    architecture
+   requirements
    ffsec
    wui
    camera_management
    guests
    user_management
    settings
-   event_cleaner
    advanced
    troubleshooting
    protocol

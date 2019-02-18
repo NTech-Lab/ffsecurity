@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, NtechLab
+# This file is distributed under the same license as the FindFace Security
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Security 1.2.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-18 18:57+0800\n"
+"PO-Revision-Date: 2019-02-18 18:59+0800\n"
+"Last-Translator: \n"
+"Language: en\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+"X-Generator: Poedit 2.1.1\n"
+
+#: ../source/deduplication.rst:4
+msgid "Дедупликация событий"
+msgstr "Deduplicate Events"
+
+#: ../source/deduplication.rst:7
+msgid "В этом разделе:"
+msgstr "In this section:"
+
+#: ../source/deduplication.rst:11
+msgid ""
+"В случае если сцены наблюдения камер, принадлежащие одной группе, приблизительно "
+"совпадают, можно использовать функцию дедупликации. Данная функция позволяет "
+"исключить регистрацию одинаковых событий в пределах группы камер."
+msgstr ""
+"If observation scenes of cameras within one group overlap, consider to enable "
+"Deduplication. This feature allows you to exclude coinciding facial recognition "
+"events among cameras belonging to the same group."
+
+#: ../source/deduplication.rst:14
+msgid ""
+"Функцию дедупликации следует использовать с крайней осторожностью, поскольку "
+"если камеры одной группы смотрят в разные стороны, возможны пропуски лиц."
+msgstr ""
+"Use deduplication with extreme caution, as if cameras within a group observe "
+"different scenes, some faces may be skipped."
+
+#: ../source/deduplication.rst:18
+msgid "Алгоритм работы дедупликации"
+msgstr "How It Works"
+
+#: ../source/deduplication.rst:20
+msgid "Инфографика алгоритма дедупликации показана на схеме ниже:"
+msgstr "The deduplication algorithm’s infographics are shown in the diagram below:"
+
+#: ../source/deduplication.rst:22
+msgid "|deduplication_ru|"
+msgstr "|deduplication_en|"
+
+#: ../source/deduplication.rst:30
+msgid ""
+"В буферном режиме работы видеодетектора без дедупликации на сервер поступает по "
+"одному лучшему изображению лица от каждой камеры группы. Данный режим "
+"рекомендуется использовать, если камеры в группе смотрят в разные стороны."
+msgstr ""
+"If the video face detector is working in the offline mode without deduplication, "
+"the server receives one best face snapshot per camera. We recommend to use this "
+"mode if cameras in the same group observe different scenes."
+
+#: ../source/deduplication.rst:31
+msgid ""
+"В режиме реального времени без дедупликации от каждой камеры поступает несколько "
+"изображений лица. Данный режим является самым ресурсоемким с точки зрения "
+"использования дискового пространства. Также возможна чрезмерная нагрузка на "
+"сотрудников службы безопасности при большом количестве посетителей."
+msgstr ""
+"If the video face detector is working in the online mode without deduplication, "
+"the server receives several images from each camera of a group. This mode is the "
+"most storage intensive. In the case of large number of visitors, security "
+"operators may also experience difficulties dealing with a large number of "
+"identical face recognition events."
+
+#: ../source/deduplication.rst:32
+msgid ""
+"В любом режиме с дедупликацией от группы камер совокупно поступает только одно "
+"изображение лица, лучшее в текущем трекинге. Следует использовать, если сцены "
+"наблюдения камер в группе совпадают."
+msgstr ""
+"With enabled deduplication, the server receives only one face snapshot per "
+"group, the best one in the current tracking session whatever the video face "
+"detector mode. Use deduplication only if the observation scenes of cameras "
+"within a group overlap."
+
+#: ../source/deduplication.rst:36
+msgid "Включение дедупликации"
+msgstr "Enable Deduplication"
+
+#: ../source/deduplication.rst:38
+msgid ""
+"Для того чтобы активировать функцию дедупликации, выполните следующие действия:"
+msgstr "To enable event deduplication, do the following:"
+
+#: ../source/deduplication.rst:40
+msgid "В веб-интерфейсе перейдите на вкладку :guilabel:`Группы камер`."
+msgstr "Navigate to the :guilabel:`Camera groups` tab."
+
+#: ../source/deduplication.rst:41
+msgid "Откройте настройки группы камер."
+msgstr "Open the camera group settings."
+
+#: ../source/deduplication.rst:42
+msgid ""
+"Поставьте флажок :guilabel:`Дедуплицировать события` и задайте в секундах "
+"интервал дедупликации (интервал, с которым события проверяются на уникальность)."
+msgstr ""
+"Check :guilabel:`Deduplicate Events` and specify the deduplication interval in "
+"seconds (interval between 2 consecutive checks for event uniqueness)."
+
+#~ msgid "In this section"
+#~ msgstr "In this section:"
+
+#~ msgid ""
+#~ "В случае, если сцены наблюдения камер, принадлежащие одной группе, "
+#~ "приблизительно совпадают, для данной группы можно использовать функцию "
+#~ "дедупликации. Данная функция позволяет исключить регистрацию одинаковых "
+#~ "событий в пределах группы камер."
+#~ msgstr ""
+#~ "If observation scenes of cameras within one group overlap, consider to enable "
+#~ "Deduplication. This feature allows you to exclude coinciding facial "
+#~ "recognition events among cameras belonging to the same group."

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-24 17:48+0700\n"
-"PO-Revision-Date: 2018-08-29 15:10+0700\n"
+"POT-Creation-Date: 2018-10-23 16:20+0700\n"
+"PO-Revision-Date: 2018-10-23 21:58+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -20,11 +20,11 @@ msgstr ""
 "Generated-By: Babel 2.5.3\n"
 "X-Generator: Poedit 2.1.1\n"
 
-#: ../docs/protocol.rst:5
-msgid "Приложение. Настройка шифрования данных"
-msgstr "Appendix. Enable Data Encryption"
+#: ../source/protocol.rst:5
+msgid "Приложение. Настройка шифрования данных в ОС Ubuntu"
+msgstr "Appendix. Enable Data Encryption in Ubuntu"
 
-#: ../docs/protocol.rst:7
+#: ../source/protocol.rst:7
 msgid ""
 "Для обеспечения безопасности данных включите SSL-шифрование. Выполните "
 "следующие действия:"
@@ -32,7 +32,7 @@ msgstr ""
 "To ensure data security, it is recommended to enable SSL encryption. Do "
 "the following:"
 
-#: ../docs/protocol.rst:9
+#: ../source/protocol.rst:9
 msgid ""
 "В директории с конфигурацией nginx создайте каталог для хранения "
 "информации о SSL-шифровании:"
@@ -40,11 +40,11 @@ msgstr ""
 "Under the nginx configuration directory, create a directory that will be "
 "used to hold all of the SSL data:"
 
-#: ../docs/protocol.rst:15
+#: ../source/protocol.rst:15
 msgid "Создайте ключ и сертификат SSL:"
 msgstr "Create the SSL key and certificate files:"
 
-#: ../docs/protocol.rst:21
+#: ../source/protocol.rst:21
 msgid ""
 "Для заполнения полей сертификата вам будет предложено несколько "
 "вопросов. Ответьте на них, уделив особое внимание строке ``Common "
@@ -61,7 +61,7 @@ msgstr ""
 "created (``my-example-domain.com.key`` and ``my-example-domain.com."
 "crt``) will be placed in the ``/etc/nginx/ssl`` directory."
 
-#: ../docs/protocol.rst:23
+#: ../source/protocol.rst:23
 msgid ""
 "Настройте nginx для использования SSL. Откройте файл конфигурации nginx. "
 "Скопируйте в него код из примера ниже."
@@ -69,11 +69,11 @@ msgstr ""
 "Configure nginx to use SSL. Open the nginx configuration file. Copy the "
 "code from the example below into the file."
 
-#: ../docs/protocol.rst:55
+#: ../source/protocol.rst:55
 msgid "Перезапустите nginx."
 msgstr "Restart nginx."
 
-#: ../docs/protocol.rst:61
+#: ../source/protocol.rst:61
 msgid ""
 "Внесите изменения в файл конфигурации ``ffsecurity``. В параметре "
 "``EXTERNAL_ADDRESS`` измените приставку ``http://`` на ``https://``."

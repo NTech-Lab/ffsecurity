@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-17 17:24+0700\n"
-"PO-Revision-Date: 2018-04-17 17:52+0700\n"
+"POT-Creation-Date: 2019-02-18 13:34+0800\n"
+"PO-Revision-Date: 2019-02-18 19:08+0800\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -18,35 +18,112 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.1.1\n"
 
-#: ../source/event_cleaner.rst:5
-msgid "Очистка базы данных событий c ``event-cleaner``"
+#: ../source/event_cleaner.rst:4
+msgid "Очистка базы данных событий"
 msgstr "Purge Old Events from Database"
 
 #: ../source/event_cleaner.rst:7
-msgid "Для удаления устаревших событий используйте утилиту ``event-cleaner``."
-msgstr "Use the ``event-cleaner`` utility to remove old events from the database."
+msgid "В этом разделе:"
+msgstr "In this section:"
 
-#: ../source/event_cleaner.rst:9
+#: ../source/event_cleaner.rst:13
+msgid "Очистка устаревших событий в ОС Windows"
+msgstr "Windows: ``cleanup-events.exe``"
+
+#: ../source/event_cleaner.rst:15
+msgid "Для удаления устаревших событий в ОС Windows используйте утилиту ``cleanup-events.exe``. Запуск утилиты выполняется из консоли. Для автоматического удаления событий используйте bat-файл или создайте задачу в Планировщике заданий Windows или любом другом планировщике."
+msgstr "To remove old events from the database in FindFace Security for Windows, use the ``cleanup-events.exe`` utility. Launch it from the console. To automatically remove events, use a batch file, or add a scheduled job to Windows Task Scheduler."
+
+#: ../source/event_cleaner.rst:17
+msgid "Для удаления событий старше определенного количества дней используется опция ``--age``. Например, для удаления событий старше 5 дней выполните команду:"
+msgstr "In order to remove events older than a given number of days, use the ``--age`` option. For example, to remove events older than 5 days, execute:"
+
+#: ../source/event_cleaner.rst:23
+msgid "При создании задачи в Планировщике Windows в качестве единственного аргумента добавьте ``--age DAYS``, где ``DAYS`` - минимальный возраст удаляемого события."
+msgstr "When creating a task in Windows Task Scheduler, specify ``--age DAYS`` as an argument, where ``DAYS`` is the minimum age of events to be purged."
+
+#: ../source/event_cleaner.rst:26
+msgid "Минимальная инструкция для запуска утилиты ``cleanup-events.exe`` на регулярной основе выглядит следующим образом:"
+msgstr "The minimum step-by-step instructions for running the ``cleanup-events. exe`` utility on a regular basis are as follows:"
+
+#: ../source/event_cleaner.rst:28
+msgid "Откройте Планировщик Windows и выберите :guilabel:`Создать задачу`."
+msgstr "Open Windows Scheduler and select :guilabel:`Create Task`."
+
+#: ../source/event_cleaner.rst:30
+msgid "|create_task|"
+msgstr "|create_task_en|"
+
+#: ../source/event_cleaner.rst:35
+msgid "При создании задачи в общих настройках укажите имя новой задачи и версию ОС."
+msgstr "On the :guilabel:`General` tab, specify the new task name and OS version."
+
+#: ../source/event_cleaner.rst:37
+msgid "|task_name|"
+msgstr "|task_name_en|"
+
+#: ../source/event_cleaner.rst:42
+msgid "На вкладке :guilabel:`Триггер` создайте новый триггер, указав в какое время и в какие дни должна выполняться задача (очистка базы данных), например, еженедельно по четвергам в 1:00."
+msgstr "On the :guilabel:`Triggers` tab, create a new trigger by scheduling the task (database cleanup), for example, to run every Thursday at 1 a.m."
+
+#: ../source/event_cleaner.rst:44
+msgid "|task_trigger|"
+msgstr "|task_trigger_en|"
+
+#: ../source/event_cleaner.rst:49
+msgid "На вкладке :guilabel:`Действия` выберите вид выполняемого действия :guilabel:`Запуск программы`, указав путь к файлу ``cleanup-events.exe``. В качестве аргумента добавьте возраст событий, которые должны быть удалены."
+msgstr "On the :guilabel:`Actions` tab, select launching an .exe file as an action, and specify the path to ``cleanup-events.exe``. As an argument, specify the age of events which have to be purged."
+
+#: ../source/event_cleaner.rst:51
+msgid "|task_action|"
+msgstr "|task_action_en|"
+
+#: ../source/event_cleaner.rst:56
+msgid "Нажмите :guilabel:`OK`. Теперь задача очистки базы данных будет отрабатывать в автоматическом режиме, включая открытие и автоматическое закрытие cmd-консоли."
+msgstr "Click :guilabel: `OK`. From now on, the database cleanup will be performed in automatic mode, including operations with cmd-console."
+
+#: ../source/event_cleaner.rst:61
+msgid "Очистка устаревших событий в ОС Ubuntu"
+msgstr "Ubuntu: ``event-cleaner``"
+
+#: ../source/event_cleaner.rst:63
+msgid "Для удаления устаревших событий в ОС Ubuntu используйте утилиту ``event-cleaner``."
+msgstr "To remove old events from the database in FindFace Security for Ubuntu, use ``event-cleaner``."
+
+#: ../source/event_cleaner.rst:65
 msgid "Cправка по утилите вызывается следующей командой:"
 msgstr "To invoke the ``event-cleaner`` help message, execute:"
 
-#: ../source/event_cleaner.rst:42
-msgid ""
-"Для удаления событий старше определенного количества дней используйте опцию ``--"
-"age``. Например, для удаления событий старше 5 дней выполните команду:"
-msgstr ""
-"In order to remove events older than a given number of days, use the ``--age`` "
-"option. For example, to remove events older than 5 days, execute:"
+#: ../source/event_cleaner.rst:98
+msgid "Для удаления событий старше определенного количества дней используйте опцию ``--age``. Например, для удаления событий старше 5 дней выполните команду:"
+msgstr "In order to remove events older than a given number of days, use the ``--age`` option. For example, to remove events older than 5 days, execute:"
 
-#: ../source/event_cleaner.rst:48
-msgid ""
-"Для автоматического удаления событий создайте задание в планировщике ``cron``. "
-"Команда в примере ниже добавляет в ``cron`` файл скрипта ``/etc/cron.d/"
-"cleanup``, который удаляет события старше 60 дней. Скрипт выполняется ежедневно "
-"в 00:05."
-msgstr ""
-"To automatically remove events, add a scheduled job to Ubuntu’s ``cron``. The "
-"command in the example below adds a script file ``/etc/cron.d/cleanup`` that "
-"removes events older than 60 days. The script is executed daily at 00:05."
+#: ../source/event_cleaner.rst:104
+msgid "Для автоматического удаления событий создайте задание в планировщике ``cron``. Команда в примере ниже добавляет в ``cron`` файл скрипта ``/etc/cron.d/cleanup``, который удаляет события старше 60 дней. Скрипт выполняется ежедневно в 00:05."
+msgstr "To automatically remove events, add a scheduled job to Ubuntu’s ``cron``. The command in the example below adds a script file ``/etc/cron.d/cleanup`` that removes events older than 60 days. The script is executed nightly at 00:05."
+
+#~ msgid "Для удаления устаревших событий используйте утилиту ``event-cleaner``."
+#~ msgstr ""
+#~ "Use the ``event-cleaner`` utility to "
+#~ "remove old events from the database."
+
+#~ msgid "Cправка по утилите вызывается следующей командой:"
+#~ msgstr "To invoke the ``event-cleaner`` help message, execute:"
+
+#~ msgid ""
+#~ "Для автоматического удаления событий создайте"
+#~ " задание в планировщике ``cron``. Команда"
+#~ " в примере ниже добавляет в ``cron``"
+#~ " файл скрипта ``/etc/cron.d/cleanup``, который"
+#~ " удаляет события старше 60 дней. "
+#~ "Скрипт выполняется ежедневно в 00:05."
+#~ msgstr ""
+#~ "To automatically remove events, add a"
+#~ " scheduled job to Ubuntu’s ``cron``. "
+#~ "The command in the example below "
+#~ "adds a script file ``/etc/cron.d/cleanup`` "
+#~ "that removes events older than 60 "
+#~ "days. The script is executed daily "
+#~ "at 00:05."

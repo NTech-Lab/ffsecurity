@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NtechLab
+# This file is distributed under the same license as the FindFace Security
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Security 1.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-18 18:19+0800\n"
+"PO-Revision-Date: 2019-02-18 18:39+0800\n"
+"Last-Translator: \n"
+"Language: en\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+"X-Generator: Poedit 2.1.1\n"
+
+#: ../source/genetec_notification.rst:6
+msgid "Оповещения в Genetec Security Center"
+msgstr "Notifications in Genetec Security Center"
+
+#: ../source/genetec_notification.rst:8
+msgid ""
+"Каждое событие распознавания лица с камеры Genetec, для которого найдено "
+"досье, активирует соответствующее оповещение ``alarm`` в Genetec "
+"Security Center. Каждое оповещение, отправленное FindFace Security, "
+"связывается с камерой-источником события распознавания лица, поэтому вы "
+"можете сразу же просматривать живое или архивное видео в задаче Alarm "
+"Monitoring в Genetec Security Desk. FindFace Security также использует "
+"операции с оповещением Alarm Procedures для обеспечения пользователя "
+"дополнительными данными по событию, такими как:"
+msgstr ""
+"Each face recognition event from a Genetec camera, that has a match with "
+"a dossier, triggers a relevant alarm in Genetec Security Center. Every "
+"alarm triggered by FindFace Security is associated with a relevant "
+"camera (source of the face recognition event) so you can instantly watch "
+"live or playback video within the Alarm Monitoring task in Genetec "
+"Security Desk. FindFace Security also utilizes Alarm Procedures to "
+"provide a user with additional content related to the alarm, such as:"
+
+#: ../source/genetec_notification.rst:10
+msgid "обнаруженное на видео лицо"
+msgstr "face detected in video"
+
+#: ../source/genetec_notification.rst:11
+msgid "найденное похожее лицо из базы данных досье"
+msgstr "matching face from the dossier database"
+
+#: ../source/genetec_notification.rst:12
+msgid "имя человека и комментарий из досье"
+msgstr "person’s name and comment from the dossier"
+
+#: ../source/genetec_notification.rst:13
+msgid "степень схожести лиц (уверенность алгоритма в совпадении)"
+msgstr "matching confidence"
+
+#: ../source/genetec_notification.rst:14
+msgid "имя списка наблюдения"
+msgstr "watch list’s name"
+
+#: ../source/genetec_notification.rst:15
+msgid "полный кадр"
+msgstr "full frame"
+
+#: ../source/genetec_notification.rst:17
+msgid "|genetec_notification_en|"
+msgstr "|genetec_notification_en|"
+
+#: ../source/genetec_notification.rst:22
+msgid ""
+"Обработка полученного оповещения о распознавания лица выполняется "
+"аналогично другим оповещениям в Genetec Security Center."
+msgstr ""
+"After you receive a face recognition alarm, process it as you usually do "
+"with other alarms in Genetec Security Center."
+
+#~ msgid ""
+#~ "Each face recognition event from a Genetec camera, that has a match "
+#~ "with a face from the dossier database, triggers a relevant alarm in "
+#~ "Genetec Security Center. Each alarm features the following "
+#~ "information:"
+#~ msgstr ""
+#~ "Each face recognition event from a Genetec camera, that has a match "
+#~ "with a face from the dossier database, triggers a relevant alarm in "
+#~ "Genetec Security Center. Each alarm features the following "
+#~ "information:"
+
+#~ msgid "Notifications in Genetec Security Center"
+#~ msgstr "Notifications in Genetec Security Center"
+
+#~ msgid "face detected in video"
+#~ msgstr "face detected in video"
+
+#~ msgid "matching face from the dossier database"
+#~ msgstr "matching face from the dossier database"
+
+#~ msgid "person's name and comment from the dossier"
+#~ msgstr "person's name and comment from the dossier"
+
+#~ msgid "matching confidence"
+#~ msgstr "matching confidence"
+
+#~ msgid "watch list's name"
+#~ msgstr "watch list's name"
+
+#~ msgid "full frame."
+#~ msgstr "full frame."
+
+#~ msgid ""
+#~ "After you receive a face recognition alarm, process it as you usually "
+#~ "do with other alarms in Genetec Security Center."
+#~ msgstr ""
+#~ "After you receive a face recognition alarm, process it as you usually "
+#~ "do with other alarms in Genetec Security Center."
