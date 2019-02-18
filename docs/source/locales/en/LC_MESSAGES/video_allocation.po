@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-09 18:00+0700\n"
-"PO-Revision-Date: 2018-10-09 18:27+0700\n"
+"POT-Creation-Date: 2019-02-18 13:34+0800\n"
+"PO-Revision-Date: 2019-02-18 14:59+0800\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -24,7 +24,11 @@ msgstr ""
 msgid "Привязка группы камер к экземпляру ``video-worker``"
 msgstr "Allocate ``video-worker`` to Camera Group"
 
-#: ../source/video_allocation.rst:6
+#: ../source/video_allocation.rst:7
+msgid "Поддерживается только в ОС Ubuntu."
+msgstr "Available only in FindFace Security for Ubuntu."
+
+#: ../source/video_allocation.rst:9
 msgid ""
 "Часто в распределенной архитектуре (например, сеть гостиниц, магазинов, "
 "несколько проходных) обработку видеоизображения с группы камер требуется "
@@ -35,26 +39,26 @@ msgid ""
 msgstr ""
 "In distributed architectures, it is often necessary that video streams "
 "from a group of cameras be processed in situ, without being "
-"redistributed across remote ``video-worker`` instances by the main "
-"server. Among typical use cases are hotel chains, chain stores, several "
-"security checkpoints in the same building, etc. In this case, simply "
-"allocate the local ``video-worker`` to the camera group."
+"redistributed by the main server across remote ``video-worker`` "
+"instances. Among typical use cases are hotel chains, chain stores, "
+"several security checkpoints in the same building, etc. If this is your "
+"case, simply allocate the local ``video-worker`` to the camera group."
 
-#: ../source/video_allocation.rst:8
+#: ../source/video_allocation.rst:11
 msgid ""
 "Для обработки видео с группы камер в определенном экземпляре компонента "
 "``video-worker`` выполните следующие действия:"
 msgstr "Do the following:"
 
-#: ../source/video_allocation.rst:10
+#: ../source/video_allocation.rst:13
 msgid "В веб-интерфейсе перейдите на вкладку :guilabel:`Группы камер`."
 msgstr "Navigate to the :guilabel:`Camera groups` tab."
 
-#: ../source/video_allocation.rst:11
+#: ../source/video_allocation.rst:14
 msgid "Откройте настройки группы камер."
 msgstr "Open the camera group settings."
 
-#: ../source/video_allocation.rst:12
+#: ../source/video_allocation.rst:15
 msgid ""
 "В поле :guilabel:`Метки` создайте или выберите из уже созданных одну или "
 "несколько меток для привязки группы камер к экземпляру ``video-worker``. "
@@ -63,7 +67,7 @@ msgstr ""
 "In the :guilabel:`Labels`, create or select one or several allocation "
 "labels. Save changes."
 
-#: ../source/video_allocation.rst:13
+#: ../source/video_allocation.rst:16
 msgid ""
 "Откройте файл конфигурации экземпляра ``video-worker`` и укажите в нем "
 "заданные метки в формате ``имя_метки=true`` (``terminal_1`` в примере "
@@ -73,6 +77,28 @@ msgstr ""
 "labels in the following format: ``label_name=true`` (label "
 "``terminal_1`` in the example below)."
 
-#: ../source/video_allocation.rst:21
+#: ../source/video_allocation.rst:24
 msgid "Перезапустите ``video-worker``."
 msgstr "Restart ``video-worker``."
+
+#: ../source/video_allocation.rst:31
+msgid ""
+"Если камере присвоена метка, то видеопоток с нее может обрабатываться "
+"как экземпляром ``video-worker`` с аналогичной меткой, так и экземпляром "
+"``video-worker`` без меток."
+msgstr ""
+"If a camera is assigned an allocation label, its video stream can be "
+"processed by a ``video-worker`` instance with the same label, as well as "
+"by all unlabeled ``video-worker`` instances."
+
+#: ../source/video_allocation.rst:34
+msgid ""
+"Если камера с меткой обрабатывается экземпляром ``video-worker`` без "
+"меток и появляется свободный экземпляр с меткой, камера автоматически на "
+"него не переключится. Чтобы переключить камеру, перезапустите экземпляр "
+"``video-worker`` с меткой."
+msgstr ""
+"If a labeled camera is processed by an unlabeled ``video-worker`` "
+"instance and a free similar-labeled instance appears, the camera won’t "
+"automatically switch to the latter. To switch the camera, restart the "
+"similar-labeled ``video-worker`` instance."

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: FindFace Security 1.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-10 17:14+0700\n"
-"PO-Revision-Date: 2018-10-19 13:46+0700\n"
+"PO-Revision-Date: 2018-10-23 16:27+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -51,7 +51,7 @@ msgstr ""
 
 #: ../source/mobile.rst:16
 msgid "Поиск лиц в базах данных."
-msgstr "Search for faces in the event list and dossier database."
+msgstr "Search for faces in the event list and dossier database"
 
 #: ../source/mobile.rst:21
 msgid "Идентификация лиц по базам данных в режиме реального времени."

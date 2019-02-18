@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, NtechLab
+# This file is distributed under the same license as the FindFace Security
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Security 1.2.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-18 18:19+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../source/genetec_notification copy.rst:6
+msgid "Notifications in Genetec Security Center"
+msgstr ""
+
+#: ../source/genetec_notification copy.rst:8
+msgid ""
+"Each face recognition event from a Genetec camera, that has a match with "
+"a dossier, triggers a relevant alarm in Genetec Security Center. Every "
+"alarm triggered by FindFace Security is associated with a relevant camera"
+" (source of the face recognition event) so you can instantly watch live "
+"or playback video within the Alarm Monitoring task in Genetec Security "
+"Desk. FindFace Security also utilizes Alarm Procedures to provide a user "
+"with additional content related to the alarm, such as:"
+msgstr ""
+
+#: ../source/genetec_notification copy.rst:10
+msgid "face detected in video"
+msgstr ""
+
+#: ../source/genetec_notification copy.rst:11
+msgid "matching face from the dossier database"
+msgstr ""
+
+#: ../source/genetec_notification copy.rst:12
+msgid "person's name and comment from the dossier"
+msgstr ""
+
+#: ../source/genetec_notification copy.rst:13
+msgid "matching confidence"
+msgstr ""
+
+#: ../source/genetec_notification copy.rst:14
+msgid "watch list's name"
+msgstr ""
+
+#: ../source/genetec_notification copy.rst:15
+msgid "full frame."
+msgstr ""
+
+#: ../source/genetec_notification copy.rst:17
+msgid "|genetec_notification_en|"
+msgstr ""
+
+#: ../source/genetec_notification copy.rst:22
+msgid ""
+"After you receive a face recognition alarm, process it as you usually do "
+"with other alarms in Genetec Security Center."
+msgstr ""
+

@@ -1,0 +1,194 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NtechLab
+# This file is distributed under the same license as the FindFace Security
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Security 1.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-18 13:34+0800\n"
+"PO-Revision-Date: 2019-02-18 15:46+0800\n"
+"Last-Translator: \n"
+"Language: en\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+"X-Generator: Poedit 2.1.1\n"
+
+#: ../source/deploy_windows.rst:5
+msgid "Развертывание в ОС Windows"
+msgstr "Deploy on Windows"
+
+#: ../source/deploy_windows.rst:8
+msgid "В этом разделе:"
+msgstr "In this section:"
+
+#: ../source/deploy_windows.rst:13
+msgid "Установка"
+msgstr "Installation"
+
+#: ../source/deploy_windows.rst:15
+msgid ""
+"Для развертывания FindFace Security в ОС Windows выполните следующие действия:"
+msgstr "To deploy FindFace Security on Windows, do the following:"
+
+#: ../source/deploy_windows.rst:17
+msgid ""
+"Установите среду виртуализации Docker, руководствуясь официальной справочной "
+"`документацией <https://docs.docker.com/docker-for-windows/install/>`__ по "
+"системе."
+msgstr ""
+"Install the :program:`Docker` virtualization environment (see the Docker’s "
+"official `documentation <https://docs.docker.com/docker-for-windows/install/"
+">`__)."
+
+#: ../source/deploy_windows.rst:18
+msgid ""
+"В настройках Docker добавьте диск, на который устанавливается FindFace "
+"Security, в список дисков в общем доступе. Для этого перейдите в :menuselection:"
+"`Settings --> Shared Drives`, выберите диск и выполните :guilabel:`Share`."
+msgstr ""
+"In the :program:`Docker` settings, share the hard drive you chose to install "
+"FindFace Security. To do so, navigate to :menuselection:`Settings —> Shared "
+"Drives`, select the drive and apply :guilabel:`Share`."
+
+#: ../source/deploy_windows.rst:19
+msgid ""
+"В настройках Docker увеличьте объем ресурсов для собственных нужд Docker и "
+"поддержания обработки необходимого количества камер, выделив максимально "
+"возможное количество ядер процессора и соответствующий объем памяти. См. :ref:"
+"`requirements`."
+msgstr ""
+"In the :program:`Docker` settings, allocate the maximum possible number of CPU "
+"cores and required amount of RAM to support video processing from all the "
+"cameras in use, as well as the Docker’s own needs. See :ref:`requirements` for "
+"details."
+
+#: ../source/deploy_windows.rst:22
+msgid ""
+"Например, для обработки одной камеры необходимо 6 Гб, для обработки 2-х - 8 Гб "
+"и т. д."
+msgstr "For example, allocate 6 Gb if you use 1 camera, 8 Gb if 2 cameras, etc."
+
+#: ../source/deploy_windows.rst:24
+msgid ""
+"Добавьте пользователя Windows, в учетной записи которого осуществляется "
+"установка, в группу ``docker-users``."
+msgstr "Add the current Windows user to the ``docker-users`` group."
+
+#: ../source/deploy_windows.rst:27
+msgid "Не допускается использовать пользователя, если ему присвоен пустой пароль."
+msgstr "Do not use a user account with an empty password."
+
+#: ../source/deploy_windows.rst:29
+msgid ""
+"Скачайте дистрибутив FindFace Security для Windows, состоящий из файлов :"
+"program:`<Install-FindFaceSecurity>.exe` и :program:`<Install-FindFaceSecurity>."
+"nsisbin`. Для успешной установки оба файла должны находится в корне одного "
+"каталога."
+msgstr ""
+"Download the FindFace Security for Windows installation files: :program:"
+"`<Install-FindFaceSecurity>.exe` and :program:`<Install-FindFaceSecurity>."
+"nsisbin`. For successful installation, these files have to be in the root of "
+"the same directory."
+
+#: ../source/deploy_windows.rst:30
+msgid "Запустите :program:`<Install-FindFaceSecurity>.exe`."
+msgstr "Launch :program:`<Install-FindFaceSecurity>.exe`."
+
+#: ../source/deploy_windows.rst:32
+msgid "|choose_components|"
+msgstr "|choose_components|"
+
+#: ../source/deploy_windows.rst:37
+msgid ""
+"Следуйте инструкциям мастера установки. В процессе установки потребуется "
+"выбрать IP-адрес компонента ``ffsecurity``, который будет использоваться для "
+"отображения веб-интерфейса в браузере. Список возможных IP-адресов "
+"пронумерован. В окне утилиты введите нужный номер и нажмите :kbd:`Enter`."
+msgstr ""
+"Follow the Installation Wizard’s instructions. During the installation, you "
+"will need to select the IP address of the ``ffsecurity`` component that will be "
+"used to access the FindFace Security web interface. The list of possible IP "
+"addresses is numbered. In the utility window, enter the right number and press :"
+"kbd:`Enter`."
+
+#: ../source/deploy_windows.rst:39
+msgid "|ip_address|"
+msgstr "|ip_address|"
+
+#: ../source/deploy_windows.rst:44
+msgid ""
+"После завершения установки оставьте установленными флажки :guilabel:`Start "
+"FindFace Security and open its webpages` и :guilabel:`Show Readme` и нажмите :"
+"guilabel:`Finish`. Появится командная строка с информацией о запускаемых/"
+"запущенных компонентах. После этого будет открыта стартовая веб-страница "
+"FindFace Security, а также веб-интерфейс лицензионного сервера, через который "
+"нужно будет загрузить файл лицензии."
+msgstr ""
+"After the installation is complete, leave :guilabel:`Start FindFace Security "
+"and open its webpages` and :guilabel:`Show Readme` checked, and click :guilabel:"
+"`Finish`. You will see a command prompt with component statistics appear, as "
+"well as the FindFace Security main web page and the web interface of the "
+"license server. Use the license server web interface to upload your license "
+"file."
+
+#: ../source/deploy_windows.rst:47
+msgid ""
+"Все необходимые для работы с FindFace Security ссылки и учетные данные вы "
+"найдете в открывшемся файле :file:`readme.txt`."
+msgstr ""
+"You will find all the links and credentials you need to get started with "
+"FindFace Security in the newly opened :file:`readme.txt`."
+
+#: ../source/deploy_windows.rst:50
+msgid ""
+"Работа с FindFace Security выполняется через веб-интерфейс, доступный по http "
+"по порту ``8081``."
+msgstr ""
+"The FindFace Security web interface is available via ``http`` on port ``8081``."
+
+#: ../source/deploy_windows.rst:52
+msgid "|complete|"
+msgstr "|complete|"
+
+#: ../source/deploy_windows.rst:57
+msgid "|start|"
+msgstr "|start|"
+
+#: ../source/deploy_windows.rst:63
+msgid ""
+"Readme-файл хранится в выбранном каталоге установки (по умолчанию :"
+"menuselection:`Program Files --> FindFace Security`)."
+msgstr ""
+"You can find the README file in the installation directory (:menuselection:"
+"`Program Files —> FindFace Security` by default)."
+
+#: ../source/deploy_windows.rst:67
+msgid "Запуск и управление"
+msgstr "Launch and Manage FindFace Security"
+
+#: ../source/deploy_windows.rst:69
+msgid ""
+"Для запуска, перезапуска и остановки FindFace Security используйте "
+"соответствующие ярлыки в меню :guilabel:`Пуск`."
+msgstr ""
+"In order to launch, restart, or stop FindFace Security, use shortcuts in the :"
+"guilabel:`Start` menu."
+
+#: ../source/deploy_windows.rst:71
+msgid "|menu_start|"
+msgstr "|menu_start|"
+
+#: ../source/deploy_windows.rst:77
+msgid ""
+"Соответствующие файлы ``.exe`` хранятся в выбранном каталоге установке (по "
+"умолчанию :menuselection:`Program Files --> FindFace Security`)."
+msgstr ""
+"You can find the relevant EXE files in the installation directory (:"
+"menuselection:`Program Files —> FindFace Security` by default)."

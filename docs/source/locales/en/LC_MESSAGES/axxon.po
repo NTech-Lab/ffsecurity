@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, NtechLab
+# This file is distributed under the same license as the FindFace Security
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FindFace Security 1.2.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-18 13:34+0800\n"
+"PO-Revision-Date: 2019-02-18 16:36+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.1.1\n"
+
+#: ../source/axxon.rst:2
+msgid "Axxon Next"
+msgstr "Axxon Next"
+
+#: ../source/axxon.rst:4
+msgid ""
+"Интеграция FindFace Security с программным комплексом Axxon Next "
+"позволяет обрабатывать видеопотоки из системы безопасности на базе Axxon "
+"и анализировать их на предмет наличия лиц из досье."
+msgstr ""
+"FindFace Security integration with Axxon Next allows you to detect and "
+"identify faces in video streams from an Axxon-based security system."
+
+#: ../source/axxon.rst:7
+msgid ""
+"Один экземпляр FindFace Security поддерживает работу не более чем с "
+"одним сервером Axxon Next."
+msgstr ""
+"One FindFace Security instance supports interaction with only one Axxon "
+"Next server."
+
+#: ../source/axxon.rst:9
+msgid ""
+"Интеграция с Axxon Next выполняется с использованием плагина "
+"``ffsecurity_axxon``."
+msgstr ""
+"Integration with Axxon Next is implemented via the ``ffsecurity_axxon`` "
+"plugin."
+
+#: ../source/axxon.rst:11
+msgid ""
+"Для того чтобы настроить интеграцию с Axxon Next в ОС Ubuntu, выполните "
+"следующие действия:"
+msgstr ""
+"To configure the FindFace Security integration with Axxon Next in "
+"Ubuntu, do the following:"
+
+#: ../source/axxon.rst:13
+msgid ""
+"Активируйте плагин, добавив в файл конфигурации ``/etc/ffsecurity/config."
+"py`` строку ``INSTALLED_APPS.append('ffsecurity_axxon')``."
+msgstr ""
+"Activate the plugin by appending the ``INSTALLED_APPS."
+"append(‘ffsecurity_axxon’)`` line to the ``/etc/ffsecurity/config.py`` "
+"configuration file."
+
+#: ../source/axxon.rst:24
+msgid ""
+"В файл конфигурации добавьте секцию ``FFSECURITY->AXXON``. Заполните ее "
+"так, как показано в примере ниже. В параметре ``api`` укажите адрес "
+"сервера Axxon Next, по которому FindFace Security будет обращаться к API "
+"Axxon и за HLS-потоками архива. В параметре ``rtsp`` укажите общий адрес "
+"видеопотоков на сервере Axxon Next."
+msgstr ""
+"Add the ``FFSECURITY->AXXON`` section to the configuration file. Fill it "
+"out as shown in the example below. In the ``api`` parameter, specify the "
+"IP address of the Axxon Next server that will provide FindFace Security "
+"with Axxon API and HLS-archive streams. In the ``rtsp`` parameter, "
+"specify the common segment of Axxon video stream addresses."
+
+#: ../source/axxon.rst:36
+msgid ""
+"(Опционально). Если в событиях распознавания лиц требуется отображать "
+"клипы видео из Axxon Next, отредактируйте секцию "
+"``FFSECURITY_UI_CONFIG`` так, как показано в примере ниже."
+msgstr ""
+"(Optional). If facial recognition events are required to contain video "
+"from Axxon Next, edit the ``FFSECURITY_UI_CONFIG`` section as shown in "
+"the example below."
+
+#: ../source/axxon.rst:47
+msgid ""
+"Создайте камеры в FindFace Security (см. :ref:`cameras`). При создании "
+"камер вам потребуется ввести их URL в формате ``axxon:"
+"<friendlyNameLong>``, где ``friendlyNameLong`` - имя камеры на сервере "
+"Axxon Next. Данное имя можно посмотреть в интерфейсе Axxon, или через "
+"API Axxon, выполнив команду:"
+msgstr ""
+"Create representations of Axxon Next cameras in FindFace Security (see :"
+"ref:`cameras`). A camera representation URL must be specified in the "
+"format ``axxon:<friendlyNameLong>``, where ``friendlyNameLong`` is a "
+"camera name on the Axxon Next server. Find out this name in the Axxon "
+"user interface, or via Axxon API by executing:"
+
+#: ../source/axxon.rst:62
+msgid ""
+"Для единственной камеры из примера выше URL должен быть задан как "
+"``axxon:vhod_1.Vhod_1``."
+msgstr ""
+"For the camera from the example above, URL must be specified as ``axxon:"
+"vhod_1.Vhod_1``."
+
+#: ../source/axxon.rst:64
+msgid ""
+"На этом настройка интеграции будет завершена. Если интеграция настроена "
+"корректно, FindFace Security будет выполнять проверку наличия лиц из "
+"досье в видеопотоках Axxon Next, а в событиях распознавания лиц будут "
+"отображаться клипы видео из Axxon Next (при соответствующих настройках)."
+msgstr ""
+"The configuration is now finished. If the integration is properly "
+"configured, FindFace Security will be detecting and identifying faces in "
+"Axxon Next video streams, and facial recognition events will be "
+"featuring video clips from Axxon Next (upon relevant settings)."

@@ -6,5 +6,8 @@
    :maxdepth: 1
    :caption: В этой главе:
 
+   event_cleaner
    logs
    remove_instance
+   
+  
