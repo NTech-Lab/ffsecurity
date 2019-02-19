@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-28 15:29+0700\n"
-"PO-Revision-Date: 2018-10-28 15:34+0700\n"
+"POT-Creation-Date: 2019-02-19 17:11+0800\n"
+"PO-Revision-Date: 2019-02-19 17:18+0800\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -29,66 +29,38 @@ msgid "При разборе нештатных ситуаций использ�
 msgstr "The FindFace Security logs contain detailed information about all the events occurred in the system and are great for troubleshooting."
 
 #: ../source/logs.rst:7
-msgid "В этом разделе:"
-msgstr "In this section:"
-
-#: ../source/logs.rst:13
-msgid "Просмотр логов в ОС Windows"
-msgstr "View Logs in Windows"
-
-#: ../source/logs.rst:15
-msgid "Для того чтобы просмотреть логи в ОС Windows, перейдите в :menuselection:`Menu Start --> FindFace Security --> Logs Monitor`."
-msgstr "To view the FindFace Security logs, navigate to :menuselection:`Menu Start —> FindFace Security —> Logs Monitor`."
-
-#: ../source/logs.rst:17
-msgid "|view_logs|"
-msgstr "|view_logs|"
-
-#: ../source/logs.rst:22
-msgid "При запуске утилита :program:`Logs Monitor` покажет последние 100 сообщений от каждого из внутренних сервисов и продолжит выводить новые, пока не будет закрыта."
-msgstr "At startup, :program:`Logs Monitor` shows the last 100 messages from each of the internal services, and will continue to display new messages until you close the utility."
-
-#: ../source/logs.rst:25
-msgid "Файл :program:`Logs Monitor` :file:`ffsec-logs.cmd` хранится в каталоге :menuselection:`ProgramData --> FindFace Security`."
-msgstr "You can find the :program:`Logs Monitor` application :file:`ffsec-logs.cmd` at :menuselection:`Program Data --> FindFace Security`."
-
-#: ../source/logs.rst:29
-msgid "Аудит-логи в ОС Ubuntu"
-msgstr "Audit Logs in Ubuntu"
-
-#: ../source/logs.rst:32
-msgid "Для того чтобы включить хранение аудит-логов на жестком диске, в файле ``/etc/systemd/journald.conf`` раскомментируйте и измените параметр ``Storage`` следующим образом:"
+msgid "Для того чтобы включить хранение аудит-логов на жестком диске в ОС Ubuntu, в файле ``/etc/systemd/journald.conf`` раскомментируйте и измените параметр ``Storage`` следующим образом:"
 msgstr "In order to enable saving audit logs to your hard drive, uncomment and edit the ``Storage`` parameter in the ``/etc/systemd/journald.conf`` file:"
 
-#: ../source/logs.rst:41
+#: ../source/logs.rst:16
 msgid "При необходимости также раскомментируйте и измените значение параметра ``SystemMaxUse``. Данный параметр определяет в процентах максимальный объем логов на жестком диске (по умолчанию 10%)."
 msgstr "If necessary, uncomment and edit the ``SystemMaxUse`` parameter as well. This parameter determines the maximum volume of log files on your hard drive (10% by default)."
 
-#: ../source/logs.rst:48
+#: ../source/logs.rst:23
 msgid "Для того чтобы просмотреть аудит-логи в ОС Ubuntu, выполните следующую команду:"
 msgstr "To view the FindFace Security audit logs in Ubuntu, execute the following command:"
 
-#: ../source/logs.rst:55
+#: ../source/logs.rst:30
 msgid "При расшифровке аудит-логов в первую очередь обращайте внимание на следующие параметры:"
 msgstr "When interpreting audit logs, first of all pay attention on the following parameters:"
 
-#: ../source/logs.rst:57
+#: ../source/logs.rst:32
 msgid "``REQUEST_USER``: пользователь, который выполнил изменения;"
 msgstr "``REQUEST_USER``: user who made the changes;"
 
-#: ../source/logs.rst:58
+#: ../source/logs.rst:33
 msgid "``REQUEST_PATH``: URL запроса;"
 msgstr "``REQUEST_PATH``: URL of the request;"
 
-#: ../source/logs.rst:59
+#: ../source/logs.rst:34
 msgid "``REQUEST_DATA``: данные запроса."
 msgstr "``REQUEST_DATA``: detailed information of the request."
 
-#: ../source/logs.rst:61
+#: ../source/logs.rst:36
 msgid "Ниже приведен пример лога создания досье с ``id=1879`` пользователем ``admin``."
 msgstr "In the log below, the ``admin`` user creates a dossier ``id=1879``."
 
-#: ../source/logs.rst:94
+#: ../source/logs.rst:69
 msgid "В следующем примере для досье с ``id=1879`` запрашивается список лиц."
 msgstr "In the next log, the list of faces is requested for the dossier ``id=1879``."
 
@@ -151,3 +123,48 @@ msgstr "In the next log, the list of faces is requested for the dossier ``id=187
 #~ "In the next log, the list of "
 #~ "faces is requested for the dossier "
 #~ "``id=1879``."
+
+#~ msgid "В этом разделе:"
+#~ msgstr "In this section:"
+
+#~ msgid "Просмотр логов в ОС Windows"
+#~ msgstr "View Logs in Windows"
+
+#~ msgid ""
+#~ "Для того чтобы просмотреть логи в "
+#~ "ОС Windows, перейдите в :menuselection:`Menu"
+#~ " Start --> FindFace Security --> Logs"
+#~ " Monitor`."
+#~ msgstr ""
+#~ "To view the FindFace Security logs, "
+#~ "navigate to :menuselection:`Menu Start —> "
+#~ "FindFace Security —> Logs Monitor`."
+
+#~ msgid "|view_logs|"
+#~ msgstr "|view_logs|"
+
+#~ msgid ""
+#~ "При запуске утилита :program:`Logs Monitor`"
+#~ " покажет последние 100 сообщений от "
+#~ "каждого из внутренних сервисов и "
+#~ "продолжит выводить новые, пока не будет"
+#~ " закрыта."
+#~ msgstr ""
+#~ "At startup, :program:`Logs Monitor` shows "
+#~ "the last 100 messages from each of"
+#~ " the internal services, and will "
+#~ "continue to display new messages until"
+#~ " you close the utility."
+
+#~ msgid ""
+#~ "Файл :program:`Logs Monitor` :file:`ffsec-"
+#~ "logs.cmd` хранится в каталоге "
+#~ ":menuselection:`ProgramData --> FindFace Security`."
+#~ msgstr ""
+#~ "You can find the :program:`Logs Monitor`"
+#~ " application :file:`ffsec-logs.cmd` at "
+#~ ":menuselection:`Program Data --> FindFace "
+#~ "Security`."
+
+#~ msgid "Аудит-логи в ОС Ubuntu"
+#~ msgstr "Audit Logs in Ubuntu"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-28 15:29+0700\n"
+"POT-Creation-Date: 2019-02-19 17:11+0800\n"
 "PO-Revision-Date: 2018-10-23 21:40+0700\n"
 "Last-Translator: \n"
 "Language: en\n"
@@ -24,38 +24,6 @@ msgid "Удаление экземпляра продукта"
 msgstr "Remove Instance"
 
 #: ../source/remove_instance.rst:5
-msgid "В этом разделе:"
-msgstr "In this section:"
-
-#: ../source/remove_instance.rst:11
-msgid "Удаление FindFace Security в ОС Windows"
-msgstr "Uninstall FindFace Security for Windows"
-
-#: ../source/remove_instance.rst:13
-msgid ""
-"Для удаления FindFace Security используйте соответствующий ярлык в меню "
-":guilabel:`Пуск`."
-msgstr ""
-"To uninstall FindFace Security, use the relevant shortcut in the "
-":guilabel:`Start` menu."
-
-#: ../source/remove_instance.rst:15
-msgid "|menu_start|"
-msgstr "|menu_start|"
-
-#: ../source/remove_instance.rst:21
-msgid ""
-"Файл ``uninstall.exe`` хранятся в выбранном каталоге установке (по "
-"умолчанию :menuselection:`Program Files --> FindFace Security`)."
-msgstr ""
-"You can find the ``uninstall.exe`` file in the installation directory "
-"(:menuselection:`Program Files —> FindFace Security` by default)."
-
-#: ../source/remove_instance.rst:25
-msgid "Удаление FindFace Security в ОС Ubuntu"
-msgstr "Uninstall FindFace Security for Ubuntu"
-
-#: ../source/remove_instance.rst:27
 msgid ""
 "Вы можете автоматически удалить FindFace Security 1.1 вместе с базой "
 "данных с помощью скрипта :download:`ffsec_1.1_uninstall.sh "
@@ -67,11 +35,11 @@ msgstr ""
 "<_scripts/ffsec_1.1_uninstall.sh>` script. The FindFace Security "
 "configuration files and database will be backed up."
 
-#: ../source/remove_instance.rst:29
+#: ../source/remove_instance.rst:7
 msgid "Выполните следующие действия:"
 msgstr "Do the following:"
 
-#: ../source/remove_instance.rst:31
+#: ../source/remove_instance.rst:9
 msgid ""
 "Загрузите скрипт :download:`ffsec_1.1_uninstall.sh "
 "<_scripts/ffsec_1.1_uninstall.sh>` в любой каталог на сервере установки "
@@ -81,15 +49,15 @@ msgstr ""
 "<_scripts/ffsec_1.1_uninstall.sh>` script to some directory on a "
 "designated host (for example, to ``/home/username/``)."
 
-#: ../source/remove_instance.rst:33
+#: ../source/remove_instance.rst:11
 msgid "Из данного каталога сделайте скрипт исполняемым."
 msgstr "From this directory, make the script executable."
 
-#: ../source/remove_instance.rst:39
+#: ../source/remove_instance.rst:17
 msgid "Запустите скрипт."
 msgstr "Run the script."
 
-#: ../source/remove_instance.rst:45
+#: ../source/remove_instance.rst:23
 msgid ""
 "Ответьте **all** на вопрос интерактивного мастера удаления, чтобы "
 "полностью удалить FindFace Security вместе с базой данных."
@@ -108,4 +76,35 @@ msgstr ""
 #~ "To remove FindFace Security 1.0, use "
 #~ ":download:`ffsec_1.0_uninstall.sh "
 #~ "<_scripts/ffsec_1.0_uninstall.sh>` instead."
+
+#~ msgid "В этом разделе:"
+#~ msgstr "In this section:"
+
+#~ msgid "Удаление FindFace Security в ОС Windows"
+#~ msgstr "Uninstall FindFace Security for Windows"
+
+#~ msgid ""
+#~ "Для удаления FindFace Security используйте "
+#~ "соответствующий ярлык в меню :guilabel:`Пуск`."
+#~ msgstr ""
+#~ "To uninstall FindFace Security, use the"
+#~ " relevant shortcut in the :guilabel:`Start`"
+#~ " menu."
+
+#~ msgid "|menu_start|"
+#~ msgstr "|menu_start|"
+
+#~ msgid ""
+#~ "Файл ``uninstall.exe`` хранятся в выбранном"
+#~ " каталоге установке (по умолчанию "
+#~ ":menuselection:`Program Files --> FindFace "
+#~ "Security`)."
+#~ msgstr ""
+#~ "You can find the ``uninstall.exe`` file"
+#~ " in the installation directory "
+#~ "(:menuselection:`Program Files —> FindFace "
+#~ "Security` by default)."
+
+#~ msgid "Удаление FindFace Security в ОС Ubuntu"
+#~ msgstr "Uninstall FindFace Security for Ubuntu"
 

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 13:34+0800\n"
-"PO-Revision-Date: 2019-02-18 15:46+0800\n"
+"POT-Creation-Date: 2019-02-19 17:11+0800\n"
+"PO-Revision-Date: 2019-02-19 17:18+0800\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -62,11 +62,11 @@ msgstr "RAM"
 
 #: ../source/requirements.rst:19
 msgid ""
-"На собственные нужды FindFace Security требуется 4 Гб. Потребление "
+"На собственные нужды FindFace Security требуется 6 Гб. Потребление "
 "памяти также зависит от количества камер. Для одной камеры "
 "``1080p@25FPS`` требуется 2 ГБ."
 msgstr ""
-"The own needs of FindFace Security require 4 Gb. The RAM consumption "
+"The own needs of FindFace Security require 6 Gb. The RAM consumption "
 "also depends on the number of cameras in use. A single camera "
 "``1080p@25FPS`` requires 2 GB RAM."
 
@@ -90,18 +90,10 @@ msgid "Операционная система"
 msgstr "Operating system"
 
 #: ../source/requirements.rst:27
-msgid "Windows 10 x64 Professional, Ubuntu 16.04 x64"
-msgstr "Windows 10 x64 Professional, Ubuntu 16.04 x64"
+msgid "Ubuntu 16.04 x64"
+msgstr "Ubuntu 16.04 x64"
 
-#: ../source/requirements.rst:30
-msgid "Среда виртуализации для Windows"
-msgstr "Virtualization environment for WIndows"
-
-#: ../source/requirements.rst:30
-msgid "Docker"
-msgstr "Docker"
-
-#: ../source/requirements.rst:35
+#: ../source/requirements.rst:32
 msgid ""
 "Минимальная конфигурация, необходимая для обработки 1 видеопотока 720p "
 "(1280×720) 25 FPS, состоит из процессора INTEL Core i5 6-го поколения с "
@@ -134,3 +126,12 @@ msgstr ""
 
 #~ msgid "Windows 10 (только 64-битная)"
 #~ msgstr "Windows 10 (only x64)"
+
+#~ msgid "Windows 10 x64 Professional, Ubuntu 16.04 x64"
+#~ msgstr "Windows 10 x64 Professional, Ubuntu 16.04 x64"
+
+#~ msgid "Среда виртуализации для Windows"
+#~ msgstr "Virtualization environment for WIndows"
+
+#~ msgid "Docker"
+#~ msgstr "Docker"

@@ -8,7 +8,7 @@
 Интеграция с Genetec Security Center реализуется через плагин ``findface-genetec``. По умолчанию плагин активен и на панели навигации FindFace Security есть вкладка :guilabel:`Genetec`. 
 
 .. note::
-   Если это не так в FindFace Security для Ubuntu, откройте файл конфигурации ``ffsecurity`` и проверьте, есть ли в нем активная строка ``INSTALLED_APPS.append('ffsecurity_genetec')``.
+   Если это не так в FindFace Security, откройте файл конфигурации ``ffsecurity`` и проверьте, есть ли в нем активная строка ``INSTALLED_APPS.append('ffsecurity_genetec')``.
 
    .. code::
 
@@ -22,9 +22,6 @@
       # integration plugins
       INSTALLED_APPS.append('ffsecurity_genetec') # remove or comment out this line to disable
  
-.. note::
-   В FindFace Security для Windows плагин ``findface-genetec`` не может быть отключен.
-
 Перед настройкой интеграции на стороне FindFace Security разверните программное обеспечение Genetec Web SDK и Media Gateway и создайте в Genetec Security Center оповещение ``Alarm``, которое будет отображаться при наступлении в FindFace Security события распознавания лица. 
 
 .. rubric:: В этой главе:
