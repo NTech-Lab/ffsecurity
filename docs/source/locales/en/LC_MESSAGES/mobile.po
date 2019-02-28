@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-19 17:25+0800\n"
-"PO-Revision-Date: 2019-02-19 17:26+0800\n"
+"POT-Creation-Date: 2019-02-28 16:50+0800\n"
+"PO-Revision-Date: 2019-02-28 16:56+0800\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -57,11 +57,22 @@ msgstr "Search for faces in the event list and dossier database"
 msgid "Идентификация лиц по базам данных в режиме реального времени."
 msgstr "Real time face identification in live streams and video files"
 
-#: ../source/mobile.rst:26
+#: ../source/mobile.rst:24
+msgid ""
+"Для того чтобы в мобильной версии получать события в формате push-"
+"оповещений, для соответствующего списка наблюдения нужно поставить "
+"флажки :guilabel:`Требовать подтверждение события` и :guilabel:`Включить "
+"звуковое оповещение` (через полноформатный веб-интерфейс)."
+msgstr ""
+"To receive push notifications of events in the mobile version, open a "
+"relevant watch list settings in the full version, and check :guilabel:"
+"`Require Event Acknoledgment` and :guilabel:`Enable Sound Alert`."
+
+#: ../source/mobile.rst:29
 msgid "Работа с досье на персону."
 msgstr "View and create a dossier on a person"
 
-#: ../source/mobile.rst:31
+#: ../source/mobile.rst:34
 msgid "Работа с данными функциями аналогична полноформатной версии."
 msgstr "Working with the mobile app is similar to the full version."
 
