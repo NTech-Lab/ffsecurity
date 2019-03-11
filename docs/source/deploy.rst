@@ -199,9 +199,9 @@
       }
 
       FFSECURITY_UI_CONFIG = {
-          'plugins' = 
-              'genetec' = True,
-          }
+          'plugins': {
+              'genetec': True,
+          },
       }
  
    .. tip::
