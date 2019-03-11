@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-23 16:20+0700\n"
-"PO-Revision-Date: 2018-10-23 21:58+0700\n"
+"POT-Creation-Date: 2019-03-11 17:33+0800\n"
+"PO-Revision-Date: 2019-03-11 17:33+0800\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -69,17 +69,30 @@ msgstr ""
 "Configure nginx to use SSL. Open the nginx configuration file. Copy the "
 "code from the example below into the file."
 
-#: ../source/protocol.rst:55
+#: ../source/protocol.rst:86
 msgid "Перезапустите nginx."
 msgstr "Restart nginx."
 
-#: ../source/protocol.rst:61
+#: ../source/protocol.rst:92
 msgid ""
 "Внесите изменения в файл конфигурации ``ffsecurity``. В параметре "
 "``EXTERNAL_ADDRESS`` измените приставку ``http://`` на ``https://``."
 msgstr ""
 "Edit the ``ffsecurity`` configuration file. In the ``EXTERNAL_ADDRESS`` "
 "parameter, substitute the ``http://`` prefix with ``https://``."
+
+#: ../source/protocol.rst:100
+msgid ""
+"Если есть запущенные процессы ``findface-video-worker``, нужно либо "
+"пересоздать камеры в веб-интерфейсе, либо изменить значение параметра "
+"``router_url`` в job-заданиях, заменив приставку ``http://`` на "
+"``https://``. Это можно сделать с помощью команды, аналогичной следующей:"
+msgstr ""
+"If there are running ``findface-video-worker`` services in the system, "
+"you need to either recreate cameras in the web interface, or change the "
+"``router_url`` parameter value in relevant video processing jobs, "
+"substituting the ``http://`` prefix with ``https://``. This can be done "
+"with the following command:"
 
 #~ msgid ""
 #~ "Настройте nginx для использования SSL. Откройте файл конфигурации "
