@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-19 20:51+0800\n"
-"PO-Revision-Date: 2019-02-19 21:20+0800\n"
+"POT-Creation-Date: 2019-03-14 22:21+0800\n"
+"PO-Revision-Date: 2019-03-14 22:26+0800\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../source/requirements.rst:5
 msgid "Системные требования"
@@ -87,8 +87,8 @@ msgid "Операционная система"
 msgstr "Operating system"
 
 #: ../source/requirements.rst:27
-msgid "Ubuntu 16.04 x64"
-msgstr "Ubuntu 16.04 x64"
+msgid "Ubuntu 16.04 (только x64)"
+msgstr "Ubuntu 16.04 (only x64)"
 
 #: ../source/requirements.rst:32
 msgid ""
