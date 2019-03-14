@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FindFace Security 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-14 22:21+0800\n"
-"PO-Revision-Date: 2019-03-14 22:26+0800\n"
+"POT-Creation-Date: 2019-03-14 22:43+0800\n"
+"PO-Revision-Date: 2019-03-14 22:44+0800\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -87,8 +87,8 @@ msgid "Операционная система"
 msgstr "Operating system"
 
 #: ../source/requirements.rst:27
-msgid "Ubuntu 16.04 (только x64)"
-msgstr "Ubuntu 16.04 (only x64)"
+msgid "Только Ubuntu 16.04 x64"
+msgstr "Ubuntu 16.04 x64 **only**"
 
 #: ../source/requirements.rst:32
 msgid ""
